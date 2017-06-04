@@ -1,0 +1,55 @@
+body {
+  font-size: 16px;
+}
+h1 {
+  text-align: center;
+  padding: .5em;
+  font-size: 72px;
+}
+.heading img {
+  height: 70px;
+  margin-bottom: 12px;
+}
+.photo {
+  width: 600px;
+  margin: auto;
+}
+.photo img {
+  width: 100%;
+}
+.announcements {
+  width: 600px;
+  margin: auto;
+  padding-top: 1em;
+}
+.league-description {
+  padding: 1em 0;
+}
+.league-description p {
+  line-height: 2em;
+  margin-bottom: 0;
+}
+.league-specifics ul {
+  margin-bottom: 0;
+  font-size: 20px;
+}
+.details-header {
+  width: 100%;
+  text-align: center;
+}
+.details-header h2 {
+  padding: .5em 0;
+}
+.details-lists {
+  padding: 2em 0;
+}
+.contact-box {
+  width: 600px;
+  margin: auto;
+  border: 5px solid;
+  line-height: 2em;
+  padding: 1.5em;
+}
+.contact-box p {
+  margin: 0;
+}
