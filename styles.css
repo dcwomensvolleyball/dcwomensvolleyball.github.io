@@ -1,10 +1,17 @@
 body {
   font-size: 16px;
+  background-color: WhiteSmoke
+  font-family: 'Roboto', sans-serif;
+  color: MidnightBlue;
+}
+h1, h2 {
+  font-family: 'Raleway', sans-serif;
 }
 h1 {
   text-align: center;
   padding: .5em;
   font-size: 72px;
+  margin: 0;
 }
 .heading img {
   height: 70px;
@@ -21,6 +28,7 @@ h1 {
   width: 600px;
   margin: auto;
   padding-top: 1em;
+  color: Tomato;
 }
 .league-description {
   padding: 1em 0;
@@ -36,6 +44,8 @@ h1 {
 .details-header {
   width: 100%;
   text-align: center;
+  color: WhiteSmoke;
+  background-color: Tomato;
 }
 .details-header h2 {
   padding: .5em 0;
