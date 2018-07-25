@@ -1,66 +1,36 @@
 body {
   font-size: 16px;
-  background-color: WhiteSmoke
+  background-color: gainsboro;
   font-family: 'Roboto', sans-serif;
   color: MidnightBlue;
 }
 h1, h2 {
   font-family: 'Raleway', sans-serif;
 }
-h1 {
-  text-align: center;
-  padding: .5em;
-  font-size: 72px;
-  margin: 0;
+.header {
+  width: 100%;
 }
-.heading img {
-  height: 70px;
-  margin-bottom: 12px;
-}
-.photo {
-  width: 600px;
-  margin: auto;
-}
-.photo img {
+.header img {
   width: 100%;
 }
 .announcements {
-  width: 600px;
-  margin: auto;
-  padding-top: 1em;
-  color: Tomato;
-  text-align: center;
+  background-color: lightsalmon;
+  margin: 25px 0;
+  padding: 25px;
 }
 .league-description {
-  padding: 1em 0;
+  padding: 25px;
+  background-color: whitesmoke;
 }
-.league-description p {
-  line-height: 2em;
-  margin-bottom: 0;
+.photos {
+  margin: 25px 0;
 }
-.league-specifics ul {
-  margin-bottom: 0;
+.league-specifics {
+  padding: 25px;
+}
+.contact {
   font-size: 20px;
-}
-.details-header {
-  width: 100%;
-  text-align: center;
-  color: WhiteSmoke;
-  background-color: Tomato;
-}
-.details-header h2 {
-  padding: .5em 0;
-}
-.details-lists {
-  padding: 2em 0;
-}
-.contact-box {
-  width: 600px;
-  margin: auto;
-  border: 5px solid;
-  line-height: 2em;
-  padding: 1.5em;
-}
-.contact-box p {
-  margin: 0;
+  padding: 25px;
+  background-color: lightseagreen;
+  color: whitesmoke;
 }
