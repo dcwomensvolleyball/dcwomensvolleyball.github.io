@@ -25,6 +25,14 @@ h1, h2 {
 .photos {
   margin: 25px 0;
 }
+#team1 {
+  width: 720px;
+  margin: auto;
+}
+#team1 img {
+  height: 576px;
+  width: 720px;
+}
 .league-specifics {
   padding: 25px;
 }
