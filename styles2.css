@@ -1,0 +1,38 @@
+body {
+  background-color: HoneyDew;
+  font-size: 18px;
+  color: MidnightBlue;
+}
+.menu {
+  height: 100vh;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: .4em;
+}
+.content {
+  height: 100vh;
+}
+ul {
+  padding: 0;
+}
+li {
+  list-style: none;
+  text-align: center;
+}
+a {
+  color: inherit;
+}
+.about-us {
+  height: 25vh;
+  background-color: Aquamarine;
+}
+.schedule {
+  height: 25vh;
+}
+.standings {
+  height: 25vh;
+  background-color: Aquamarine;
+}
+.contact {
+  height: 25vh;
+}
