@@ -1,0 +1,1191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fair Play Initiative</title>
+    <link rel="shortcut icon" type="image/svg" href="molten.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <script src="stats.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  </head>
+
+  <body>
+
+  <nav class="navbar">
+    <!-- LOGO -->
+    <div class="logo">DC Women's Volleyball - Fall 2023
+    <!-- NAVIGATION MENU -->
+    <ul class="nav-links">
+
+      <!-- NAVIGATION MENUS -->
+      <div class="menu">
+
+        <li><a style="background-color:#13a89e;border-radius:5px;padding: 5px 14px;" href="DCWVB.html">Main</a></li>
+        <li><a href="#" onclick="openTab('Teams', [])">Teams</a></li>
+        <li style="z-index:2;" class="services">
+          <a href="#">Standings</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="#" onclick="openTab('Standings', [])">Table</a></li>
+            <li><a href="#" onclick="openTab('Graph', [])">Chart</a></li>
+          </ul>
+        </li>
+
+        <li style="z-index:2;" class="services">
+          <a href="#">Schedule</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="#" onclick="openTab('ALL', [])">FULL</a></li>
+            <li><a href="#" onclick="openTab('M1', [])">Week 1: 10/10</a></li>
+            <li><a href="#" onclick="openTab('M2', [])">Week 2: 10/17</a></li>
+            <li><a href="#" onclick="openTab('M3', [])">Week 3: 10/24</a></li>
+            <li><a href="#" onclick="openTab('M4', [])">Week 4: 10/31</a></li>
+            <li><a href="#" onclick="openTab('M5', [])">Week 5: 11/7</a></li>
+            <li><a href="#" onclick="openTab('M6', [])">Week 6: 11/14</a></li>
+            <li><a disabled>BYE: 11/21</a></li>
+            <li><a href="#" onclick="openTab('M7', [])">Week 7: 11/28</a></li>
+          </ul>
+        </li>
+
+        <li style="z-index:2;" class="services">
+          <a href="#">Playoffs</a>
+          <!-- DROPDOWN MENU -->
+          <ul class="dropdown">
+            <li><a href="#" onclick="openTab('P1', [])">Playoff 1: 12/5</a></li>
+            <li><a href="#" onclick="openTab('P2', [])">Playoff 2: 12/12</a></li>
+          </ul>
+        </li>
+
+        <li><a href="#" onclick="openTab('Grid', [])">Grid</a></li>
+      </div>
+    </ul>
+    </div>
+    </div>
+  </nav>
+
+    <div id="Teams" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th></th>
+        <th style="width:200px;text-align:center;border-style:solid;background-color:LightBlue;">Team Name</th>
+        <th style="width:200px;text-align:center;border-style:solid;background-color:LightBlue;">Captain</th>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 1</th>
+        <td style="border:1px solid black;padding-left:5px;">Team Cara</td>
+        <td style="border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Cara G.</td>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 2</th>
+        <td style="border:1px solid black;padding-left:5px;">Smashing Pumpkins</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Grace G.</td>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 3</th>
+        <td style="border:1px solid black;padding-left:5px;padding-right:5px;">Team Grace H</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Grace H.</td>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 4</th>
+        <td style="border:1px solid black;padding-left:5px;">Big Dig Energy</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Liz D.</td>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 5</th>
+        <td style="border:1px solid black;padding-left:5px;padding-right:5px;">Team Katie</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Katie T.</td>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 6</th>
+        <td style="border:1px solid black;padding-left:5px;">Team May</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">May Y.</td>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 7</th>
+        <td style="border:1px solid black;padding-left:5px;padding-right:5px;">Team Meghan</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Meghan S.</td>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;padding-right:5px;">Team 8</th>
+        <td style="border-top:1px solid black;border-left:solid;border-right:1px solid black;border-bottom:solid;padding-left:5px;">Blocktopussies</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;padding-left:5px;">Mikaela A.</td>
+      </tr>
+    </table>
+    </div>
+
+    <div id="Standings" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th></th>
+        <th title="Matches Played" style="width:75px;text-align:center;border-style:solid;background-color:LightBlue;">MP</th>
+        <th title="Set Points For" style="width:75px;text-align:center;border-style:solid;background-color:LightBlue;">SPF</th>
+        <th title="Set Points Against" style="width:75px;text-align:center;border-style:solid;background-color:LightBlue;">SPA</th>
+        <th title="Total Points For" style="width:75px;text-align:center;border-style:solid;background-color:LightBlue;">TPF</th>
+        <th title="Total Points Against" style="width:75px;text-align:center;border-style:solid;background-color:LightBlue;">TPA</th>
+        <th title="Point Differential" style="width:75px;text-align:center;border-style:solid;background-color:LightBlue;">PD</th>
+      </tr>
+      <tr style="background-color:PaleGoldenrod">
+        <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Team Katie</th>
+        <td style="border:1px solid black;text-align:center;">7</td>
+        <td style="border:1px solid black;text-align:center;">14.5</td>
+        <td style="border:1px solid black;text-align:center;">3</td>
+        <td style="border:1px solid black;text-align:center;">370</td>
+        <td style="border:1px solid black;text-align:center;">300</td>
+        <td style="border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">+70</th>
+      </tr>
+      <tr style="background-color:PaleGoldenrod">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Smashing Pumpkins</th>
+        <td style="border:1px solid black;text-align:center;">7</td>
+        <td style="border:1px solid black;text-align:center;">11</td>
+        <td style="border:1px solid black;text-align:center;">6.5</td>
+        <td style="border:1px solid black;text-align:center;">349</td>
+        <td style="border:1px solid black;text-align:center;">336</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">+13</th>
+      </tr>
+      <tr style="background-color:PaleGoldenrod">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Team Meghan</th>
+        <td style="border:1px solid black;text-align:center;">7</td>
+        <td style="border:1px solid black;text-align:center;">10</td>
+        <td style="border:1px solid black;text-align:center;">7.5</td>
+        <td style="border:1px solid black;text-align:center;">373</td>
+        <td style="border:1px solid black;text-align:center;">310</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">+63</th>
+      </tr>
+      <tr style="background-color:PaleGoldenrod">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;padding-right:5px;">Team Cara</th>
+        <td style="border:1px solid black;border-bottom:solid;text-align:center;">7</td>
+        <td style="border:1px solid black;border-bottom:solid;text-align:center;">10</td>
+        <td style="border:1px solid black;border-bottom:solid;text-align:center;">7.5</td>
+        <td style="border:1px solid black;border-bottom:solid;text-align:center;">368</td>
+        <td style="border:1px solid black;border-bottom:solid;text-align:center;">321</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;text-align:center;">+47</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Team May</th>
+        <td style="border:1px solid black;text-align:center;">7</td>
+        <td style="border:1px solid black;text-align:center;">8</td>
+        <td style="border:1px solid black;text-align:center;">9.5</td>
+        <td style="border:1px solid black;text-align:center;">324</td>
+        <td style="border:1px solid black;text-align:center;">352</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">-28</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Blocktopussies</th>
+        <td style="border:1px solid black;text-align:center;">7</td>
+        <td style="border:1px solid black;text-align:center;">7.25</td>
+        <td style="border:1px solid black;text-align:center;">10.25</td>
+        <td style="border:1px solid black;text-align:center;">330</td>
+        <td style="border:1px solid black;text-align:center;">337</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">-7</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Team Grace H</th>
+        <td style="border:1px solid black;text-align:center;">7</td>
+        <td style="border:1px solid black;text-align:center;">6.5</td>
+        <td style="border:1px solid black;text-align:center;">11</td>
+        <td style="border:1px solid black;text-align:center;">311</td>
+        <td style="border:1px solid black;text-align:center;">372</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">-61</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;padding-right:5px;">Big Dig Energy</th>
+        <td style="border-top:1px solid black;border-left:solid;border-right:1px solid black;border-bottom:solid;text-align:center;">7</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">2.75</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">14.75</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">269</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">380</td>
+        <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;text-align:center;">-111</th>
+      </tr>
+    </table>
+    </div>
+
+    <div style="display:none;width:100%;height:700px;padding-top:20px;z-index:-1;" id="Graph" class="tabcontent">
+      <script>
+        anychart.onDocumentReady(function () {
+          // add data
+          var data = [
+            ["M1",6,3,5,4,7,2,8,1],
+            ["M2",6,4,7,3,5,2,8,1],
+            ["M3",2,6,3,5,7,4,8,1],
+            ["M4",5,7,2,4,6,3,8,1],
+            ["M5",2,6,3,5,7,4,8,1],
+            ["M6",3,6,2,5,7,4,8,1],
+            ["M7",4,6,2,5,7,3,8,1]
+          ];
+  
+          // create a data set
+          var dataSet = anychart.data.set(data);
+
+          // map the data for all series
+          var firstSeriesData = dataSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = dataSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = dataSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = dataSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = dataSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = dataSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = dataSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = dataSet.mapAs({x: 0, value: 8});
+
+          // create a line chart
+          var chart = anychart.line();
+
+          // create the series and name them
+          var firstSeries = chart.line(firstSeriesData);
+          firstSeries.name("TC");
+          firstSeries.stroke({color:"red",thickness:3})
+          var secondSeries = chart.line(secondSeriesData);
+          secondSeries.name("B");
+          secondSeries.stroke({color:"orange",thickness:3})
+          var thirdSeries = chart.line(thirdSeriesData);
+          thirdSeries.name("SP");
+          thirdSeries.stroke({color:"yellow",thickness:3})
+          var fourthSeries = chart.line(fourthSeriesData);
+          fourthSeries.name("TMay");
+          fourthSeries.stroke({color:"green",thickness:3})
+          var fifthSeries = chart.line(fifthSeriesData);
+          fifthSeries.name("TGH");
+          fifthSeries.stroke({color:"blue",thickness:3})
+          var sixthSeries = chart.line(sixthSeriesData);
+          sixthSeries.name("TMeg");
+          sixthSeries.stroke({color:"purple",thickness:3})
+          var seventhSeries = chart.line(seventhSeriesData);
+          seventhSeries.name("BDE");
+          seventhSeries.stroke({color:"magenta",thickness:3})
+          var eighthSeries = chart.line(eighthSeriesData);
+          eighthSeries.name("TK");
+          eighthSeries.stroke({color:"gray",thickness:3})
+
+          chart.xAxis().orientation("top");
+          chart.xAxis().labels().fontColor("black");
+          chart.xAxis().labels().fontWeight("bold");
+          chart.xAxis().stroke({color:"black",thickness:2});
+
+          chart.yAxis().orientation("right");
+          chart.yAxis().labels().fontColor("black");
+          chart.yAxis().labels().fontWeight("bold");
+          chart.yAxis().drawFirstLabel(false);
+          chart.yAxis().drawLastLabel(false);
+          chart.yScale().inverted(true);
+          chart.yScale().ticks().interval(1);
+          chart.yAxis().stroke({color:"black",thickness:2});
+          chart.background().fill("gainsboro");
+
+          // add a legend
+          chart.legend().enabled(true);
+  
+          // add a title
+          chart.title("Rankings");
+          chart.title().orientation("bottom");
+  
+          // specify where to display the chart
+          chart.container("Graph");
+  
+          // draw the resulting chart
+          chart.draw();
+        });
+      </script>
+    </div>
+
+    <div id="ALL" class="tabcontent" style="display:none;margin-bottom:25px;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team May</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team Katie</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 10/10</th>
+      </tr>
+    </table>
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Grace H</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 2: 10/17</th>
+      </tr>
+    </table>
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 3: 10/24</th>
+      </tr>
+    </table>
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 4: 10/31</th>
+      </tr>
+    </table>
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team Katie</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 5: 11/7</th>
+      </tr>
+    </table>
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Grace H</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Katie</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 6: 11/14</th>
+      </tr>
+    </table>
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Grace H</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:170px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 7: 11/28</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="M1" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">20</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">48</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">11</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">41</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">12</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">44</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">6</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">24</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">22</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">8</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">51</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">55</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 10/10</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="M2" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">2</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">44</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">43</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">53</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">10</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">10</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">41</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">47</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">56</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">50</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">8</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">46</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 2: 10/17</th>
+      </tr>
+    </table>
+    </div>
+    
+    <div id="M3" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">57</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">20</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">51</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">20</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">6</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">41</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0.25</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">4</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">33</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">22</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">55</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">22</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">5</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">48</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.25</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">13</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">18</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">40</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 3: 10/24</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="M4" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">51</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">59</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">39</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">10</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">41</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">51</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">44</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">19</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">55</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">59</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 4: 10/31</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="M5" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">50</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">20</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">45</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">58</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">51</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">22</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">55</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">34</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">7</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">39</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 5: 11/7</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="M6" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">8</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">50</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">10</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">52</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">19</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">10</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">44</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">50</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">18</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">46</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">53</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">19</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">10</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">40</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 6: 11/14</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="M7" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="12" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">10</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">43</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">11</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">53</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">20</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">12</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">53</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">7</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">30</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">52</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">44</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0.5</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">22</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">19</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">8</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">49</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 7: 11/28</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="P1" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="4" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="4" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Playoff 1: 12/5</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="P2" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th colspan="4" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">7:00 PM</th>
+        <th colspan="4" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">8:00 PM</th>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;"></td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;"></td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Smashing Pumpkins</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;"></td>
+        <td style="width:170px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Grace H</td>
+        <td style="width:40px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;"></td>
+      </tr>
+      <tr>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;"></td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Blocktopussies</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;"></td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Cara</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;"></td>
+        <td style="width:170px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team May</td>
+        <td style="width:40px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;"></td>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 1</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Match 2</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 3</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Match 4</th>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+      </tr>
+      <tr>
+        <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Playoff 2: 12/12</th>
+      </tr>
+    </table>
+    </div>
+
+    <div id="Grid" class="tabcontent" style="display:none;">
+    <table style="margin-left:25px;margin-top:25px;">
+      <tr>
+        <th></th>
+        <th title="Team Cara" style="width:60px;text-align:center;border-top:solid;border-left:solid;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TC</th>
+        <th title="Smashing Pumpkins" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">SP</th>
+        <th title="Team Grace H" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TGH</th>
+        <th title="Big Dig Energy" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">BDE</th>
+        <th title="Team Katie" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TK</th>
+        <th title="Team May" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TMay</th>
+        <th title="Team Meghan" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TMeg</th>
+        <th title="Blocktopussies" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:LightBlue;">B</th>
+        <th style="width:60px;"></th>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Cara</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">0.5</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;text-align:center;">0.5</th>
+        <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">10</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Smashing Pumpkins</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">2</th>
+        <td style="border:1px solid black;text-align:center;">0.5</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">11</th>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Team Grace H</th>
+        <td style="border:1px solid black;text-align:center;">2</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">6.5</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Big Dig Energy</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">0.5</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">2.25</th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">2.75</th>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Katie</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;text-align:center;">2</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">2</th>
+        <td style="border:1px solid black;text-align:center;">2</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">14.5</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team May</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">0.5</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">8</th>
+      </tr>
+      <tr style="background-color:GhostWhite">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Meghan</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;text-align:center;">0.5</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">10</th>
+      </tr>
+      <tr style="background-color:LightGray">
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;">Blocktopussies</th>
+        <td style="border:1px solid black;text-align:center;">2</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">1.5</th>
+        <td style="border:1px solid black;text-align:center;">0.25</th>
+        <td style="border:1px solid black;text-align:center;">0</th>
+        <td style="border:1px solid black;text-align:center;">1</th>
+        <td style="border:1px solid black;text-align:center;">2.5</th>
+        <td style="border:1px solid black;background-color:DarkGray;"></th>
+        <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;text-align:center;">7.25</th>
+      </tr>
+      <tr>
+        <th></th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:solid;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">7.5</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">6.5</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">11</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">14.75</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">3</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">9.5</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">7.5</th>
+        <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:GhostWhite;">10.25</th>
+        <th></th>
+      </tr>
+    </table>
+    </div>
+
+  </div>
+</body>
+</html>
+
