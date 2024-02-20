@@ -1,0 +1,17 @@
+User-agent: *
+Disallow: /old/
+
+User-agent: *
+Disallow: /coed/
+
+User-agent: *
+Disallow: /womens/
+
+User-agent: *
+Disallow: /css/
+
+User-agent: *
+Disallow: /js/
+
+User-agent: *
+Disallow: /images/
