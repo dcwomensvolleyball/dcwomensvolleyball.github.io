@@ -4,41 +4,127 @@ body {
   font-family: 'Roboto', sans-serif;
   color: MidnightBlue;
 }
-h1, h2 {
-  font-family: 'Raleway', sans-serif;
+
+#border{
+  height:50px;
 }
-.header {
+#container{
+  overflow-x:scroll;
+  overflow-y:hidden;
+  white-space:nowrap;
+  position:relative;
+  display:inline;
+}
+.coed_league_link{
+  display:inline;
+  margin-left:50px;
+  margin-top:50px;
+  margin-bottom:50px;
+}
+.womens_league_link{
+  display:inline;
+  margin-left:50px;
+  margin-top:50px;
+  margin-right:50px;
+  margin-bottom:50px;
+}
+
+ /* Style the tab */
+.tab {
+  overflow: auto;
+  border: 2px solid #ddd;
+  background-color: #f1f1f1;
+  margin-left:50px;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: #ccc;
+}
+
+/* The subnavigation menu */
+.subnav {
+  float: left;
+}
+
+.tab .subnav {
+  float: left;
+}
+
+/* Subnav button */
+.subnav .subnavbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: inherit;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.subnav:hover .subnavbtn {
+  background-color: #ddd;
+}
+
+/* Style the subnav content - positioned absolute */
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: inherit;
   width: 100%;
+  z-index: 1;
+  margin-left:50px;
 }
-.header img {
-  width: 100%;
+
+/* Style the subnav links */
+.subnav-content button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
 }
-.announcements {
-  background-color: lightsalmon;
-  margin: 25px 0;
-  padding: 25px;
+
+/* Style the subnav links */
+.subnav-content button:hover {
+  background-color: #ddd;
 }
-.league-description {
-  padding: 25px;
-  background-color: whitesmoke;
+
+/* Add a grey background color on hover */
+.subnav-content button.active {
+  background-color: #ccc;
 }
-.photos {
-  margin: 25px 0;
+
+/* When you move the mouse over the subnav container, open the subnav content */
+.subnav:hover .subnav-content {
+  display: block;
 }
-#team1 {
-  width: 720px;
-  margin: auto;
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 3px solid #ccc;
+  border-top: none;
 }
-#team1 img {
-  height: 576px;
-  width: 720px;
-}
-.league-specifics {
-  padding: 25px;
-}
-.contact {
-  font-size: 20px;
-  padding: 25px;
-  background-color: lightseagreen;
-  color: whitesmoke;
-}
+
