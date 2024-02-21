@@ -15,8 +15,23 @@ a {
   text-decoration: none;
 }
 
-li {
-  list-style: none;
+/* Main Level */
+.rules ul {
+  margin-left:25px;
+}
+
+/* Second Level */
+.rules ul ul {
+  margin-left:30px;
+}
+
+/* Third Level */
+.rules ul ul ul {
+  margin-left:35px;
+}
+
+.rules ol {
+  margin-left:30px;
 }
 
 /* NAVBAR STYLING STARTS */
@@ -50,10 +65,12 @@ li {
   background-color: #13a89e;
   border-radius: 5px;
   transition: 0.3s ease;
+  list-style: none;
 }
 
 .menu li {
   padding: 5px 14px;
+  list-style: none;
 }
 
 /* DROPDOWN MENU */
@@ -78,10 +95,12 @@ li {
   padding: 0.5em 0.5em;
   width: 9em;
   text-align: left;
+  list-style: none;
 }
 
 .dropdown li:hover {
   background-color: #093c61;
+  list-style: none;
 }
 
 .services:hover .dropdown {
@@ -111,4 +130,3 @@ li {
 .subnav a:focus {
   background-color: Silver;
 }
-
