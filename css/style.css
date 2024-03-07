@@ -37,7 +37,7 @@ a {
 /* NAVBAR STYLING STARTS */
 /* LOGO */
 .logo {
-  font-size: 22px;
+  font-size: 20px;
 }
 
 .navbar {
@@ -116,14 +116,18 @@ a {
 /* SUBNAV STYLING STARTS */
 .subnav {
   color: #fff;
+  display: flex;
+  flex-flow: row wrap;
 }
 
 .subnav a {
+  font-size: 11px;
   border-radius: 5px;
   color: MidnightBlue;
   padding: 7px 11px 7px 11px;
-  width: 8em;
+  width: 7em;
   border: 3px solid Silver;
+  margin: 2px;
 }
 
 .subnav a:hover {
