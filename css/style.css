@@ -15,25 +15,6 @@ a {
   text-decoration: none;
 }
 
-/* Main Level */
-.rules ul {
-  margin-left:25px;
-}
-
-/* Second Level */
-.rules ul ul {
-  margin-left:30px;
-}
-
-/* Third Level */
-.rules ul ul ul {
-  margin-left:35px;
-}
-
-.rules ol {
-  margin-left:30px;
-}
-
 /* NAVBAR STYLING STARTS */
 /* LOGO */
 .logo {
