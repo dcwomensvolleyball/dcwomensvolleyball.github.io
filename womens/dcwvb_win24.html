@@ -22,22 +22,22 @@
         <!-- NAVIGATION MENUS -->
         <div class="menu">
           <li><a href="DCWVB.html"><i class="material-icons">home</i></a></li>
-          <li><a href="#Teams" onclick="openTab('Teams', ['P1','P2','M1','M2','M3','M4','M5','M6','M7'])">Teams</a></li>
+          <li><a href="#Teams" onclick="openTab('Teams', ['P1','P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Teams</a></li>
           <li style="z-index:2;" class="services">
             <a href="#">Standings</a>
             <!-- DROPDOWN MENU -->
             <ul class="dropdown">
-              <li><a href="#Table" onclick="openTab('Standings', ['P1','P2','M1','M2','M3','M4','M5','M6','M7'])">Table</a></li>
-              <li><a href="#Chart" onclick="openTab('Graph', ['P1','P2','M1','M2','M3','M4','M5','M6','M7'])">Chart</a></li>
+              <li><a href="#Table" onclick="openTab('Standings', ['P1','P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Table</a></li>
+              <li><a href="#Chart" onclick="openTab('Graph', ['P1','P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Chart</a></li>
             </ul>
           </li>
           <li style="z-index:2;" class="services">
             <a href="#">Schedule</a>
             <!-- DROPDOWN MENU -->
             <ul class="dropdown">
-              <li><a href="#Regular_Season" onclick="openTab('Regular Season', ['P1','P2','M1','M2','M3','M4','M5','M6','M7'])">Regular Season</a></li>
-              <li><a href="#Playoffs" onclick="openTab('Playoffs', ['P1','P2','M1','M2','M3','M4','M5','M6','M7'])">Playoffs</a></li>
-              <li><a href="#Grid" onclick="openTab('Grid', ['P1','P2','M1','M2','M3','M4','M5','M6','M7'])">Grid</a></li>
+              <li><a href="#Regular_Season" onclick="openTab('Regular Season', ['P1','P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Regular Season</a></li>
+              <li><a href="#Playoffs" onclick="openTab('Playoffs', ['P1','P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Playoffs</a></li>
+              <li><a href="#Grid" onclick="openTab('Grid', ['P1','P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Grid</a></li>
             </ul>
           </li>
         </div>
@@ -883,8 +883,9 @@
 
     <div id="Playoffs" class="tabcontent" style="display:none;">
       <div class="subnav" style="margin-left:10px;margin-top:10px;">
-        <a href="#Playoff_1" onclick="showImage('P1', ['P2','M1','M2','M3','M4','M5','M6','M7'])">Playoff 1</a>
-        <a href="#Playoff_2" onclick="showImage('P2', ['P1','M1','M2','M3','M4','M5','M6','M7'])">Playoff 2</a>
+        <a href="#Playoff_1" onclick="showImage('P1', ['P2','BR','M1','M2','M3','M4','M5','M6','M7'])">Playoff 1</a>
+        <a href="#Playoff_2" onclick="showImage('P2', ['P1','BR','M1','M2','M3','M4','M5','M6','M7'])">Playoff 2</a>
+        <a href="#Bracket" onclick="showImage('BR', ['P1','P2','M1','M2','M3','M4','M5','M6'])">Bracket</a>
       </div>
     </div>
 
@@ -898,46 +899,46 @@
           <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1 - Match 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">#1</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Meghan</td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">#4</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Jenn's Revenge</td>
+          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
         </tr>
         <tr>
           <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2 - Match 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">#2</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Supreme Court</td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">#3</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Holy Blockamole!</td>
+          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
         </tr>
         <tr>
           <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
           <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1 - Match 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">#5</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
+          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Baker's Half Dozen</td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">#8</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
+          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Unconventional Flapjacks</td>
+          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
         </tr>
         <tr>
           <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2 - Match 4</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">#6</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
+          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">BLOCKPINK</td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">#7</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
+          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Sets and the City</td>
+          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
         </tr>
       </table>
     </div>
@@ -994,6 +995,12 @@
           <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
         </tr>
       </table>
+    </div>
+
+    <div id="BR" style="display:none;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;">
+      <div>
+        <img title="Bracket" style="height:100%;width:min(871px,100%);" src="../images/dcwvb_win24_bracket.png">
+      </div>
     </div>
 
 
