@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Fair Play Initiative</title>
-    <link rel="shortcut icon" type="image/svg" href="../images/molten.png"/>
+    <link rel="shortcut icon" type="image/svg" href="../images/main/molten.png"/>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -22,7 +22,14 @@
         <div class="menu">
           <li><a href="../index.html"><i class="material-icons">home</i></a></li>
           <li><a href="#Rules" onclick="openTab('Rules', [])">Rules</a></li>
-          <li><a href="#Location" onclick="openTab('Location', [])">Location</a></li>
+          <li style="z-index:2;" class="services">
+            <a href="#">Location</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="#Map" onclick="openTab('Map', ['Equipment'])">Map</a></li>
+              <li><a href="#Equipment" onclick="openTab('Equipment', ['Map'])">Equipment</a></li>
+            </ul>
+          </li>
           <li style="z-index:2;" class="services">
             <a href="#">Leagues</a>
             <!-- DROPDOWN MENU -->
@@ -127,13 +134,72 @@
       </div>
     </div>
 
-    <div id="Location" class="tabcontent" style="display:none;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;">
+    <div id="Map" class="tabcontent" style="display:none;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;">
       <div>
-        <img title="National Cathedral School - Agnes Cochran Underwood Athletic Center" style="height:100%;width:min(1045px,100%);" src="../images/ncs_map.png">
+        <img title="National Cathedral School - Agnes Cochran Underwood Athletic Center" style="height:100%;width:min(1045px,100%);" src="../images/main/ncs_map.png">
       </div>
       <div style="margin-top:15px;">
         <a href="https://www.google.com/maps/place/Agnes+Cochran+Underwood+Athletic+Center/@38.9305725,-77.0675811,18z/data=!4m6!3m5!1s0x89b7c9d80323a0af:0x3888c561b4d7e98b!8m2!3d38.9310046!4d-77.0681419!16s%2Fg%2F1hdyx0492?entry=ttu">GOOGLE MAPS LINK</a>
       </div>
+    </div>
+
+    <div id="Equipment" class="tabcontent" style="display:none;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;">
+      <div class="subnav" style="margin-top:10px;margin-right:10px;">
+        <a href="#Nets" onclick="showImage('Nets', ['Antennas'])">Nets</a>
+        <a href="#Antennas" onclick="showImage('Antennas', ['Nets'])">Antennas</a>
+      </div>
+    </div>
+
+    <div id="Nets" class="tabcontent" style="display:none;">
+      <div class="slideshow-container">
+        <div class="slide" style="margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">1 / 7</div>
+          <img src="../images/dvb/1_net_setter_coed.png" style="height:min(806px,100%);width:min(605px,100%);">
+          <div class="text">Verify current net height</div>
+        </div>
+
+        <div class="slide" style="display:none;margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">2 / 7</div>
+          <img src="../images/main/2_net_crank_upper.png" style="height:min(806px,100%);width:min(605px,100%);">
+          <div class="text">Loosen net (upper) by turning hand crank</div>
+        </div>
+
+        <div class="slide" style="display:none;margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">3 / 7</div>
+          <img src="../images/main/3_net_lever_open.png" style="height:min(806px,100%);width:min(605px,100%);">
+          <div class="text">Move slide lever to 'open' position</div>
+        </div>
+
+        <div class="slide" style="display:none;margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">4 / 7</div>
+          <img src="../images/main/4_net_slide_frame.png" style="height:min(806px,100%);width:min(605px,100%);">
+          <div class="text">Move slide frame up/down to desired height</div>
+        </div>
+
+        <div class="slide" style="display:none;margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">5 / 7</div>
+          <img src="../images/main/5_net_lever_closed.png" style="height:min(806px,100%);width:min(605px,100%);">
+          <div class="text">Reset slide lever to 'closed' position</div>
+        </div>
+
+        <div class="slide" style="display:none;margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">6 / 7</div>
+          <img src="../images/main/2_net_crank_upper.png" style="height:min(806px,100%);width:min(605px,100%);">
+          <div class="text">Tighten net (upper) by turning hand crank</div>
+        </div>
+
+        <div class="slide" style="display:none;margin-left:10px;margin-right:10px;margin-bottom:10px;">
+          <div class="numbertext">7 / 7</div>
+          <img src="../images/main/6_net_pulley_lower.png" style="height:min(605px,100%);width:min(806px,100%);">
+          <div class="text">Tighten net (lower) by using rope pulley</div>
+        </div>
+
+        <a class="prev" onclick="nextSlide(-1)" style="color:#ffffff;">❮</a>
+        <a class="next" onclick="nextSlide(1)" style="color:#ffffff;">❯</a>
+      </div>
+    </div>
+
+    <div id="Antennas" class="tabcontent" style="display:none;">
     </div>
 
   </body>
