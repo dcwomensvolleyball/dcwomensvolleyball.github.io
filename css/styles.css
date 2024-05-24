@@ -5,27 +5,50 @@ body {
   color: MidnightBlue;
 }
 
-#border{
+#border {
   height:50px;
 }
-#container{
+
+#container {
   overflow-x:scroll;
   overflow-y:hidden;
   white-space:nowrap;
   position:relative;
   display:inline;
 }
-.coed_league_link{
+
+.coed_league_link {
   display:block;
   margin-left:50px;
   margin-top:50px;
   margin-right:50px;
   margin-bottom:50px;
 }
-.womens_league_link{
+
+.womens_league_link {
   display:block;
   margin-left:50px;
   margin-top:50px;
   margin-right:50px;
   margin-bottom:50px;
+}
+
+#dvb_logo {
+  height:min(411px,100%);
+  width:min(568px,100%);
+  box-shadow: 0 0 20px #888888;
+}
+
+#dcwvb_logo {
+  height:min(411px,100%);
+  width:min(568px,100%);
+  box-shadow: 0 0 20px #888888;
+}
+
+#dvb_logo:hover {
+  box-shadow: 0 0 20px #444444;
+}
+
+#dcwvb_logo:hover {
+  box-shadow: 0 0 20px #444444;
 }
