@@ -28,7 +28,7 @@
             <!-- DROPDOWN MENU -->
             <ul class="dropdown">
               <li><a href="#Table" onclick="openTab('Standings', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Table</a></li>
-              <li><a href="#Chart" onclick="openTab('Graph', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Chart</a></li>
+              <li><a href="#Chart" onclick="openTab('Chart', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Chart</a></li>
             </ul>
           </li>
           <li style="z-index:2;" class="services">
@@ -275,33 +275,39 @@
       </table>
     </div>
 
-    <div style="display:none;width:100%;height:700px;padding-top:20px;z-index:-1;" id="Graph" class="tabcontent">
+    <div id="Chart" class="tabcontent" style="display:none;">
+      <div class="subnav" style="margin-left:10px;margin-top:10px;">
+        <a href="#Rank" onclick="showImage('Rank', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P2','BR','Points'])">Rank</a>
+        <a href="#Points" onclick="showImage('Points', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','BR','Rank'])">Points</a>
+      </div>
+    </div>
+
+    <div id="Rank" style="display:none;width:100%;height:700px;padding-top:20px;z-index:-1;" class="tabcontent">
       <script>
         anychart.onDocumentReady(function () {
-          // add data
-          var data = [
+          // add rank
+          var rank = [
             ["M1",3,3,11,3,11,3,7,1,7,1,7,7],
             ["M2",2,6,10,5,12,3,8,4,9,1,11,7],
-            ["M3",4,3,10,6,12,2,11,7,8,1,9,5]
-            
+            ["M3",4,3,10,6,12,2,11,7,8,1,9,5],
           ];
-  
-          // create a data set
-          var dataSet = anychart.data.set(data);
 
-          // map the data for all series
-          var firstSeriesData = dataSet.mapAs({x: 0, value: 1});
-          var secondSeriesData = dataSet.mapAs({x: 0, value: 2});
-          var thirdSeriesData = dataSet.mapAs({x: 0, value: 3});
-          var fourthSeriesData = dataSet.mapAs({x: 0, value: 4});
-          var fifthSeriesData = dataSet.mapAs({x: 0, value: 5});
-          var sixthSeriesData = dataSet.mapAs({x: 0, value: 6});
-          var seventhSeriesData = dataSet.mapAs({x: 0, value: 7});
-          var eighthSeriesData = dataSet.mapAs({x: 0, value: 8});
-          var ninthSeriesData = dataSet.mapAs({x: 0, value: 9});
-          var tenthSeriesData = dataSet.mapAs({x: 0, value: 10});
-          var eleventhSeriesData = dataSet.mapAs({x: 0, value: 11});
-          var twelfthSeriesData = dataSet.mapAs({x: 0, value: 12});
+          // create a rank set
+          var rankSet = anychart.data.set(rank);
+
+          // map the rank for all series
+          var firstSeriesData = rankSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = rankSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = rankSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = rankSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = rankSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = rankSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = rankSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = rankSet.mapAs({x: 0, value: 8});
+          var ninthSeriesData = rankSet.mapAs({x: 0, value: 9});
+          var tenthSeriesData = rankSet.mapAs({x: 0, value: 10});
+          var eleventhSeriesData = rankSet.mapAs({x: 0, value: 11});
+          var twelfthSeriesData = rankSet.mapAs({x: 0, value: 12});
 
           // create a line chart
           var chart = anychart.line();
@@ -356,21 +362,145 @@
           chart.yAxis().drawLastLabel(false);
           chart.yScale().inverted(true);
           chart.yScale().ticks().interval(1);
+          chart.yScale().minimum(0.25);
+          chart.yScale().maximum(12.5);
           chart.yAxis().stroke({color:"black",thickness:2});
           chart.background().fill("gainsboro");
 
+          // gold division range
+          var rangeMarker1 = chart.rangeMarker(1);
+          rangeMarker1.axis(chart.yAxis());
+          rangeMarker1.from(0.25);
+          rangeMarker1.to(4.5);
+          rangeMarker1.fill("#F2C891 0.4");
+
+          // silver division range
+          var rangeMarker2 = chart.rangeMarker(2);
+          rangeMarker2.axis(chart.yAxis());
+          rangeMarker2.from(4.5);
+          rangeMarker2.to(8.5);
+          rangeMarker2.fill("#DBE2E9 0.4");
+
+          // bronze division range
+          var rangeMarker3 = chart.rangeMarker(3);
+          rangeMarker3.axis(chart.yAxis());
+          rangeMarker3.from(8.5);
+          rangeMarker3.to(12.5);
+          rangeMarker3.fill("#B77729 0.4");
+
           // add a legend
           chart.legend().enabled(true);
-  
+
           // add a title
           chart.title("Rankings");
           chart.title().orientation("bottom");
-  
+
           // specify where to display the chart
-          chart.container("Graph");
-  
+          chart.container("Rank");
+
           // draw the resulting chart
           chart.draw();
+        });
+      </script>
+    </div>
+
+    <div id="Points" class="tabcontent" style="display:none;width:100%;height:700px;padding-top:20px;z-index:-1;" class="tabcontent">
+      <script>
+        anychart.onDocumentReady(function () {
+          // add points
+          var points = [
+            ["M0",0,0,0,0,0,0,0,0,0,0,0,0],
+            ["M1",1.5,1.5,0,1.5,0,1.5,1,2.5,1,2.5,1,1],
+            ["M2",4,3,1.5,3,0,4,2,3.5,2,4,1,2],
+            ["M3",4.5,5.5,2,4,1.5,6,2,3.5,3,6,2.5,4.5]
+          ];
+
+          // create a points set
+          var pointsSet = anychart.data.set(points);
+
+          // map the points for all series
+          var firstSeriesData = pointsSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = pointsSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = pointsSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = pointsSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = pointsSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = pointsSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = pointsSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = pointsSet.mapAs({x: 0, value: 8});
+          var ninthSeriesData = pointsSet.mapAs({x: 0, value: 9});
+          var tenthSeriesData = pointsSet.mapAs({x: 0, value: 10});
+          var eleventhSeriesData = pointsSet.mapAs({x: 0, value: 11});
+          var twelfthSeriesData = pointsSet.mapAs({x: 0, value: 12});
+
+          // create a line chart
+          var pointsChart = anychart.line();
+
+          // create the series and name them
+          var firstSeries = pointsChart.line(firstSeriesData);
+          firstSeries.name("EZB");
+          firstSeries.stroke({color:"red",thickness:3});
+          var secondSeries = pointsChart.line(secondSeriesData);
+          secondSeries.name("TwW");
+          secondSeries.stroke({color:"orange",thickness:3});
+          var thirdSeries = pointsChart.line(thirdSeriesData);
+          thirdSeries.name("SB");
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          var fourthSeries = pointsChart.line(fourthSeriesData);
+          fourthSeries.name("GII");
+          fourthSeries.stroke({color:"green",thickness:3});
+          var fifthSeries = pointsChart.line(fifthSeriesData);
+          fifthSeries.name("SIaFI");
+          fifthSeries.stroke({color:"blue",thickness:3});
+          var sixthSeries = pointsChart.line(sixthSeriesData);
+          sixthSeries.name("S");
+          sixthSeries.stroke({color:"purple",thickness:3});
+          var seventhSeries = pointsChart.line(seventhSeriesData);
+          seventhSeries.name("PA");
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          var eighthSeries = pointsChart.line(eighthSeriesData);
+          eighthSeries.name("LaFS");
+          eighthSeries.stroke({color:"gray",thickness:3});
+          var ninthSeries = pointsChart.line(ninthSeriesData);
+          ninthSeries.name("WHSS");
+          ninthSeries.stroke({color:"black",thickness:3});
+          var tenthSeries = pointsChart.line(tenthSeriesData);
+          tenthSeries.name("E");
+          tenthSeries.stroke({color:"cyan",thickness:3});
+          var eleventhSeries = pointsChart.line(eleventhSeriesData);
+          eleventhSeries.name("SN");
+          eleventhSeries.stroke({color:"pink",thickness:3});
+          var twelfthSeries = pointsChart.line(twelfthSeriesData);
+          twelfthSeries.name("AS");
+          twelfthSeries.stroke({color:"lime",thickness:3});
+
+          pointsChart.xAxis().orientation("top");
+          pointsChart.xAxis().labels().fontColor("black");
+          pointsChart.xAxis().labels().fontWeight("bold");
+          pointsChart.xAxis().stroke({color:"black",thickness:2});
+
+          pointsChart.yAxis().orientation("right");
+          pointsChart.yAxis().labels().fontColor("black");
+          pointsChart.yAxis().labels().fontWeight("bold");
+          pointsChart.yAxis().drawFirstLabel(false);
+          pointsChart.yAxis().drawLastLabel(false);
+          pointsChart.yScale().ticks().interval(0.5);
+          pointsChart.yScale().minimum(-0.25);
+          pointsChart.yScale().maximum(6.4);
+          pointsChart.yAxis().stroke({color:"black",thickness:2});
+          pointsChart.background().fill("gainsboro");
+
+          // add a legend
+          pointsChart.legend().enabled(true);
+
+          // add a title
+          pointsChart.title("Set Points");
+          pointsChart.title().orientation("bottom");
+
+          // specify where to display the pointsChart
+          pointsChart.container("Points");
+
+          // draw the resulting pointsChart
+          pointsChart.draw();
         });
       </script>
     </div>
