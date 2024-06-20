@@ -283,7 +283,7 @@
       </div>
     </div>
 
-    <div id="Rank" style="display:none;width:100%;height:700px;padding-top:10px;z-index:-1;" class="tabcontent">
+    <div id="Rank" style="display:none;width:100%;height:700px;padding-top:20px;z-index:-1;" class="tabcontent">
       <script>
         anychart.onDocumentReady(function () {
           // add rank
@@ -406,16 +406,16 @@
       </script>
     </div>
 
-    <div id="Points" class="tabcontent" style="display:none;width:100%;height:700px;padding-top:10px;z-index:-1;" class="tabcontent">
+    <div id="Points" class="tabcontent" style="display:none;width:100%;height:700px;padding-top:20px;z-index:-1;" class="tabcontent">
       <script>
         anychart.onDocumentReady(function () {
           // add points
           var points = [
-            ["M0",0,0,0,0,0,0,0,0,0,0,0,0,0,0],
-            ["M1",1.5,1.5,0,1.5,0,1.5,1,2.5,1,2.5,1,1,0.875,1.5],
-            ["M2",4,3,1.5,3,0,4,2,3.5,2,4,1,2,1.75,3],
-            ["M3",4.5,5.5,2,4,1.5,6,2,3.5,3,6,2.5,4.5,2.625,4.5],
-            ["M4",6,6.5,3.5,5,3,7,3.5,4.5,3.5,7.5,3.5,6,3.5,6]
+            ["M0",0,0,0,0,0,0,0,0,0,0,0,0],
+            ["M1",1.5,1.5,0,1.5,0,1.5,1,2.5,1,2.5,1,1],
+            ["M2",4,3,1.5,3,0,4,2,3.5,2,4,1,2],
+            ["M3",4.5,5.5,2,4,1.5,6,2,3.5,3,6,2.5,4.5],
+            ["M4",6,6.5,3.5,5,3,7,3.5,4.5,3.5,7.5,3.5,6]
           ];
 
           // create a points set
@@ -434,8 +434,6 @@
           var tenthSeriesData = pointsSet.mapAs({x: 0, value: 10});
           var eleventhSeriesData = pointsSet.mapAs({x: 0, value: 11});
           var twelfthSeriesData = pointsSet.mapAs({x: 0, value: 12});
-          var silverSeriesData = pointsSet.mapAs({x: 0, value: 13});
-          var goldSeriesData = pointsSet.mapAs({x: 0, value: 14});
 
           // create a line chart
           var pointsChart = anychart.line();
@@ -477,12 +475,6 @@
           var twelfthSeries = pointsChart.line(twelfthSeriesData);
           twelfthSeries.name("AS");
           twelfthSeries.stroke({color:"lime",thickness:3});
-          var silverSeries = pointsChart.line(silverSeriesData);
-          silverSeries.name("Silver");
-          silverSeries.stroke({color:"#848482",dash: "8 8",thickness:2});
-          var goldSeries = pointsChart.line(goldSeriesData);
-          goldSeries.name("Gold");
-          goldSeries.stroke({color:"#B8860B",dash: "8 8",thickness:2});
 
           pointsChart.xAxis().orientation("top");
           pointsChart.xAxis().labels().fontColor("black");
@@ -495,8 +487,8 @@
           pointsChart.yAxis().drawFirstLabel(false);
           pointsChart.yAxis().drawLastLabel(false);
           pointsChart.yScale().ticks().interval(0.5);
-          pointsChart.yScale().minimum(-0.5);
-          pointsChart.yScale().maximum(8);
+          pointsChart.yScale().minimum(-0.25);
+          pointsChart.yScale().maximum(7.9);
           pointsChart.yAxis().stroke({color:"black",thickness:2});
           pointsChart.background().fill("gainsboro");
 
@@ -3338,4 +3330,3 @@
 
   </body>
 </html>
-
