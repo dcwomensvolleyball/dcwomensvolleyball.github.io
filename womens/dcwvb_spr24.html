@@ -224,7 +224,7 @@
           fourthSeries.name("TK");
           fourthSeries.stroke({color:"green",thickness:3})
           var fifthSeries = chart.line(fifthSeriesData);
-          fifthSeries.name("TMa");
+          fifthSeries.name("TM");
           fifthSeries.stroke({color:"blue",thickness:3})
           var sixthSeries = chart.line(sixthSeriesData);
           sixthSeries.name("FMv");
@@ -248,8 +248,24 @@
           chart.yAxis().drawLastLabel(false);
           chart.yScale().inverted(true);
           chart.yScale().ticks().interval(1);
+          chart.yScale().minimum(0.35);
+          chart.yScale().maximum(8.5);
           chart.yAxis().stroke({color:"black",thickness:2});
           chart.background().fill("gainsboro");
+
+          // gold division range
+          var rangeMarker1 = chart.rangeMarker(1);
+          rangeMarker1.axis(chart.yAxis());
+          rangeMarker1.from(0.35);
+          rangeMarker1.to(4.5);
+          rangeMarker1.fill("#F2C891 0.4");
+
+          // silver division range
+          var rangeMarker2 = chart.rangeMarker(2);
+          rangeMarker2.axis(chart.yAxis());
+          rangeMarker2.from(4.5);
+          rangeMarker2.to(8.5);
+          rangeMarker2.fill("#DBE2E9 0.4");
 
           // add a legend
           chart.legend().enabled(true);
@@ -954,22 +970,22 @@
         </tr>
         <tr>
           <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Katie</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
         </tr>
         <tr>
           <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Blocker? I barely knew her</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
         </tr>
         <tr>
           <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2 - 5th Place</th>
         </tr>
         <tr>
           <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Grace G</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
         </tr>
         <tr>
           <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Fearless (Meghan's version)</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
         </tr>
         <tr>
           <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
@@ -988,11 +1004,11 @@
         </tr>
         <tr>
           <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team May</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
+          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
         </tr>
         <tr>
           <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Ballerinas</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;"></td>
+          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
         </tr>
       </table>
     </div>
@@ -1012,7 +1028,7 @@
           <th title="Team Grace G" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TGG</th>
           <th title="Team Grace H" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TGH</th>
           <th title="Team Katie" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TK</th>
-          <th title="Team May" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TMa</th>
+          <th title="Team May" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TM</th>
           <th title="Fearless (Meghan's version)" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">FMv</th>
           <th title="Ballerinas" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">B</th>
           <th title="Team Vanessa" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:LightBlue;">TV</th>
