@@ -297,37 +297,48 @@
           // create the series and name them
           var firstSeries = chart.line(firstSeriesData);
           firstSeries.name("LaFS");
-          firstSeries.stroke({color:"red",thickness:3})
+          firstSeries.stroke({color:"red",thickness:3});
+          firstSeries.hovered().stroke({color:"red",thickness:6});
           var secondSeries = chart.line(secondSeriesData);
           secondSeries.name("E");
-          secondSeries.stroke({color:"orange",thickness:3})
+          secondSeries.stroke({color:"orange",thickness:3});
+          secondSeries.hovered().stroke({color:"orange",thickness:6});
           var thirdSeries = chart.line(thirdSeriesData);
           thirdSeries.name("WHSS");
-          thirdSeries.stroke({color:"yellow",thickness:3})
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          thirdSeries.hovered().stroke({color:"yellow",thickness:6});
           var fourthSeries = chart.line(fourthSeriesData);
           fourthSeries.name("EZB");
-          fourthSeries.stroke({color:"green",thickness:3})
+          fourthSeries.stroke({color:"green",thickness:3});
+          fourthSeries.hovered().stroke({color:"green",thickness:6});
           var fifthSeries = chart.line(fifthSeriesData);
           fifthSeries.name("GII");
-          fifthSeries.stroke({color:"blue",thickness:3})
+          fifthSeries.stroke({color:"blue",thickness:3});
+          fifthSeries.hovered().stroke({color:"blue",thickness:6});
           var sixthSeries = chart.line(sixthSeriesData);
           sixthSeries.name("SB");
-          sixthSeries.stroke({color:"purple",thickness:3})
+          sixthSeries.stroke({color:"purple",thickness:3});
+          sixthSeries.hovered().stroke({color:"purple",thickness:6});
           var seventhSeries = chart.line(seventhSeriesData);
           seventhSeries.name("S");
-          seventhSeries.stroke({color:"magenta",thickness:3})
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          seventhSeries.hovered().stroke({color:"magenta",thickness:6});
           var eighthSeries = chart.line(eighthSeriesData);
           eighthSeries.name("SIaFI");
-          eighthSeries.stroke({color:"gray",thickness:3})
+          eighthSeries.stroke({color:"gray",thickness:3});
+          eighthSeries.hovered().stroke({color:"gray",thickness:6});
           var ninthSeries = chart.line(ninthSeriesData);
           ninthSeries.name("SN");
-          ninthSeries.stroke({color:"black",thickness:3})
+          ninthSeries.stroke({color:"black",thickness:3});
+          ninthSeries.hovered().stroke({color:"black",thickness:6});
           var tenthSeries = chart.line(tenthSeriesData);
           tenthSeries.name("PA");
-          tenthSeries.stroke({color:"cyan",thickness:3})
+          tenthSeries.stroke({color:"cyan",thickness:3});
+          tenthSeries.hovered().stroke({color:"cyan",thickness:6});
           var eleventhSeries = chart.line(eleventhSeriesData);
           eleventhSeries.name("TwW");
-          eleventhSeries.stroke({color:"pink",thickness:3})
+          eleventhSeries.stroke({color:"pink",thickness:3});
+          eleventhSeries.hovered().stroke({color:"pink",thickness:6});
 
           chart.xAxis().orientation("top");
           chart.xAxis().labels().fontColor("black");
