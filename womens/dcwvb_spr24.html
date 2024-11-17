@@ -213,28 +213,36 @@
           // create the series and name them
           var firstSeries = chart.line(firstSeriesData);
           firstSeries.name("BIHKH");
-          firstSeries.stroke({color:"red",thickness:3})
+          firstSeries.stroke({color:"red",thickness:3});
+          firstSeries.hovered().stroke({color:"red",thickness:6});
           var secondSeries = chart.line(secondSeriesData);
           secondSeries.name("TGG");
-          secondSeries.stroke({color:"orange",thickness:3})
+          secondSeries.stroke({color:"orange",thickness:3});
+          secondSeries.hovered().stroke({color:"orange",thickness:6});
           var thirdSeries = chart.line(thirdSeriesData);
           thirdSeries.name("TGH");
-          thirdSeries.stroke({color:"yellow",thickness:3})
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          thirdSeries.hovered().stroke({color:"yellow",thickness:6});
           var fourthSeries = chart.line(fourthSeriesData);
           fourthSeries.name("TK");
-          fourthSeries.stroke({color:"green",thickness:3})
+          fourthSeries.stroke({color:"green",thickness:3});
+          fourthSeries.hovered().stroke({color:"green",thickness:6});
           var fifthSeries = chart.line(fifthSeriesData);
           fifthSeries.name("TM");
-          fifthSeries.stroke({color:"blue",thickness:3})
+          fifthSeries.stroke({color:"blue",thickness:3});
+          fifthSeries.hovered().stroke({color:"blue",thickness:6});
           var sixthSeries = chart.line(sixthSeriesData);
           sixthSeries.name("FMv");
-          sixthSeries.stroke({color:"purple",thickness:3})
+          sixthSeries.stroke({color:"purple",thickness:3});
+          sixthSeries.hovered().stroke({color:"purple",thickness:6});
           var seventhSeries = chart.line(seventhSeriesData);
           seventhSeries.name("B");
-          seventhSeries.stroke({color:"magenta",thickness:3})
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          seventhSeries.hovered().stroke({color:"magenta",thickness:6});
           var eighthSeries = chart.line(eighthSeriesData);
           eighthSeries.name("TV");
-          eighthSeries.stroke({color:"gray",thickness:3})
+          eighthSeries.stroke({color:"gray",thickness:3});
+          eighthSeries.hovered().stroke({color:"gray",thickness:6});
 
           chart.xAxis().orientation("top");
           chart.xAxis().labels().fontColor("black");
