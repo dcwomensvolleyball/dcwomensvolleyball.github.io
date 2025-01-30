@@ -18,7 +18,7 @@
   background-color:LightGray;
 }
 
-.teams_table_row_top_th {
+.teams_table_row_top_team_id {
   border-top:solid;
   border-left:solid;
   border-right:solid;
@@ -26,7 +26,7 @@
   padding-left:5px;
 }
 
-.teams_table_row_top_td2 {
+.teams_table_row_top_cap {
   border-top:solid;
   border-left:1px solid black;
   border-right:solid;
@@ -34,12 +34,12 @@
   padding-left:5px;
 }
 
-.teams_table_row_td1 {
+.teams_table_row_mid_team_page_link {
   border:1px solid black;
   padding-left:5px;
 }
 
-.teams_table_row_mid_th {
+.teams_table_row_mid_team_id {
   border-top:1px solid black;
   border-left:solid;
   border-right:solid;
@@ -47,7 +47,7 @@
   padding-left:5px;
 }
 
-.teams_table_row_mid_td2 {
+.teams_table_row_mid_cap {
   border-top:1px solid black;
   border-left:1px solid black;
   border-right:solid;
@@ -55,7 +55,7 @@
   padding-left:5px;
 }
 
-.teams_table_row_bot_th {
+.teams_table_row_bot_team_id {
   border-top:1px solid black;
   border-left:solid;
   border-right:solid;
@@ -64,7 +64,7 @@
   padding-right:5px;
 }
 
-.teams_table_row_bot_td1 {
+.teams_table_row_bot_team_page_link {
   border-top:1px solid black;
   border-left:solid;
   border-right:1px solid black;
@@ -72,7 +72,7 @@
   padding-left:5px;
 }
 
-.teams_table_row_bot_td2 {
+.teams_table_row_bot_cap {
   border-top:1px solid black;
   border-left:1px solid black;
   border-right:solid;
