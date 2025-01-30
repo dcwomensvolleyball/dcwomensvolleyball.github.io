@@ -1,0 +1,81 @@
+.teams_table {
+  margin-left:10px;
+  margin-top:10px;
+}
+
+.teams_table_title {
+  width:150px;
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.teams_table_row_white {
+  background-color:GhostWhite;
+}
+
+.teams_table_row_gray {
+  background-color:LightGray;
+}
+
+.teams_table_row_top_th {
+  border-top:solid;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:5px;
+}
+
+.teams_table_row_top_td2 {
+  border-top:solid;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:5px;
+}
+
+.teams_table_row_td1 {
+  border:1px solid black;
+  padding-left:5px;
+}
+
+.teams_table_row_mid_th {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:5px;
+}
+
+.teams_table_row_mid_td2 {
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:5px;
+}
+
+.teams_table_row_bot_th {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+  padding-left:5px;
+  padding-right:5px;
+}
+
+.teams_table_row_bot_td1 {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:1px solid black;
+  border-bottom:solid;
+  padding-left:5px;
+}
+
+.teams_table_row_bot_td2 {
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:solid;
+  padding-left:5px;
+}

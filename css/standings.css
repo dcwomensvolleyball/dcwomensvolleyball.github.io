@@ -1,0 +1,87 @@
+.standings_table {
+  margin-left:10px;
+  margin-top:10px;
+}
+
+.standings_table_title {
+  width:40px;
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.standings_table_row_gold {
+  background-color:#F2C891;
+}
+
+.standings_table_row_silver {
+  background-color:#DBE2E9;
+}
+
+.standings_table_row_bronze {
+  background-color:#B77729;
+}
+
+.standings_table_row_top_th {
+  border-top:solid;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:3px;
+  padding-right:3px;
+}
+
+.standings_table_row_th_basic {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:3px;
+  padding-right:3px;
+}
+
+.standings_table_row_td_basic {
+  border:1px solid black;
+  text-align:center;
+}
+
+.standings_table_row_bot_th_basic {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+  text-align:center;
+  background-color:DarkGray;
+}
+
+.standings_table_row_div_th {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+  padding-left:3px;
+  padding-right:3px;
+}
+
+.standings_table_row_div_td {
+  border:1px solid black;
+  border-bottom:solid;
+  text-align:center;
+}
+
+.standings_table_row_div_bot_th {
+  border-top:1px solid black;  
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+  text-align:center;
+  background-color:DarkGray;
+}
+
+.standings_table_row_div_bot_td {
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:1px solid black;
+  border-bottom:solid;
+  text-align:center;
+}
