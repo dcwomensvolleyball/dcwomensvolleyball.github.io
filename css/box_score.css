@@ -127,3 +127,47 @@
   border-right:solid;
   background-color:LightGray;
 }
+
+.box_score_court_gold {
+  text-align:center;
+  border-top:solid;
+  border-bottom:solid;
+  border-left:solid;
+  border-right:solid;
+  background-color:#F2C891;
+}
+
+.box_score_court_silver {
+  text-align:center;
+  border-top:solid;
+  border-bottom:solid;
+  border-left:solid;
+  border-right:solid;
+  background-color:#DBE2E9;
+}
+
+.box_score_court_bronze {
+  text-align:center;
+  border-top:solid;
+  border-bottom:solid;
+  border-left:solid;
+  border-right:solid;
+  background-color:#B77729;
+}
+
+.box_score_top_bisque {
+  text-align:center;
+  width:180px;
+  border-left:1px solid black;
+  border-right:solid;
+  background-color:Bisque;
+}
+
+.box_score_bot_bisque {
+  text-align:center;
+  width:180px;
+  border-bottom:solid;
+  border-left:1px solid black;
+  border-right:solid;
+  background-color:Bisque;
+}

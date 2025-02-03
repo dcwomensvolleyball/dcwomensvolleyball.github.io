@@ -148,3 +148,33 @@
   text-align:center;
   background-color:GhostWhite;
 }
+
+.grid_table_row_opp_top_td_sets_gray {
+  width:60px;
+  border-top:solid;
+  border-left:solid;
+  border-right:1px solid black;
+  border-bottom:solid;
+  text-align:center;
+  background-color:LightGray;
+}
+
+.grid_table_row_opp_mid_td_sets_gray {
+  width:60px;
+  border-top:solid;
+  border-left:1px solid black;
+  border-right:1px solid black;
+  border-bottom:solid;
+  text-align:center;
+  background-color:LightGray;
+}
+
+.grid_table_row_opp_bot_td_sets_gray {
+  width:60px;
+  border-top:solid;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:solid;
+  text-align:center;
+  background-color:LightGray;
+}

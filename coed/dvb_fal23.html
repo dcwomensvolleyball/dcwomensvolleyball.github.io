@@ -10,6 +10,11 @@
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
     <link href="../css/style.css" rel="stylesheet">
+    <link href="../css/teams.css" rel="stylesheet">
+    <link href="../css/standings.css" rel="stylesheet">
+    <link href="../css/box_score.css" rel="stylesheet">
+    <link href="../css/grid.css" rel="stylesheet">
+    <link href="../css/team_page.css" rel="stylesheet">
     <script src="../js/stats.js"></script>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
   </head>
@@ -51,198 +56,198 @@
     </nav>
 
     <div id="Teams" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="teams_table">
         <tr>
           <th></th>
-          <th style="width:150px;text-align:center;border-style:solid;background-color:LightBlue;">Team Name</th>
-          <th style="width:150px;text-align:center;border-style:solid;background-color:LightBlue;">Captain</th>
+          <th class="teams_table_title">Team Name</th>
+          <th class="teams_table_title">Captain</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 1</th>
-          <td style="border:1px solid black;padding-left:5px;">Love at First Spike</td>
-          <td style="border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Maddie S.</td>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_top_team_id">Team 1</th>
+          <td class="teams_table_row_mid_team_page_link">Love at First Spike</td>
+          <td class="teams_table_row_top_cap">Maddie S.</td>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 2</th>
-          <td style="border:1px solid black;padding-left:5px;">Team Kristy</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Kristy C.</td>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 2</th>
+          <td class="teams_table_row_mid_team_page_link">Team Kristy</td>
+          <td class="teams_table_row_mid_cap">Kristy C.</td>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 3</th>
-          <td style="border:1px solid black;padding-left:5px;">Thursdays with Walter</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Katie S.</td>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 3</th>
+          <td class="teams_table_row_mid_team_page_link">Thursdays with Walter</td>
+          <td class="teams_table_row_mid_cap">Katie S.</td>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 4</th>
-          <td style="border:1px solid black;padding-left:5px;">When Harry Set Sally</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">John M.</td>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 4</th>
+          <td class="teams_table_row_mid_team_page_link">When Harry Set Sally</td>
+          <td class="teams_table_row_mid_cap">John M.</td>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 5</th>
-          <td style="border:1px solid black;padding-left:5px;">Supreme</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Claire M.</td>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 5</th>
+          <td class="teams_table_row_mid_team_page_link">Supreme</td>
+          <td class="teams_table_row_mid_cap">Claire M.</td>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 6</th>
-          <td style="border:1px solid black;padding-left:5px;">Space Balls</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Claire S.</td>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 6</th>
+          <td class="teams_table_row_mid_team_page_link">Space Balls</td>
+          <td class="teams_table_row_mid_cap">Claire S.</td>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 7</th>
-          <td style="border:1px solid black;padding-left:5px;">Team Leonard</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Leonard K.</td>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 7</th>
+          <td class="teams_table_row_mid_team_page_link">Team Leonard</td>
+          <td class="teams_table_row_mid_cap">Leonard K.</td>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 8</th>
-          <td style="border:1px solid black;padding-left:5px;">Get It In</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Matt S.</td>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 8</th>
+          <td class="teams_table_row_mid_team_page_link">Get It In</td>
+          <td class="teams_table_row_mid_cap">Matt S.</td>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team 9</th>
-          <td style="border:1px solid black;padding-left:5px;">Team Burdge</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Dan B.</td>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 9</th>
+          <td class="teams_table_row_mid_team_page_link">Team Burdge</td>
+          <td class="teams_table_row_mid_cap">Dan B.</td>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;padding-right:5px;">Team 10</th>
-          <td style="border-top:1px solid black;border-left:solid;border-right:1px solid black;border-bottom:solid;padding-left:5px;">EZ Balls</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;padding-left:5px;">Phillis K.</td>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_bot_team_id">Team 10</th>
+          <td class="teams_table_row_bot_team_page_link">EZ Balls</td>
+          <td class="teams_table_row_bot_cap">Phillis K.</td>
         </tr>
       </table>
     </div>
 
     <div id="Standings" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="standings_table">
         <tr>
           <th></th>
-          <th title="Matches Played" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">MP</th>
-          <th title="Set Points For" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">SPF</th>
-          <th title="Set Points Against" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">SPA</th>
-          <th title="Winning Percentage" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">WP</th>
-          <th title="Opponents' Winning Percentage" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">OWP</th>
-          <th title="Opponents' Opponents' Winning Percentage" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">OOWP</th>
-          <th title="Strength of Schedule" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">SoS</th>
-          <th title="Remaining Strength of Schedule" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">RSoS</th>
-          <th title="Weekly Rank Change" style="width:40px;text-align:center;border-style:solid;background-color:LightBlue;">&#9651;</th>
+          <th class="standings_table_title" title="Matches Played">MP</th>
+          <th class="standings_table_title" title="Set Points For">SPF</th>
+          <th class="standings_table_title" title="Set Points Against">SPA</th>
+          <th class="standings_table_title" title="Winning Percentage">WP</th>
+          <th class="standings_table_title" title="Opponents' Winning Percentage">OWP</th>
+          <th class="standings_table_title" title="Opponents' Opponents' Winning Percentage">OOWP</th>
+          <th class="standings_table_title" title="Strength of Schedule">SoS</th>
+          <th class="standings_table_title" title="Remaining Strength of Schedule">RSoS</th>
+          <th class="standings_table_title" title="Weekly Rank Change">&#9651;</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">EZ Balls</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">16.50</td>
-          <td style="border:1px solid black;text-align:center;">6.00</td>
-          <td style="border:1px solid black;text-align:center;">0.733</td>
-          <td style="border:1px solid black;text-align:center;">0.474</td>
-          <td style="border:1px solid black;text-align:center;">0.503</td>
-          <td style="border:1px solid black;text-align:center;">0.484</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:LightGreen;">+1</th>
+        <tr class="standings_table_row_white">
+          <th class="standings_table_row_top_th">EZ Balls</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">16.50</td>
+          <td class="standings_table_row_td_basic">6.00</td>
+          <td class="standings_table_row_td_basic">0.733</td>
+          <td class="standings_table_row_td_basic">0.474</td>
+          <td class="standings_table_row_td_basic">0.503</td>
+          <td class="standings_table_row_td_basic">0.484</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:LightGreen;">+1</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">When Harry Set Sally</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">14.50</td>
-          <td style="border:1px solid black;text-align:center;">8.00</td>
-          <td style="border:1px solid black;text-align:center;">0.644</td>
-          <td style="border:1px solid black;text-align:center;">0.484</td>
-          <td style="border:1px solid black;text-align:center;">0.502</td>
-          <td style="border:1px solid black;text-align:center;">0.490</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:LightCoral;">-1</th>
+        <tr class="standings_table_row_gray">
+          <th class="standings_table_row_th_basic">When Harry Set Sally</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">14.50</td>
+          <td class="standings_table_row_td_basic">8.00</td>
+          <td class="standings_table_row_td_basic">0.644</td>
+          <td class="standings_table_row_td_basic">0.484</td>
+          <td class="standings_table_row_td_basic">0.502</td>
+          <td class="standings_table_row_td_basic">0.490</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:LightCoral;">-1</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Supreme</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">14.25</td>
-          <td style="border:1px solid black;text-align:center;">8.25</td>
-          <td style="border:1px solid black;text-align:center;">0.633</td>
-          <td style="border:1px solid black;text-align:center;">0.485</td>
-          <td style="border:1px solid black;text-align:center;">0.501</td>
-          <td style="border:1px solid black;text-align:center;">0.490</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:DarkGray;">-</th>
+        <tr class="standings_table_row_white">
+          <th class="standings_table_row_th_basic">Supreme</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">14.25</td>
+          <td class="standings_table_row_td_basic">8.25</td>
+          <td class="standings_table_row_td_basic">0.633</td>
+          <td class="standings_table_row_td_basic">0.485</td>
+          <td class="standings_table_row_td_basic">0.501</td>
+          <td class="standings_table_row_td_basic">0.490</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Space Balls</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">13.50</td>
-          <td style="border:1px solid black;text-align:center;">9.00</td>
-          <td style="border:1px solid black;text-align:center;">0.600</td>
-          <td style="border:1px solid black;text-align:center;">0.489</td>
-          <td style="border:1px solid black;text-align:center;">0.501</td>
-          <td style="border:1px solid black;text-align:center;">0.493</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:DarkGray;">-</th>
+        <tr class="standings_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Space Balls</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">13.50</td>
+          <td class="standings_table_row_td_basic">9.00</td>
+          <td class="standings_table_row_td_basic">0.600</td>
+          <td class="standings_table_row_td_basic">0.489</td>
+          <td class="standings_table_row_td_basic">0.501</td>
+          <td class="standings_table_row_td_basic">0.493</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Burdge</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">12.00</td>
-          <td style="border:1px solid black;text-align:center;">10.50</td>
-          <td style="border:1px solid black;text-align:center;">0.533</td>
-          <td style="border:1px solid black;text-align:center;">0.496</td>
-          <td style="border:1px solid black;text-align:center;">0.500</td>
-          <td style="border:1px solid black;text-align:center;">0.497</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:ForestGreen;">+2</th>
+        <tr class="standings_table_row_white">
+          <th class="standings_table_row_th_basic">Team Burdge</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">12.00</td>
+          <td class="standings_table_row_td_basic">10.50</td>
+          <td class="standings_table_row_td_basic">0.533</td>
+          <td class="standings_table_row_td_basic">0.496</td>
+          <td class="standings_table_row_td_basic">0.500</td>
+          <td class="standings_table_row_td_basic">0.497</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:ForestGreen;">+2</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Leonard</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">10.25</td>
-          <td style="border:1px solid black;text-align:center;">12.25</td>
-          <td style="border:1px solid black;text-align:center;">0.456</td>
-          <td style="border:1px solid black;text-align:center;">0.505</td>
-          <td style="border:1px solid black;text-align:center;">0.499</td>
-          <td style="border:1px solid black;text-align:center;">0.503</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:DarkGray;">-</th>
+        <tr class="standings_table_row_gray">
+          <th class="standings_table_row_th_basic">Team Leonard</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">10.25</td>
+          <td class="standings_table_row_td_basic">12.25</td>
+          <td class="standings_table_row_td_basic">0.456</td>
+          <td class="standings_table_row_td_basic">0.505</td>
+          <td class="standings_table_row_td_basic">0.499</td>
+          <td class="standings_table_row_td_basic">0.503</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Kristy</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">10.00</td>
-          <td style="border:1px solid black;text-align:center;">12.50</td>
-          <td style="border:1px solid black;text-align:center;">0.444</td>
-          <td style="border:1px solid black;text-align:center;">0.506</td>
-          <td style="border:1px solid black;text-align:center;">0.499</td>
-          <td style="border:1px solid black;text-align:center;">0.504</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:IndianRed;">-2</th>
+        <tr class="standings_table_row_white">
+          <th class="standings_table_row_th_basic">Team Kristy</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">10.00</td>
+          <td class="standings_table_row_td_basic">12.50</td>
+          <td class="standings_table_row_td_basic">0.444</td>
+          <td class="standings_table_row_td_basic">0.506</td>
+          <td class="standings_table_row_td_basic">0.499</td>
+          <td class="standings_table_row_td_basic">0.504</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:IndianRed;">-2</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Get It In</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">8.50</td>
-          <td style="border:1px solid black;text-align:center;">14.00</td>
-          <td style="border:1px solid black;text-align:center;">0.378</td>
-          <td style="border:1px solid black;text-align:center;">0.513</td>
-          <td style="border:1px solid black;text-align:center;">0.498</td>
-          <td style="border:1px solid black;text-align:center;">0.508</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:DarkGray;">-</th>
+        <tr class="standings_table_row_gray">
+          <th class="standings_table_row_th_basic">Get It In</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">8.50</td>
+          <td class="standings_table_row_td_basic">14.00</td>
+          <td class="standings_table_row_td_basic">0.378</td>
+          <td class="standings_table_row_td_basic">0.513</td>
+          <td class="standings_table_row_td_basic">0.498</td>
+          <td class="standings_table_row_td_basic">0.508</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Thursdays with Walter</th>
-          <td style="border:1px solid black;text-align:center;">9</td>
-          <td style="border:1px solid black;text-align:center;">6.50</td>
-          <td style="border:1px solid black;text-align:center;">16.00</td>
-          <td style="border:1px solid black;text-align:center;">0.289</td>
-          <td style="border:1px solid black;text-align:center;">0.523</td>
-          <td style="border:1px solid black;text-align:center;">0.497</td>
-          <td style="border:1px solid black;text-align:center;">0.514</td>
-          <td style="border:1px solid black;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;background-color:DarkGray;">-</th>
+        <tr class="standings_table_row_white">
+          <th class="standings_table_row_th_basic">Thursdays with Walter</th>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">6.50</td>
+          <td class="standings_table_row_td_basic">16.00</td>
+          <td class="standings_table_row_td_basic">0.289</td>
+          <td class="standings_table_row_td_basic">0.523</td>
+          <td class="standings_table_row_td_basic">0.497</td>
+          <td class="standings_table_row_td_basic">0.514</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;">Love at First Spike</th>
-          <td style="border-top:1px solid black;border-left:solid;border-right:1px solid black;border-bottom:solid;text-align:center;">9</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">6.50</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">16.00</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">0.289</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">0.523</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">0.497</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">0.514</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;text-align:center;">-</td>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;text-align:center;background-color:DarkGray;">-</th>
+        <tr class="standings_table_row_gray">
+          <th class="standings_table_row_div_th">Love at First Spike</th>
+          <td class="standings_table_row_div_bot_td">9</td>
+          <td class="standings_table_row_div_bot_td">6.50</td>
+          <td class="standings_table_row_div_bot_td">16.00</td>
+          <td class="standings_table_row_div_bot_td">0.289</td>
+          <td class="standings_table_row_div_bot_td">0.523</td>
+          <td class="standings_table_row_div_bot_td">0.497</td>
+          <td class="standings_table_row_div_bot_td">0.514</td>
+          <td class="standings_table_row_div_bot_td">-</td>
+          <th class="standings_table_row_div_bot_th" style="background-color:DarkGray;">-</th>
         </tr>
       </table>
     </div>
@@ -369,658 +374,667 @@
     </div>
 
     <div id="M1" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 9/14</th>
+          <th class="box_score_title" colspan="3">Week 1: 9/14</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">EZ Balls</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Team Kristy</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Team Burdge</td>
+          <td class="box_score_bot_score_white">1.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Thursdays with Walter</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">Get It In</td>
+          <td class="box_score_bot_score_gray">1.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_top_score_gray">2.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Team Leonard</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Space Balls</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
       </table>
     </div>
 
     <div id="M2" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 2: 9/21</th>
+          <th class="box_score_title" colspan="3">Week 2: 9/21</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_top_team_white">Supreme</td>
+          <td class="box_score_top_score_white">2.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">When Harry Set Sally</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.25</td>
+          <td class="box_score_top_team_gray">Team Leonard</td>
+          <td class="box_score_top_score_gray">0.25</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.25</td>
+          <td class="box_score_bot_team_gray">Team Kristy</td>
+          <td class="box_score_bot_score_gray">2.25</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_score_gray">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">EZ Balls</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_top_team_gray">Team Burdge</td>
+          <td class="box_score_top_score_gray">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray">0.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M3" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 3: 9/28</th>
+          <th class="box_score_title" colspan="3">Week 3: 9/28</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Team Burdge</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">Team Leonard</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray">2.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Space Balls</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.25</td>
+          <td class="box_score_top_score_gray">0.25</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.25</td>
+          <td class="box_score_bot_team_gray">Supreme</td>
+          <td class="box_score_bot_score_gray">2.25</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Thursdays with Walter</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray">2.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M4" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 4: 10/5</th>
+          <th class="box_score_title" colspan="3">Week 4: 10/5</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Thursdays with Walter</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">Team Kristy</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2</td>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0.5</td>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white">0.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Team Burdge</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">EZ Balls</td>
+          <td class="box_score_bot_score_gray">1.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Team Leonard</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray">2.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M5" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 5: 10/12</th>
+          <th class="box_score_title" colspan="3">Week 5: 10/12</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">Space Balls</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">Team Leonard</td>
+          <td class="box_score_top_score_white">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray">0.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray">2</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_top_score_gray">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_bot_team_gray">Thursdays with Walter</td>
+          <td class="box_score_bot_score_gray">0.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_bot_team_gray">Team Kristy</td>
+          <td class="box_score_bot_score_gray">0.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M6" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 6: 10/19</th>
+          <th class="box_score_title" colspan="3">Week 6: 10/19</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">EZ Balls</td>
+          <td class="box_score_top_score_white">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Team Burdge</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">When Harry Set Sally</td>
+          <td class="box_score_top_score_white">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Space Balls</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Thursdays with Walter</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Team Leonard</td>
+          <td class="box_score_bot_score_gray">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_top_score_gray">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_bot_team_gray">Get It In</td>
+          <td class="box_score_bot_score_gray">0.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
       </table>
     </div>
 
     <div id="M7" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 7: 10/26</th>
+          <th class="box_score_title" colspan="3">Week 7: 10/26</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">When Harry Set Sally</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">Thursdays with Walter</td>
+          <td class="box_score_top_score_white">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Space Balls</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">Team Kristy</td>
+          <td class="box_score_bot_score_gray">1.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">EZ Balls</td>
+          <td class="box_score_bot_score_gray">1.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray">0.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_bot_team_gray">Team Burdge</td>
+          <td class="box_score_bot_score_gray">2</td>
         </tr>
       </table>
     </div>
 
     <div id="M8" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 8: 11/2</th>
+          <th class="box_score_title" colspan="3">Week 8: 11/2</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0.5</td>
+          <td class="box_score_top_team_white">Get It In</td>
+          <td class="box_score_top_score_white">0.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2</td>
+          <td class="box_score_bot_team_white">Team Leonard</td>
+          <td class="box_score_bot_score_white">2</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Team Kristy</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">When Harry Set Sally</td>
+          <td class="box_score_bot_score_white">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Supreme</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_score_gray">1.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Space Balls</td>
+          <td class="box_score_bot_score_gray">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_top_team_gray">Thursdays with Walter</td>
+          <td class="box_score_top_score_gray">2.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
       </table>
     </div>
 
     <div id="M9" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 9: 11/9</th>
+          <th class="box_score_title" colspan="3">Week 9: 11/9</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2</td>
+          <td class="box_score_top_team_white">Supreme</td>
+          <td class="box_score_top_score_white">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0.5</td>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white">0.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_top_team_white">EZ Balls</td>
+          <td class="box_score_top_score_white">2.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">When Harry Set Sally</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Team Burdge</td>
+          <td class="box_score_bot_score_gray">2.5</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_top_score_gray">2.5</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Team Kristy</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_top_team_gray">Space Balls</td>
+          <td class="box_score_top_score_gray">2</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_bot_team_gray">Team Leonard</td>
+          <td class="box_score_bot_score_gray">0.5</td>
         </tr>
       </table>
     </div>
@@ -1036,296 +1050,299 @@
     </div>
 
     <div id="P1" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 1/25</th>
+          <th class="box_score_title" colspan="3">Week 1: 1/25</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Team Burdge</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Team Kristy</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Love at First Spike</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Get It In</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Get It In</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Team Kristy</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Team Leonard</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
       </table>
     </div>
 
     <div id="P2" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 1/25</th>
+          <th class="box_score_title" colspan="3">Week 1: 1/25</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Love at First Spike</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Team Leonard</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Team Kristy</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Team Burdge</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Get It In</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Team Leonard</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
       </table>
     </div>
 
     <div id="P3" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 1/25</th>
+          <th class="box_score_title" colspan="3">Week 1: 1/25</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Team Kristy</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Space Balls</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Team Burdge</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">When Harry Set Sally</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Love at First Spike</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Thursdays with Walter</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">EZ Balls</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
           <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Team Kristy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Get It In</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:solid;border-left:1px solid black;background-color:LightGray;padding-left:3px;">Team Leonard</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Team Leonard</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
       </table>
     </div>
 
     <div id="P4" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 1/25</th>
+          <th class="box_score_title" colspan="3">Week 1: 1/25</th>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Supreme</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">When Harry Set Sally</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">When Harry Set Sally</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Space Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white"></td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Team Burdge</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;"></td>
+          <td class="box_score_bot_team_white">Team Burdge</td>
+          <td class="box_score_bot_score_white"></td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 3</th>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th rowspan="9" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">EZ Balls</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:150px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Supreme</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Supreme</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 3</th>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
         </tr>
         <tr>
-          <td rowspan="2" colspan="2" style="text-align:center;width:180px;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:Bisque;">(open)</td>
+          <td class="box_score_top_bisque" colspan="2">Open</td>
         </tr>
         <tr>
+          <td class="box_score_bot_bisque" colspan="2">Court</td>
         </tr>
       </table>
     </div>
@@ -1337,173 +1354,173 @@
     </div>
 
     <div id="Grid" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="grid_table">
         <tr>
           <th></th>
-          <th title="Love at First Spike" style="width:60px;text-align:center;border-top:solid;border-left:solid;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">LaFS</th>
-          <th title="Team Kristy" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TK</th>
-          <th title="Thursdays with Walter" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TwW</th>
-          <th title="When Harry Set Sally" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">WHSS</th>
-          <th title="Supreme" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">S</th>
-          <th title="Space Balls" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">SB</th>
-          <th title="Team Leonard" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TL</th>
-          <th title="Get It In" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">GII</th>
-          <th title="Team Burdge" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TB</th>
-          <th title="EZ Balls" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:LightBlue;">EZB</th>
+          <th class="grid_table_title_left"   title="Love at First Spike">LaFS</th>
+          <th class="grid_table_title_middle" title="Team Kristy">TK</th>
+          <th class="grid_table_title_middle" title="Thursdays with Walter">TwW</th>
+          <th class="grid_table_title_middle" title="When Harry Set Sally">WHSS</th>
+          <th class="grid_table_title_middle" title="Supreme">S</th>
+          <th class="grid_table_title_middle" title="Space Balls">SB</th>
+          <th class="grid_table_title_middle" title="Team Leonard">TL</th>
+          <th class="grid_table_title_middle" title="Get It In">GII</th>
+          <th class="grid_table_title_middle" title="Team Burdge">TB</th>
+          <th class="grid_table_title_right"  title="EZ Balls">EZB</th>
           <th style="width:60px;"></th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Love at First Spike</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">6.5</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_top_th_team">Love at First Spike</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_top_th_sets">6.5</th>
         </tr>
         <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Kristy</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">0.25</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2.25</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">10</th>
+          <th class="grid_table_row_mid_th_team">Team Kristy</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0.25</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.25</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <th class="grid_table_row_mid_th_sets">10</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Thursdays with Walter</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">6.5</th>
-        </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">When Harry Set Sally</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">14.5</th>
-        </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Supreme</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2.25</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">14.25</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Thursdays with Walter</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">6.5</th>
         </tr>
         <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Space Balls</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">13.5</th>
+          <th class="grid_table_row_mid_th_team">When Harry Set Sally</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">14.5</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Leonard</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">0.25</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">10.25</th>
-        </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Get It In</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">8.5</th>
-        </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;">Team Burdge</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">12</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Supreme</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.25</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">14.25</th>
         </tr>
         <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;">EZ Balls</th>
-          <td style="border-top:1px solid black;border-left:solid;border-right:1px solid black;border-bottom:solid;text-align:center;">2.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">2</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">2.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">1.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">1.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">2.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">1.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">1</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">1.5</th>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:DarkGray;text-align:center;"></th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;text-align:center;">16.5</th>
+          <th class="grid_table_row_mid_th_team">Space Balls</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">13.5</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Team Leonard</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0.25</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">10.25</th>
+        </tr>
+        <tr style="background-color:LightGray">
+          <th class="grid_table_row_mid_th_team">Get It In</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <th class="grid_table_row_mid_th_sets">8.5</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Team Burdge</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">12</th>
+        </tr>
+        <tr style="background-color:LightGray">
+          <th class="grid_table_row_bot_th_team">EZ Balls</th>
+          <td class="grid_table_row_bot_td_basic">2.5</th>
+          <td class="grid_table_row_bot_td_basic">2</th>
+          <td class="grid_table_row_bot_td_basic">2.5</th>
+          <td class="grid_table_row_bot_td_basic">1.5</th>
+          <td class="grid_table_row_bot_td_basic">1.5</th>
+          <td class="grid_table_row_bot_td_basic">2.5</th>
+          <td class="grid_table_row_bot_td_basic">1.5</th>
+          <td class="grid_table_row_bot_td_basic">1</th>
+          <td class="grid_table_row_bot_td_basic">1.5</th>
+          <td class="grid_table_row_bot_td_bye"></th>
+          <th class="grid_table_row_bot_th_sets">16.5</th>
         </tr>
         <tr>
           <th></th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:solid;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">16</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">12.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">16</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">8</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">8.25</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">9</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">12.25</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">14</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">10.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:GhostWhite;">6</th>
+          <th class="grid_table_row_opp_top_td_sets">16</th>
+          <th class="grid_table_row_opp_mid_td_sets">12.5</th>
+          <th class="grid_table_row_opp_mid_td_sets">16</th>
+          <th class="grid_table_row_opp_mid_td_sets">8</th>
+          <th class="grid_table_row_opp_mid_td_sets">8.25</th>
+          <th class="grid_table_row_opp_mid_td_sets">9</th>
+          <th class="grid_table_row_opp_mid_td_sets">12.25</th>
+          <th class="grid_table_row_opp_mid_td_sets">14</th>
+          <th class="grid_table_row_opp_mid_td_sets">10.5</th>
+          <th class="grid_table_row_opp_bot_td_sets">6</th>
           <th></th>
         </tr>
       </table>

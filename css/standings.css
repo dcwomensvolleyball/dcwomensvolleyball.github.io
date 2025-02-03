@@ -10,6 +10,14 @@
   background-color:LightBlue;
 }
 
+.standings_table_row_white {
+  background-color:GhostWhite;
+}
+
+.standings_table_row_gray {
+  background-color:LightGray;
+}
+
 .standings_table_row_gold {
   background-color:#F2C891;
 }
@@ -74,7 +82,6 @@
   border-right:solid;
   border-bottom:solid;
   text-align:center;
-  background-color:DarkGray;
 }
 
 .standings_table_row_div_bot_td {
