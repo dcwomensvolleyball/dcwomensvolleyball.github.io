@@ -1,0 +1,190 @@
+.team_page_table {
+  margin-left:10px;
+  margin-top:10px;
+}
+
+.team_page_team_title {
+  width:171px;
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.team_page_row_blue {
+  background-color:LightBlue
+}
+
+.team_page_row_white {
+  background-color:GhostWhite
+}
+
+.team_page_row_gray {
+  background-color:LightGray
+}
+
+.team_page_team_info_name {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:1px solid black;
+  border-bottom:solid;
+  padding-left:5px;
+}
+
+.team_page_team_info_cap {
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:solid;
+  padding-left:5px;
+}
+
+.team_page_results_title {
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.team_page_results_column {
+  width:114px;
+  text-align:center;
+  border-style:solid;
+}
+
+.team_page_results_season {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+  padding-left:5px;
+}
+
+.team_page_results_season_bot {
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+  padding-left:5px;
+}
+
+.team_page_results_reg_finish {
+  text-align:center;
+  border:1px solid black;
+}
+
+.team_page_results_reg_finish_bot {
+  text-align:center;
+  border:1px solid black;
+  border-bottom:solid;
+}
+
+.team_page_results_play_finish {
+  text-align:center;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:1px solid black;
+}
+
+.team_page_results_play_finish_bot {
+  text-align:center;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:solid;
+}
+
+.team_page_schedule_title {
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.team_page_schedule_column_basic {
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+.team_page_schedule_column_opp {
+  width:130px;
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.team_page_schedule_column_court {
+  text-align:center;
+  border-style:solid;
+  background-color:LightBlue;
+}
+
+.team_page_schedule_week {
+  text-align:center;
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:1px solid black;
+}
+
+.team_page_schedule_week_bot {
+  text-align:center;
+  border-top:1px solid black;
+  border-left:solid;
+  border-right:solid;
+  border-bottom:solid;
+}
+
+.team_page_schedule_date {
+  text-align:center;
+  border:1px solid black;
+}
+
+.team_page_schedule_date_bot {
+  text-align:center;
+  border:1px solid black;
+  border-bottom:solid;
+}
+
+.team_page_schedule_opp {
+  border:1px solid black;
+  padding-left:2px;
+}
+
+.team_page_schedule_opp_bot {
+  border:1px solid black;
+  border-bottom:solid;
+  padding-left:2px;
+}
+
+.team_page_schedule_court {
+  text-align:center;
+  border:1px solid black;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+.team_page_schedule_court_bot {
+  text-align:center;
+  border:1px solid black;
+  border-bottom:solid;
+  padding-left:2px;
+  padding-right:2px;
+}
+
+.team_page_schedule_score {
+  text-align:center;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:1px solid black;
+}
+
+.team_page_schedule_score_bot {
+  text-align:center;
+  border-top:1px solid black;
+  border-left:1px solid black;
+  border-right:solid;
+  border-bottom:solid;
+}
