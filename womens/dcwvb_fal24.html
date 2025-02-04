@@ -14,7 +14,6 @@
     <link href="../css/standings.css" rel="stylesheet">
     <link href="../css/box_score.css" rel="stylesheet">
     <link href="../css/grid.css" rel="stylesheet">
-    <link href="../css/team_page.css" rel="stylesheet">
     <script src="../js/stats.js"></script>
     <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
   </head>
@@ -56,7 +55,7 @@
     </nav>
 
     <div id="Teams" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="teams_table">
         <tr>
           <th></th>
           <th class="teams_table_title">Team Name</th>
@@ -106,87 +105,87 @@
     </div>
 
     <div id="Standings" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="standings_table">
         <tr>
           <th></th>
-          <th title="Matches Played" style="width:35px;text-align:center;border-style:solid;background-color:LightBlue;">MP</th>
-          <th title="Set Points For" style="width:35px;text-align:center;border-style:solid;background-color:LightBlue;">SPF</th>
-          <th title="Set Points Against" style="width:35px;text-align:center;border-style:solid;background-color:LightBlue;">SPA</th>
-          <th title="Total Points For" style="width:35px;text-align:center;border-style:solid;background-color:LightBlue;">TPF</th>
-          <th title="Total Points Against" style="width:35px;text-align:center;border-style:solid;background-color:LightBlue;">TPA</th>
-          <th title="Point Differential" style="width:35px;text-align:center;border-style:solid;background-color:LightBlue;">PD</th>
+          <th class="standings_table_title" title="Matches Played">MP</th>
+          <th class="standings_table_title" title="Set Points For">SPF</th>
+          <th class="standings_table_title" title="Set Points Against">SPA</th>
+          <th class="standings_table_title" title="Total Points For">TPF</th>
+          <th class="standings_table_title" title="Total Points Against">TPA</th>
+          <th class="standings_table_title" title="Point Differential">PD</th>
         </tr>
-        <tr style="background-color:#F2C891">
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:3px;padding-right:3px;">We Bring the Boom</th>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">13.5</td>
-          <td style="border:1px solid black;text-align:center;">4</td>
-          <td style="border:1px solid black;text-align:center;">369</td>
-          <td style="border:1px solid black;text-align:center;">300</td>
-          <td style="border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">+69</th>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_top_th">We Bring the Boom</th>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">13.5</td>
+          <td class="standings_table_row_td_basic">4</td>
+          <td class="standings_table_row_td_basic">369</td>
+          <td class="standings_table_row_td_basic">300</td>
+          <td class="standings_table_row_bot_th_basic">+69</th>
         </tr>
-        <tr style="background-color:#F2C891">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:3px;padding-right:3px;">Serves You Right</th>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">13</td>
-          <td style="border:1px solid black;text-align:center;">4.5</td>
-          <td style="border:1px solid black;text-align:center;">356</td>
-          <td style="border:1px solid black;text-align:center;">292</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">+64</th>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Serves You Right</th>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">13</td>
+          <td class="standings_table_row_td_basic">4.5</td>
+          <td class="standings_table_row_td_basic">356</td>
+          <td class="standings_table_row_td_basic">292</td>
+          <td class="standings_table_row_bot_th_basic">+64</th>
         </tr>
-        <tr style="background-color:#F2C891">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:3px;padding-right:3px;">Big Dig Energy</th>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">10</td>
-          <td style="border:1px solid black;text-align:center;">7.5</td>
-          <td style="border:1px solid black;text-align:center;">351</td>
-          <td style="border:1px solid black;text-align:center;">337</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">+14</th>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Big Dig Energy</th>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">10</td>
+          <td class="standings_table_row_td_basic">7.5</td>
+          <td class="standings_table_row_td_basic">351</td>
+          <td class="standings_table_row_td_basic">337</td>
+          <td class="standings_table_row_bot_th_basic">+14</th>
         </tr>
-        <tr style="background-color:#F2C891">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:3px;padding-right:3px;">Pipe dreamssss</th>
-          <td style="border:1px solid black;border-bottom:solid;text-align:center;">7</td>
-          <td style="border:1px solid black;border-bottom:solid;text-align:center;">9.5</td>
-          <td style="border:1px solid black;border-bottom:solid;text-align:center;">8</td>
-          <td style="border:1px solid black;border-bottom:solid;text-align:center;">346</td>
-          <td style="border:1px solid black;border-bottom:solid;text-align:center;">337</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;text-align:center;">+9</th>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_div_th">Pipe dreamssss</th>
+          <td class="standings_table_row_div_td">7</td>
+          <td class="standings_table_row_div_td">9.5</td>
+          <td class="standings_table_row_div_td">8</td>
+          <td class="standings_table_row_div_td">346</td>
+          <td class="standings_table_row_div_td">337</td>
+          <td class="standings_table_row_div_bot_th">+9</th>
         </tr>
-        <tr style="background-color:#DBE2E9">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:3px;padding-right:3px;">Falleyball</th>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">10.5</td>
-          <td style="border:1px solid black;text-align:center;">322</td>
-          <td style="border:1px solid black;text-align:center;">345</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">-23</th>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Falleyball</th>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">10.5</td>
+          <td class="standings_table_row_td_basic">322</td>
+          <td class="standings_table_row_td_basic">345</td>
+          <td class="standings_table_row_bot_th_basic">-23</th>
         </tr>
-        <tr style="background-color:#DBE2E9">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:3px;padding-right:3px;">Team Kate</th>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">6</td>
-          <td style="border:1px solid black;text-align:center;">11.5</td>
-          <td style="border:1px solid black;text-align:center;">315</td>
-          <td style="border:1px solid black;text-align:center;">354</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">-39</th>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Team Kate</th>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">11.5</td>
+          <td class="standings_table_row_td_basic">315</td>
+          <td class="standings_table_row_td_basic">354</td>
+          <td class="standings_table_row_bot_th_basic">-39</th>
         </tr>
-        <tr style="background-color:#DBE2E9">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:3px;padding-right:3px;">Pumpkin Spike Latt-ace</th>
-          <td style="border:1px solid black;text-align:center;">7</td>
-          <td style="border:1px solid black;text-align:center;">6</td>
-          <td style="border:1px solid black;text-align:center;">11.5</td>
-          <td style="border:1px solid black;text-align:center;">330</td>
-          <td style="border:1px solid black;text-align:center;">372</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:1px solid black;text-align:center;">-42</th>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Pumpkin Spike Latt-ace</th>
+          <td class="standings_table_row_td_basic">7</td>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">11.5</td>
+          <td class="standings_table_row_td_basic">330</td>
+          <td class="standings_table_row_td_basic">372</td>
+          <td class="standings_table_row_bot_th_basic">-42</th>
         </tr>
-        <tr style="background-color:#DBE2E9">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:3px;padding-right:3px;">Dressed to Kill</th>
-          <td style="border-top:1px solid black;border-left:solid;border-right:1px solid black;border-bottom:solid;text-align:center;">7</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">5</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">12.5</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">293</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;text-align:center;">373</td>
-          <td style="border-top:1px solid black;border-left:1px solid black;border-right:solid;border-bottom:solid;text-align:center;">-60</th>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_div_th">Dressed to Kill</th>
+          <td class="standings_table_row_div_bot_td">7</td>
+          <td class="standings_table_row_div_bot_td">5</td>
+          <td class="standings_table_row_div_bot_td">12.5</td>
+          <td class="standings_table_row_div_bot_td">293</td>
+          <td class="standings_table_row_div_bot_td">373</td>
+          <td class="standings_table_row_div_bot_th">-60</th>
         </tr>
       </table>
     </div>
@@ -315,603 +314,603 @@
     </div>
 
     <div id="M1" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 1: 10/8</th>
+          <th class="box_score_title" colspan="7">Week 1: 10/8</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">9</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">49</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Big Dig Energy</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">49</td>
+          <td class="box_score_top_score_white_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">51</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Serves You Right</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">13</td>
+          <td class="box_score_bot_score_white_pts">51</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">55</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">Falleyball</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">55</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">11</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">47</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">11</td>
+          <td class="box_score_bot_score_white_pts">47</td>
+          <td class="box_score_bot_score_white_pts">1</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">22</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">54</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_top_team_gray">We Bring the Boom</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">22</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_pts">54</td>
+          <td class="box_score_top_score_gray_pts">2</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">20</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">50</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_bot_team_gray">Dressed to Kill</td>
+          <td class="box_score_bot_score_gray_set">16</td>
+          <td class="box_score_bot_score_gray_set">20</td>
+          <td class="box_score_bot_score_gray_set">14</td>
+          <td class="box_score_bot_score_gray_pts">50</td>
+          <td class="box_score_bot_score_gray_pts">0.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">12</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">41</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Team Kate</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_set">14</td>
+          <td class="box_score_top_score_gray_pts">41</td>
+          <td class="box_score_top_score_gray_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">58</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Pipe dreamssss</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">16</td>
+          <td class="box_score_bot_score_gray_pts">58</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M2" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 2: 10/15</th>
+          <th class="box_score_title" colspan="7">Week 2: 10/15</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">18</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">5</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">44</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Pipe dreamssss</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">18</td>
+          <td class="box_score_top_score_white_set">5</td>
+          <td class="box_score_top_score_white_pts">44</td>
+          <td class="box_score_top_score_white_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">52</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Falleyball</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">52</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">6</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">33</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Team Kate</td>
+          <td class="box_score_top_score_white_set">6</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">12</td>
+          <td class="box_score_top_score_white_pts">33</td>
+          <td class="box_score_top_score_white_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">57</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">We Bring the Boom</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">57</td>
+          <td class="box_score_bot_score_white_pts">2.5</td>
          </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">18</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">20</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">49</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_top_score_gray_set">18</td>
+          <td class="box_score_top_score_gray_set">20</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_pts">49</td>
+          <td class="box_score_top_score_gray_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">22</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">12</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">55</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Big Dig Energy</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">22</td>
+          <td class="box_score_bot_score_gray_set">12</td>
+          <td class="box_score_bot_score_gray_pts">55</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">12</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">13</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">36</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Dressed to Kill</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_set">13</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_pts">36</td>
+          <td class="box_score_top_score_gray_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">Serves You Right</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">57</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
         </tr>
       </table>
     </div>
     
     <div id="M3" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 3: 10/22</th>
+          <th class="box_score_title" colspan="7">Week 3: 10/22</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">57</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_top_team_white">Big Dig Energy</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">57</td>
+          <td class="box_score_top_score_white_pts">2.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">8</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">4</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">29</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Dressed to Kill</td>
+          <td class="box_score_bot_score_white_set">8</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">4</td>
+          <td class="box_score_bot_score_white_pts">29</td>
+          <td class="box_score_bot_score_white_pts">0</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">54</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">14</td>
+          <td class="box_score_top_score_white_pts">54</td>
+          <td class="box_score_top_score_white_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">53</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Pipe dreamssss</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_pts">53</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">51</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_top_team_gray">Serves You Right</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">9</td>
+          <td class="box_score_top_score_gray_pts">51</td>
+          <td class="box_score_top_score_gray_pts">2.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">8</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">7</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">32</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Team Kate</td>
+          <td class="box_score_bot_score_gray_set">17</td>
+          <td class="box_score_bot_score_gray_set">8</td>
+          <td class="box_score_bot_score_gray_set">7</td>
+          <td class="box_score_bot_score_gray_pts">32</td>
+          <td class="box_score_bot_score_gray_pts">0</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">36</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Falleyball</td>
+          <td class="box_score_top_score_gray_set">14</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_pts">36</td>
+          <td class="box_score_top_score_gray_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_bot_team_gray">We Bring the Boom</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">57</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M4" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 4: 10/29</th>
+          <th class="box_score_title" colspan="7">Week 4: 10/29</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">45</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0.5</td>
+          <td class="box_score_top_team_white">Pipe dreamssss</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">13</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">45</td>
+          <td class="box_score_top_score_white_pts">0.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">55</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2</td>
+          <td class="box_score_bot_team_white">Big Dig Energy</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">13</td>
+          <td class="box_score_bot_score_white_pts">55</td>
+          <td class="box_score_bot_score_white_pts">2</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">9</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">47</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Dressed to Kill</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">47</td>
+          <td class="box_score_top_score_white_pts">1</td>
          </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">52</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Team Kate</td>
+          <td class="box_score_bot_score_white_set">19</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_pts">52</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">57</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">2.5</td>
+          <td class="box_score_top_team_gray">We Bring the Boom</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">57</td>
+          <td class="box_score_top_score_gray_pts">2.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">8</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">34</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_bot_score_gray_set">17</td>
+          <td class="box_score_bot_score_gray_set">9</td>
+          <td class="box_score_bot_score_gray_set">8</td>
+          <td class="box_score_bot_score_gray_pts">34</td>
+          <td class="box_score_bot_score_gray_pts">0</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">18</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">7</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">46</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_top_team_gray">Serves You Right</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">18</td>
+          <td class="box_score_top_score_gray_set">7</td>
+          <td class="box_score_top_score_gray_pts">46</td>
+          <td class="box_score_top_score_gray_pts">1.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">18</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">6</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">45</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Falleyball</td>
+          <td class="box_score_bot_score_gray_set">18</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">6</td>
+          <td class="box_score_bot_score_gray_pts">45</td>
+          <td class="box_score_bot_score_gray_pts">1</td>
         </tr>
       </table>
     </div>
 
     <div id="M5" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 5: 11/5</th>
+          <th class="box_score_title" colspan="7">Week 5: 11/5</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">4</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">39</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Dressed to Kill</td>
+          <td class="box_score_top_score_white_set">14</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">4</td>
+          <td class="box_score_top_score_white_pts">39</td>
+          <td class="box_score_top_score_white_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">53</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Falleyball</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">53</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">13</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">48</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">13</td>
+          <td class="box_score_top_score_white_set">14</td>
+          <td class="box_score_top_score_white_pts">48</td>
+          <td class="box_score_top_score_white_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">52</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_bot_team_white">Serves You Right</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_pts">52</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">12</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">49</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Big Dig Energy</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_pts">49</td>
+          <td class="box_score_top_score_gray_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">51</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">Team Kate</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">51</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">9</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">45</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Pipe dreamssss</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">9</td>
+          <td class="box_score_top_score_gray_pts">45</td>
+          <td class="box_score_top_score_gray_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">52</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">We Bring the Boom</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">16</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">52</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M6" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 6: 11/12</th>
+          <th class="box_score_title" colspan="7">Week 6: 11/12</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">17</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">59</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_top_team_white">We Bring the Boom</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_pts">59</td>
+          <td class="box_score_top_score_white_pts">2.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">14</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">45</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Big Dig Energy</td>
+          <td class="box_score_bot_score_white_set">14</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">45</td>
+          <td class="box_score_bot_score_white_pts">0</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">19</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">11</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">42</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Falleyball</td>
+          <td class="box_score_top_score_white_set">12</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">11</td>
+          <td class="box_score_top_score_white_pts">42</td>
+          <td class="box_score_top_score_white_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">57</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">Team Kate</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">57</td>
+          <td class="box_score_bot_score_white_pts">2.5</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">6</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">42</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Serves You Right</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_set">6</td>
+          <td class="box_score_top_score_gray_pts">42</td>
+          <td class="box_score_top_score_gray_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">11</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">49</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">Pipe dreamssss</td>
+          <td class="box_score_bot_score_gray_set">17</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">11</td>
+          <td class="box_score_bot_score_gray_pts">49</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">13</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">48</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_top_score_gray_set">13</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">14</td>
+          <td class="box_score_top_score_gray_pts">48</td>
+          <td class="box_score_top_score_gray_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">14</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">16</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">51</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">Dressed to Kill</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">14</td>
+          <td class="box_score_bot_score_gray_set">16</td>
+          <td class="box_score_bot_score_gray_pts">51</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
         </tr>
       </table>
     </div>
 
     <div id="M7" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="7" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Week 7: 11/19</th>
+          <th class="box_score_title" colspan="7">Week 7: 11/19</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">10</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">8</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">33</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">We Bring the Boom</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_set">10</td>
+          <td class="box_score_top_score_white_set">8</td>
+          <td class="box_score_top_score_white_pts">33</td>
+          <td class="box_score_top_score_white_pts">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">57</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">2.5</td>
+          <td class="box_score_bot_team_white">Serves You Right</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">57</td>
+          <td class="box_score_bot_score_white_pts">2.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2</th>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">16</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">52</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">1.5</td>
+          <td class="box_score_top_team_white">Pipe dreamssss</td>
+          <td class="box_score_top_score_white_set">16</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">52</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;border-left:solid;background-color:GhostWhite;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">12</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:GhostWhite;">8</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">41</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Dressed to Kill</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_set">8</td>
+          <td class="box_score_bot_score_white_pts">41</td>
+          <td class="box_score_bot_score_white_pts">1</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">13</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">7</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">41</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Big Dig Energy</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">13</td>
+          <td class="box_score_top_score_gray_set">7</td>
+          <td class="box_score_top_score_gray_pts">41</td>
+          <td class="box_score_top_score_gray_pts">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">17</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">53</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:solid;border-right:solid;background-color:LightGray;">1.5</td>
+          <td class="box_score_bot_team_gray">Falleyball</td>
+          <td class="box_score_bot_score_gray_set">17</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">53</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
         </tr>
         <tr>
-          <th colspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2</th>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">19</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">15</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">49</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:solid;border-right:solid;background-color:LightGray;">0.5</td>
+          <td class="box_score_top_team_gray">Team Kate</td>
+          <td class="box_score_top_score_gray_set">19</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">49</td>
+          <td class="box_score_top_score_gray_pts">0.5</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:solid;border-left:solid;background-color:LightGray;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">21</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;background-color:LightGray;">8</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">50</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">2</td>
+          <td class="box_score_bot_team_gray">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">8</td>
+          <td class="box_score_bot_score_gray_pts">50</td>
+          <td class="box_score_bot_score_gray_pts">2</td>
         </tr>
       </table>
     </div>
@@ -925,109 +924,109 @@
     </div>
 
     <div id="P1" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Playoff 1: 12/3</th>
+          <th class="box_score_title" colspan="3">Playoff 1: 12/3</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1 - Match 1</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1 - Match 1</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">We Bring The Boom</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">We Bring The Boom</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Pipe dreamssss</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2 - Match 2</th>
+          <th class="box_score_court_white" colspan="2">Court 2 - Match 2</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">Serves You Right</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Big Dig Energy</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1 - Match 3</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1 - Match 3</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Falleyball</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Dressed to Kill</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2 - Match 4</th>
+          <th class="box_score_court_gray" colspan="2">Court 2 - Match 4</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Team Kate</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
       </table>
     </div>
 
     <div id="P2" style="display:none;">
-      <table style="margin-left:15px;margin-top:20px;">
+      <table class="box_score_table">
         <tr>
-          <th colspan="3" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightBlue;">Playoff 2: 12/10</th>
+          <th class="box_score_title" colspan="3">Playoff 2: 12/10</th>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;padding-left:5px;padding-right:5px;">7 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 1 - 1st Place</th>
+          <th class="box_score_7pm" rowspan="6">7 PM</th>
+          <th class="box_score_court_gold" colspan="2">Court 1 - 1st Place</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">We Bring the Boom</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_top_team_white">We Bring the Boom</td>
+          <td class="box_score_top_score_white">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:GhostWhite;padding-left:3px;">Big Dig Energy</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_bot_team_white">Big Dig Energy</td>
+          <td class="box_score_bot_score_white">1</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:GhostWhite;">Court 2 - 5th Place</th>
+          <th class="box_score_court_silver" colspan="2">Court 2 - 5th Place</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Falleyball</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">1</td>
+          <td class="box_score_top_team_white">Falleyball</td>
+          <td class="box_score_top_score_white">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:GhostWhite;padding-left:3px;">Team Kate</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:GhostWhite;">0</td>
+          <td class="box_score_bot_team_white">Team Kate</td>
+          <td class="box_score_bot_score_white">0</td>
         </tr>
         <tr>
-          <th rowspan="6" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;padding-left:5px;padding-right:5px;">8 PM</th>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 1 - 3rd Place</th>
+          <th class="box_score_8pm" rowspan="6">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1 - 3rd Place</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Pipe dreamssss</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_top_team_gray">Pipe dreamssss</td>
+          <td class="box_score_top_score_gray">1</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:1px solid black;border-left:solid;border-right:1px solid black;background-color:LightGray;padding-left:3px;">Serves You Right</td>
-          <td style="width:30px;text-align:center;border-bottom:1px solid black;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_bot_team_gray">Serves You Right</td>
+          <td class="box_score_bot_score_gray">0</td>
         </tr>
         <tr>
-          <th colspan="2" style="text-align:center;border-top:solid;border-bottom:solid;border-left:solid;border-right:solid;background-color:LightGray;">Court 2 - 7th Place</th>
+          <th class="box_score_court_gray" colspan="2">Court 2 - 7th Place</th>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Dressed to Kill</td>
-          <td style="width:30px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">0</td>
+          <td class="box_score_top_team_gray">Dressed to Kill</td>
+          <td class="box_score_top_score_gray">0</td>
         </tr>
         <tr>
-          <td style="width:160px;text-align:left;border-bottom:solid;border-left:1px solid black;border-right:1px solid black;border-left:solid;background-color:LightGray;padding-left:3px;">Pumpkin Spike Latt-ace</td>
-          <td style="width:30px;text-align:center;border-bottom:solid;border-left:1px solid black;border-right:solid;background-color:LightGray;">1</td>
+          <td class="box_score_bot_team_gray">Pumpkin Spike Latt-ace</td>
+          <td class="box_score_bot_score_gray">1</td>
         </tr>
       </table>
     </div>
@@ -1040,125 +1039,125 @@
 
 
     <div id="Grid" class="tabcontent" style="display:none;">
-      <table style="margin-left:10px;margin-top:10px;">
+      <table class="standings_table">
         <tr>
           <th></th>
-          <th title="Big Dig Energy" style="width:60px;text-align:center;border-top:solid;border-left:solid;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">BDE</th>
-          <th title="Falleyball" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">F</th>
-          <th title="We Bring the Boom" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TJ</th>
-          <th title="Team Kate" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">TKate</th>
-          <th title="Pipe dreamssss" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">Pd</th>
-          <th title="Dressed to Kill" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">DtK</th>
-          <th title="Pumpkin Spike Latt-ace" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:LightBlue;">PSL</th>
-          <th title="Serves You Right" style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:LightBlue;">SYR</th>
+          <th class="grid_table_title_left"   title="Big Dig Energy">BDE</th>
+          <th class="grid_table_title_middle" title="Falleyball">F</th>
+          <th class="grid_table_title_middle" title="We Bring the Boom">TJ</th>
+          <th class="grid_table_title_middle" title="Team Kate">TKate</th>
+          <th class="grid_table_title_middle" title="Pipe dreamssss">Pd</th>
+          <th class="grid_table_title_middle" title="Dressed to Kill">DtK</th>
+          <th class="grid_table_title_middle" title="Pumpkin Spike Latt-ace">PSL</th>
+          <th class="grid_table_title_right"  title="Serves You Right">SYR</th>
           <th style="width:60px;"></th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Big Dig Energy</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:solid;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">10</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_top_th_team">Big Dig Energy</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_top_th_sets">10</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Falleyball</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">7</th>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Falleyball</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">7</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">We Bring the Boom</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">13.5</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">We Bring the Boom</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">13.5</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Team Kate</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">6</th>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Team Kate</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">6</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Pipe dreamssss</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">9.5</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Pipe dreamssss</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <th class="grid_table_row_mid_th_sets">9.5</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Dressed to Kill</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">5</th>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Dressed to Kill</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">5</th>
         </tr>
-        <tr style="background-color:GhostWhite">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;padding-left:5px;padding-right:5px;">Pumpkin Spike Latt-ace</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">0</th>
-          <td style="border:1px solid black;text-align:center;">2</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:1px solid black;text-align:center;">6</th>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Pumpkin Spike Latt-ace</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">6</th>
         </tr>
-        <tr style="background-color:LightGray">
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;padding-left:5px;padding-right:5px;">Serves You Right</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1</th>
-          <td style="border:1px solid black;text-align:center;">2.5</th>
-          <td style="border:1px solid black;text-align:center;">1.5</th>
-          <td style="border:1px solid black;background-color:DarkGray;"></th>
-          <th style="border-top:1px solid black;border-left:solid;border-right:solid;border-bottom:solid;text-align:center;">13</th>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_bot_th_team">Serves You Right</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <th class="grid_table_row_bot_th_sets">13</th>
         </tr>
         <tr>
           <th></th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:solid;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">7.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">10.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">4</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">11.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">8</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">12.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:1px solid black;border-bottom:solid;background-color:GhostWhite;">11.5</th>
-          <th style="width:60px;text-align:center;border-top:solid;border-left:1px solid black;border-right:solid;border-bottom:solid;background-color:GhostWhite;">4.5</th>
+          <th class="grid_table_row_opp_top_td_sets">7.5</th>
+          <th class="grid_table_row_opp_mid_td_sets">10.5</th>
+          <th class="grid_table_row_opp_mid_td_sets">4</th>
+          <th class="grid_table_row_opp_mid_td_sets">11.5</th>
+          <th class="grid_table_row_opp_mid_td_sets">8</th>
+          <th class="grid_table_row_opp_mid_td_sets">12.5</th>
+          <th class="grid_table_row_opp_mid_td_sets">11.5</th>
+          <th class="grid_table_row_opp_bot_td_sets">4.5</th>
           <th></th>
         </tr>
       </table>
