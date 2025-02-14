@@ -375,6 +375,7 @@
           var twelfthSeries = chart.line(twelfthSeriesData);
           twelfthSeries.name("AS");
           twelfthSeries.stroke({color:"lime",thickness:3});
+          twelfthSeries.hovered().stroke({color:"lime",thickness:6});
 
           chart.xAxis().orientation("top");
           chart.xAxis().labels().fontColor("black");
@@ -511,6 +512,7 @@
           var twelfthSeries = pointsChart.line(twelfthSeriesData);
           twelfthSeries.name("AS");
           twelfthSeries.stroke({color:"lime",thickness:3});
+          twelfthSeries.hovered().stroke({color:"lime",thickness:6});
 
           var silverSeries = pointsChart.line(silverSeriesData);
           silverSeries.name("Silver");
