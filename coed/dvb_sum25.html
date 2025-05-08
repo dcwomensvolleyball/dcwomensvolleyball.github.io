@@ -1,0 +1,3552 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fair Play Initiative</title>
+    <link rel="shortcut icon" type="image/svg" href="../images/main/molten.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link href="../css/navigation.css" rel="stylesheet">
+    <link href="../css/teams.css" rel="stylesheet">
+    <link href="../css/standings.css" rel="stylesheet">
+    <link href="../css/box_score.css" rel="stylesheet">
+    <link href="../css/grid.css" rel="stylesheet">
+    <link href="../css/team_page.css" rel="stylesheet">
+    <script src="../js/stats.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Brian Hood -->
+    <!-- Jonathan Turley -->
+    <!-- Jonathan Zittrain -->
+    <!-- David Faber -->
+    <!-- Guido Scorza -->
+
+    <nav class="navbar">
+      <!-- LOGO -->
+      <div class="logo">District Volleyball - Summer 2025
+        <!-- NAVIGATION MENUS -->
+        <div class="menu">
+          <li><a href="dvb.html"><i class="material-icons">arrow_back</i></a></li>
+          <li><a href="dvb_sum25.html"><i class="material-icons">home</i></a></li>
+          <li><a href="#Teams" onclick="openTab('Teams', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Teams</a></li>
+          <li style="z-index:2;" class="services">
+            <a href="#">Standings</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="#Table" onclick="openTab('Standings', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Table</a></li>
+              <li><a href="#Chart" onclick="openTab('Chart', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Chart</a></li>
+            </ul>
+          </li>
+          <li style="z-index:2;" class="services">
+            <a href="#">Schedule</a>
+            <!-- DROPDOWN MENU -->
+            <ul class="dropdown">
+              <li><a href="#Regular_Season" onclick="openTab('Regular Season', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Regular Season</a></li>
+              <li><a href="#Playoffs" onclick="openTab('Playoffs', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Playoffs</a></li>
+              <li><a href="#Grid" onclick="openTab('Grid', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Grid</a></li>
+            </ul>
+          </li>
+        </div>
+      </div>
+    </nav>
+
+
+    <div id="Teams" class="tabcontent" style="display:none;">
+      <table class="teams_table">
+        <tr>
+          <th></th>
+          <th class="teams_table_title">Team Name</th>
+          <th class="teams_table_title">Captain</th>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_top_team_id">Team 1</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="teams_table_row_top_cap">Maddie S.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 2</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="teams_table_row_mid_cap">Matt S.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 3</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="teams_table_row_mid_cap">Claire C.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 4</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="teams_table_row_mid_cap">Katie S.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 5</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="teams_table_row_mid_cap">Herbert C.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 6</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="teams_table_row_mid_cap">Shaoyi Z.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 7</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="teams_table_row_mid_cap">Leonard K.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 8</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="teams_table_row_mid_cap">Sara R.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 9</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="teams_table_row_mid_cap">Artie B.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 10</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="teams_table_row_mid_cap">Rafael F.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 11</th>
+          <td class="teams_table_row_mid_team_page_link"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="teams_table_row_mid_cap">Katie T.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_bot_team_id">Team 12</th>
+          <td class="teams_table_row_bot_team_page_link"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="teams_table_row_bot_cap">Tony H.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Standings" class="tabcontent" style="display:none;">
+      <table class="standings_table">
+        <tr>
+          <th></th>
+          <th class="standings_table_title" title="Matches Played">MP</th>
+          <th class="standings_table_title" title="Set Points For">SPF</th>
+          <th class="standings_table_title" title="Set Points Against">SPA</th>
+          <th class="standings_table_title" title="Winning Percentage">WP</th>
+          <th class="standings_table_title" title="Opponents' Winning Percentage">OWP</th>
+          <th class="standings_table_title" title="Opponents' Opponents' Winning Percentage">OOWP</th>
+          <th class="standings_table_title" title="Strength of Schedule">SoS</th>
+          <th class="standings_table_title" title="Remaining Strength of Schedule">RSoS</th>
+          <th class="standings_table_title" title="Weekly Rank Change">&#9651;</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_top_th">Love at First Spike</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Get It In</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Space Balls</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_div_th">Thursdays with Walter</th>
+          <td class="standings_table_row_div_td">0</td>
+          <td class="standings_table_row_div_td">0.00</td>
+          <td class="standings_table_row_div_td">0.00</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">-</td>
+          <th class="standings_table_row_div_bot_th" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Spike Now</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Ace Squad</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Panic Attack</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_div_th">EZ Balls</th>
+          <td class="standings_table_row_div_td">0</td>
+          <td class="standings_table_row_div_td">0.00</td>
+          <td class="standings_table_row_div_td">0.00</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">0.000</td>
+          <td class="standings_table_row_div_td">-</td>
+          <th class="standings_table_row_div_bot_th" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">Exodia</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">When Harry Set Sally</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">Supreme</th>
+          <td class="standings_table_row_td_basic">0</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.00</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">0.000</td>
+          <td class="standings_table_row_td_basic">-</td>
+          <th class="standings_table_row_bot_th_basic" style="background-color:DarkGray;">-</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_div_th">Set It and Forget It</th>
+          <td class="standings_table_row_div_bot_td">0</td>
+          <td class="standings_table_row_div_bot_td">0.00</td>
+          <td class="standings_table_row_div_bot_td">0.00</td>
+          <td class="standings_table_row_div_bot_td">0.000</td>
+          <td class="standings_table_row_div_bot_td">0.000</td>
+          <td class="standings_table_row_div_bot_td">0.000</td>
+          <td class="standings_table_row_div_bot_td">0.000</td>
+          <td class="standings_table_row_div_bot_td">-</td>
+          <th class="standings_table_row_div_bot_th" style="background-color:DarkGray;">-</th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Chart" class="tabcontent" style="display:none;">
+      <div class="subnav" style="margin-left:10px;margin-top:10px;">
+        <a href="#Rank" onclick="showImage('Rank', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P2','BR','Points'])">Rank</a>
+        <a href="#Points" onclick="showImage('Points', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','BR','Rank'])">Points</a>
+      </div>
+    </div>
+
+    <div id="Rank" style="display:none;width:100%;height:700px;padding-top:10px;z-index:-1;" class="tabcontent">
+      <script>
+        anychart.onDocumentReady(function () {
+          // add rank
+          var rank = [
+            ["M1",1,1,1,1,1,1,1,1,1,1,1,1],
+          ];
+
+          // create a rank set
+          var rankSet = anychart.data.set(rank);
+
+          // map the rank for all series
+          var firstSeriesData = rankSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = rankSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = rankSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = rankSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = rankSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = rankSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = rankSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = rankSet.mapAs({x: 0, value: 8});
+          var ninthSeriesData = rankSet.mapAs({x: 0, value: 9});
+          var tenthSeriesData = rankSet.mapAs({x: 0, value: 10});
+          var eleventhSeriesData = rankSet.mapAs({x: 0, value: 11});
+          var twelfthSeriesData = rankSet.mapAs({x: 0, value: 12});
+
+          // create a line chart
+          var chart = anychart.line();
+
+          // create the series and name them
+          var firstSeries = chart.line(firstSeriesData);
+          firstSeries.name("LaFS");
+          firstSeries.stroke({color:"red",thickness:3});
+          firstSeries.hovered().stroke({color:"red",thickness:6});
+          var secondSeries = chart.line(secondSeriesData);
+          secondSeries.name("GII");
+          secondSeries.stroke({color:"orange",thickness:3});
+          secondSeries.hovered().stroke({color:"orange",thickness:6});
+          var thirdSeries = chart.line(thirdSeriesData);
+          thirdSeries.name("SB");
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          thirdSeries.hovered().stroke({color:"yellow",thickness:6});
+          var fourthSeries = chart.line(fourthSeriesData);
+          fourthSeries.name("TwW");
+          fourthSeries.stroke({color:"green",thickness:3});
+          fourthSeries.hovered().stroke({color:"green",thickness:6});
+          var fifthSeries = chart.line(fifthSeriesData);
+          fifthSeries.name("SN");
+          fifthSeries.stroke({color:"blue",thickness:3});
+          fifthSeries.hovered().stroke({color:"blue",thickness:6});
+          var sixthSeries = chart.line(sixthSeriesData);
+          sixthSeries.name("AS");
+          sixthSeries.stroke({color:"purple",thickness:3});
+          sixthSeries.hovered().stroke({color:"purple",thickness:6});
+          var seventhSeries = chart.line(seventhSeriesData);
+          seventhSeries.name("PA");
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          seventhSeries.hovered().stroke({color:"magenta",thickness:6});
+          var eighthSeries = chart.line(eighthSeriesData);
+          eighthSeries.name("EZB");
+          eighthSeries.stroke({color:"gray",thickness:3});
+          eighthSeries.hovered().stroke({color:"gray",thickness:6});
+          var ninthSeries = chart.line(ninthSeriesData);
+          ninthSeries.name("E");
+          ninthSeries.stroke({color:"black",thickness:3});
+          ninthSeries.hovered().stroke({color:"black",thickness:6});
+          var tenthSeries = chart.line(tenthSeriesData);
+          tenthSeries.name("WHSS");
+          tenthSeries.stroke({color:"cyan",thickness:3});
+          tenthSeries.hovered().stroke({color:"cyan",thickness:6});
+          var eleventhSeries = chart.line(eleventhSeriesData);
+          eleventhSeries.name("S");
+          eleventhSeries.stroke({color:"pink",thickness:3});
+          eleventhSeries.hovered().stroke({color:"pink",thickness:6});
+          var twelfthSeries = chart.line(twelfthSeriesData);
+          twelfthSeries.name("SIaFI");
+          twelfthSeries.stroke({color:"lime",thickness:3});
+          twelfthSeries.hovered().stroke({color:"lime",thickness:6});
+
+          chart.xAxis().orientation("top");
+          chart.xAxis().labels().fontColor("black");
+          chart.xAxis().labels().fontWeight("bold");
+          chart.xAxis().stroke({color:"black",thickness:2});
+
+          chart.yAxis().orientation("right");
+          chart.yAxis().labels().fontColor("black");
+          chart.yAxis().labels().fontWeight("bold");
+          chart.yAxis().drawFirstLabel(false);
+          chart.yAxis().drawLastLabel(false);
+          chart.yScale().inverted(true);
+          chart.yScale().ticks().interval(1);
+          chart.yScale().minimum(0.25);
+          chart.yScale().maximum(12.5);
+          chart.yAxis().stroke({color:"black",thickness:2});
+          chart.background().fill("gainsboro");
+
+          // gold division range
+          var rangeMarker1 = chart.rangeMarker(1);
+          rangeMarker1.axis(chart.yAxis());
+          rangeMarker1.from(0.25);
+          rangeMarker1.to(4.5);
+          rangeMarker1.fill("#F2C891 0.4");
+
+          // silver division range
+          var rangeMarker2 = chart.rangeMarker(2);
+          rangeMarker2.axis(chart.yAxis());
+          rangeMarker2.from(4.5);
+          rangeMarker2.to(8.5);
+          rangeMarker2.fill("#DBE2E9 0.4");
+
+          // bronze division range
+          var rangeMarker3 = chart.rangeMarker(3);
+          rangeMarker3.axis(chart.yAxis());
+          rangeMarker3.from(8.5);
+          rangeMarker3.to(12.5);
+          rangeMarker3.fill("#B77729 0.4");
+
+          // add a legend
+          chart.legend().enabled(true);
+
+          // add a title
+          chart.title("Rankings");
+          chart.title().orientation("bottom");
+
+          // specify where to display the chart
+          chart.container("Rank");
+
+          // draw the resulting chart
+          chart.draw();
+        });
+      </script>
+    </div>
+
+    <div id="Points" class="tabcontent" style="display:none;width:100%;height:700px;padding-top:10px;z-index:-1;" class="tabcontent">
+      <script>
+        anychart.onDocumentReady(function () {
+          // add points
+          var points = [
+            ["M1",0,0,0,0,0,0,0,0,0,0,0,0,0,0],
+          ];
+
+          // create a points set
+          var pointsSet = anychart.data.set(points);
+
+          // map the points for all series
+          var firstSeriesData = pointsSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = pointsSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = pointsSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = pointsSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = pointsSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = pointsSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = pointsSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = pointsSet.mapAs({x: 0, value: 8});
+          var ninthSeriesData = pointsSet.mapAs({x: 0, value: 9});
+          var tenthSeriesData = pointsSet.mapAs({x: 0, value: 10});
+          var eleventhSeriesData = pointsSet.mapAs({x: 0, value: 11});
+          var twelfthSeriesData = pointsSet.mapAs({x: 0, value: 12});
+          var silverSeriesData = pointsSet.mapAs({x: 0, value: 13});
+          var goldSeriesData = pointsSet.mapAs({x: 0, value: 14});
+
+          // create a line chart
+          var pointsChart = anychart.line();
+
+          // create the series and name them
+          var firstSeries = pointsChart.line(firstSeriesData);
+          firstSeries.name("LaFS");
+          firstSeries.stroke({color:"red",thickness:3});
+          firstSeries.hovered().stroke({color:"red",thickness:6});
+          var secondSeries = pointsChart.line(secondSeriesData);
+          secondSeries.name("GII");
+          secondSeries.stroke({color:"orange",thickness:3});
+          secondSeries.hovered().stroke({color:"orange",thickness:6});
+          var thirdSeries = pointsChart.line(thirdSeriesData);
+          thirdSeries.name("SB");
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          thirdSeries.hovered().stroke({color:"yellow",thickness:6});
+          var fourthSeries = pointsChart.line(fourthSeriesData);
+          fourthSeries.name("TwW");
+          fourthSeries.stroke({color:"green",thickness:3});
+          fourthSeries.hovered().stroke({color:"green",thickness:6});
+          var fifthSeries = pointsChart.line(fifthSeriesData);
+          fifthSeries.name("SN");
+          fifthSeries.stroke({color:"blue",thickness:3});
+          fifthSeries.hovered().stroke({color:"blue",thickness:6});
+          var sixthSeries = pointsChart.line(sixthSeriesData);
+          sixthSeries.name("AS");
+          sixthSeries.stroke({color:"purple",thickness:3});
+          sixthSeries.hovered().stroke({color:"purple",thickness:6});
+          var seventhSeries = pointsChart.line(seventhSeriesData);
+          seventhSeries.name("PA");
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          seventhSeries.hovered().stroke({color:"magenta",thickness:6});
+          var eighthSeries = pointsChart.line(eighthSeriesData);
+          eighthSeries.name("EZB");
+          eighthSeries.stroke({color:"gray",thickness:3});
+          eighthSeries.hovered().stroke({color:"gray",thickness:6});
+          var ninthSeries = pointsChart.line(ninthSeriesData);
+          ninthSeries.name("E");
+          ninthSeries.stroke({color:"black",thickness:3});
+          ninthSeries.hovered().stroke({color:"black",thickness:6});
+          var tenthSeries = pointsChart.line(tenthSeriesData);
+          tenthSeries.name("WHSS");
+          tenthSeries.stroke({color:"cyan",thickness:3});
+          tenthSeries.hovered().stroke({color:"cyan",thickness:6});
+          var eleventhSeries = pointsChart.line(eleventhSeriesData);
+          eleventhSeries.name("S");
+          eleventhSeries.stroke({color:"pink",thickness:3});
+          eleventhSeries.hovered().stroke({color:"pink",thickness:6});
+          var twelfthSeries = pointsChart.line(twelfthSeriesData);
+          twelfthSeries.name("SIaFI");
+          twelfthSeries.stroke({color:"lime",thickness:3});
+          twelfthSeries.hovered().stroke({color:"lime",thickness:6});
+
+          var silverSeries = pointsChart.line(silverSeriesData);
+          silverSeries.name("Silver");
+          silverSeries.stroke({color:"#848482",dash: "8 8",thickness:3});
+          silverSeries.hovered().stroke({color:"#848482",dash: "8 8",thickness:6});
+          var goldSeries = pointsChart.line(goldSeriesData);
+          goldSeries.name("Gold");
+          goldSeries.stroke({color:"#B8860B",dash: "8 8",thickness:3});
+          goldSeries.hovered().stroke({color:"#B8860B",dash: "8 8",thickness:6});
+
+          pointsChart.xAxis().orientation("top");
+          pointsChart.xAxis().labels().fontColor("black");
+          pointsChart.xAxis().labels().fontWeight("bold");
+          pointsChart.xAxis().stroke({color:"black",thickness:2});
+
+          pointsChart.yAxis().orientation("right");
+          pointsChart.yAxis().labels().fontColor("black");
+          pointsChart.yAxis().labels().fontWeight("bold");
+          pointsChart.yAxis().drawFirstLabel(false);
+          pointsChart.yAxis().drawLastLabel(false);
+          pointsChart.yScale().ticks().interval(0.5);
+          pointsChart.yScale().minimum(-0.25);
+          pointsChart.yScale().maximum(0.3);
+          pointsChart.yAxis().stroke({color:"black",thickness:2});
+          pointsChart.background().fill("gainsboro");
+
+          // add a legend
+          pointsChart.legend().enabled(true);
+
+          // add a title
+          pointsChart.title("Set Points");
+          pointsChart.title().orientation("bottom");
+
+          // specify where to display the pointsChart
+          pointsChart.container("Points");
+
+          // draw the resulting pointsChart
+          pointsChart.draw();
+        });
+      </script>
+    </div>
+
+    <div id="Regular Season" class="tabcontent" style="display:none;">
+      <div class="subnav" style="margin-left:10px;margin-top:10px;margin-right:10px;">
+        <a href="#Week_1" onclick="showImage('M1', ['M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 1</a>
+        <a href="#Week_2" onclick="showImage('M2', ['M1','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 2</a>
+        <a href="#Week_3" onclick="showImage('M3', ['M1','M2','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 3</a>
+        <a href="#Week_4" onclick="showImage('M4', ['M1','M2','M3','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 4</a>
+        <a href="#Week_5" onclick="showImage('M5', ['M1','M2','M3','M4','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 5</a>
+        <a href="#Week_6" onclick="showImage('M6', ['M1','M2','M3','M4','M5','M7','M8','M9','M10','M11','P1','P2'])">Week 6</a>
+        <a href="#Week_7" onclick="showImage('M7', ['M1','M2','M3','M4','M5','M6','M8','M9','M10','M11','P1','P2'])">Week 7</a>
+        <a href="#Week_8" onclick="showImage('M8', ['M1','M2','M3','M4','M5','M6','M7','M9','M10','M11','P1','P2'])">Week 8</a>
+        <a href="#Week_9" onclick="showImage('M9', ['M1','M2','M3','M4','M5','M6','M7','M8','M10','M11','P1','P2'])">Week 9</a>
+        <a href="#Week_10" onclick="showImage('M10', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M11','P1','P2'])">Week 10</a>
+        <a href="#Week_11" onclick="showImage('M11', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','P1','P2'])">Week 11</a>
+      </div>
+    </div>
+
+    <div id="M1" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 1: 5/8</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Thursdays with Walter</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Exodia</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spike Now</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">EZ Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Ace Squad</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Panic Attack</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Love at First Spike</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Set It and Forget It</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Supreme</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Space Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M2" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 2: 5/15</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">EZ Balls</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Space Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Panic Attack</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Ace Squad</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Spike Now</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">When Harry Set Sally</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Set It and Forget It</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Exodia</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Get It In</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M3" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 3: 5/29</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">When Harry Set Sally</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Supreme</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Exodia</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Set It and Forget It</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">EZ Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Panic Attack</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Space Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Ace Squad</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Thursdays with Walter</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Spike Now</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M4" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 4: 6/5</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Exodia</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Love at First Spike</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spike Now</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Panic Attack</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Set It and Forget It</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Ace Squad</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Thursdays with Walter</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Space Balls</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M5" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 5: 6/12</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">EZ Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Exodia</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Panic Attack</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">When Harry Set Sally</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Ace Squad</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Spike Now</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Set It and Forget It</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Thursdays with Walter</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Space Balls</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M6" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 6: 6/26</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">When Harry Set Sally</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Get It In</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Set It and Forget It</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Panic Attack</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Ace Squad</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">EZ Balls</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Spike Now</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Exodia</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M7" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 7: 7/10</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Exodia</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Space Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">When Harry Set Sally</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Supreme</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Set It and Forget It</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Love at First Spike</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Ace Squad</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Panic Attack</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Spike Now</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Thursdays with Walter</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M8" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 8: 7/17</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spike Now</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Love at First Spike</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Thursdays with Walter</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Ace Squad</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Panic Attack</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Get It In</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Set It and Forget It</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Exodia</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Supreme</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M9" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 9: 7/24</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Thursdays with Walter</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spike Now</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Space Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Ace Squad</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Panic Attack</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Set It and Forget It</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">EZ Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Supreme</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Exodia</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M10" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 10: 7/31</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Ace Squad</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">When Harry Set Sally</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Panic Attack</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Exodia</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">EZ Balls</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Space Balls</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Love at First Spike</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Get It In</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Thursdays with Walter</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Set It and Forget It</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Spike Now</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M11" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Week 11: 8/7</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Love at First Spike</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Get It In</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Space Balls</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Set It and Forget It</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Thursdays with Walter</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Supreme</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Spike Now</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">When Harry Set Sally</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Ace Squad</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Exodia</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Panic Attack</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">EZ Balls</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Playoffs" class="tabcontent" style="display:none;">
+      <div class="subnav" style="margin-left:10px;margin-top:10px;">
+        <a href="#Playoff_1" onclick="showImage('P1', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P2','BR'])">Playoff 1</a>
+        <a href="#Playoff_2" onclick="showImage('P2', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','BR'])">Playoff 2</a>
+        <a href="#Bracket" onclick="showImage('BR', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Bracket</a>
+      </div>
+    </div>
+
+    <div id="P1" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Playoff 1: 8/14</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1 - Match 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">#6</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">#7</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2 - Match 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">#9</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">#12</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3 - Match 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">#10</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">#11</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1 - Match 4</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">#1</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">#4</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2 - Match 5</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">#2</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">#3</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3 - Match 6</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">#5</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">#8</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="P2" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Playoff 2: 8/21</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1 - 3rd Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Loser - Match 4</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Loser - Match 5</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2 - 7th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Loser - Match 6</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Loser - Match 1</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3 - 11th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Loser - Match 2</td>
+          <td class="box_score_top_score_white"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Loser - Match 3</td>
+          <td class="box_score_bot_score_white"></td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gold" colspan="2">Court 1 - 1st Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Winner - Match 4</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Winner - Match 5</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_silver" colspan="2">Court 2 - 5th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Winner - Match 6</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Winner - Match 1</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+        <tr>
+          <th class="box_score_court_bronze" colspan="2">Court 3 - 9th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Winner - Match 2</td>
+          <td class="box_score_top_score_gray"></td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Winner - Match 3</td>
+          <td class="box_score_bot_score_gray"></td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="BR" style="display:none;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;">
+      <div>
+        <img title="Bracket" style="height:min(760px,100%);width:min(870px,100%);" src="../images/dvb/dvb_sum25_bracket.png">
+      </div>
+    </div>
+
+    <div id="Grid" class="tabcontent" style="display:none;">
+      <table class="grid_table">
+        <tr>
+          <th></th>
+          <th class="grid_table_title_left"   title="Love at First Spike">LaFS</th>
+          <th class="grid_table_title_middle" title="Get It In">GII</th>
+          <th class="grid_table_title_middle" title="Space Balls">SB</th>
+          <th class="grid_table_title_middle" title="Thursdays with Walter">TwW</th>
+          <th class="grid_table_title_middle" title="Spike Now">SN</th>
+          <th class="grid_table_title_middle" title="Ace Squad">AS</th>
+          <th class="grid_table_title_middle" title="Panic Attack">PA</th>
+          <th class="grid_table_title_middle" title="EZ Balls">EB</th>
+          <th class="grid_table_title_middle" title="Exodia">E</th>
+          <th class="grid_table_title_middle" title="When Harry Set Sally">WHSS</th>
+          <th class="grid_table_title_middle" title="Supreme">S</th>
+          <th class="grid_table_title_right"  title="Set It and Forget It">SIaFI</th>
+          <th style="width:60px;"></th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_top_th_team">Love at First Spike</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <th class="grid_table_row_top_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Get It In</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Space Balls</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Thursdays with Walter</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Spike Now</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Ace Squad</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Panic Attack</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">EZ Balls</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Exodia</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">When Harry Set Sally</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Supreme</th>
+          <td class="grid_table_row_td_basic">M2</th>
+          <td class="grid_table_row_td_basic">M1</th>
+          <td class="grid_table_row_td_basic">M6</th>
+          <td class="grid_table_row_td_basic">M11</th>
+          <td class="grid_table_row_td_basic">M5</th>
+          <td class="grid_table_row_td_basic">M10</th>
+          <td class="grid_table_row_td_basic">M4</th>
+          <td class="grid_table_row_td_basic">M9</th>
+          <td class="grid_table_row_td_basic">M3</th>
+          <td class="grid_table_row_td_basic">M8</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">M7</th>
+          <th class="grid_table_row_mid_th_sets">0</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_bot_th_team">Set It and Forget It</th>
+          <td class="grid_table_row_bot_td_basic">M1</th>
+          <td class="grid_table_row_bot_td_basic">M6</th>
+          <td class="grid_table_row_bot_td_basic">M11</th>
+          <td class="grid_table_row_bot_td_basic">M5</th>
+          <td class="grid_table_row_bot_td_basic">M10</th>
+          <td class="grid_table_row_bot_td_basic">M4</th>
+          <td class="grid_table_row_bot_td_basic">M9</th>
+          <td class="grid_table_row_bot_td_basic">M3</th>
+          <td class="grid_table_row_bot_td_basic">M8</th>
+          <td class="grid_table_row_bot_td_basic">M2</th>
+          <td class="grid_table_row_bot_td_basic">M7</th>
+          <td class="grid_table_row_bot_td_bye"></th>
+          <th class="grid_table_row_bot_th_sets">0</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th class="grid_table_row_opp_top_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_mid_td_sets">0</th>
+          <th class="grid_table_row_opp_bot_td_sets">0</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Love at First Spike" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Love at First Spike</td>
+          <td class="team_page_team_info_cap">Maddie S.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">10th</td>
+          <td class="team_page_results_play_finish">10th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">10th</td>
+          <td class="team_page_results_play_finish">10th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">5th</td>
+          <td class="team_page_results_play_finish">6th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">10th</td>
+          <td class="team_page_results_play_finish">9th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">7th</td>
+          <td class="team_page_results_play_finish">7th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">6th</td>
+          <td class="team_page_results_play_finish">5th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court_bot">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Get It In" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Get It In</td>
+          <td class="team_page_team_info_cap">Matt S.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">8th</td>
+          <td class="team_page_results_play_finish">7th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">8th</td>
+          <td class="team_page_results_play_finish">7th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">8th</td>
+          <td class="team_page_results_play_finish">9th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">8th</td>
+          <td class="team_page_results_play_finish">7th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">11th</td>
+          <td class="team_page_results_play_finish">10th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">7th</td>
+          <td class="team_page_results_play_finish">8th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court_bot">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Space Balls" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Space Balls</td>
+          <td class="team_page_team_info_cap">Claire C.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">5th</td>
+          <td class="team_page_results_play_finish">6th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">4th</td>
+          <td class="team_page_results_play_finish">T-5th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">10th</td>
+          <td class="team_page_results_play_finish">8th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">5th</td>
+          <td class="team_page_results_play_finish">5th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">8th</td>
+          <td class="team_page_results_play_finish">8th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">9th</td>
+          <td class="team_page_results_play_finish">10th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court_bot">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Thursdays with Walter" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Thursdays with Walter</td>
+          <td class="team_page_team_info_cap">Katie S.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">4th</td>
+          <td class="team_page_results_play_finish">T-3rd</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">9th</td>
+          <td class="team_page_results_play_finish">9th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">7th</td>
+          <td class="team_page_results_play_finish">4th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">9th</td>
+          <td class="team_page_results_play_finish">10th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">5th</td>
+          <td class="team_page_results_play_finish">5th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">5th</td>
+          <td class="team_page_results_play_finish">6th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court_bot">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Spike Now" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Spike Now</td>
+          <td class="team_page_team_info_cap">Herbert C.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">9th</td>
+          <td class="team_page_results_play_finish">10th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">11th</td>
+          <td class="team_page_results_play_finish">11th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">6th</td>
+          <td class="team_page_results_play_finish">6th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">12th</td>
+          <td class="team_page_results_play_finish">11th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court_bot">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Ace Squad" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Ace Squad</td>
+          <td class="team_page_team_info_cap">Shaoyi Z.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">4th</td>
+          <td class="team_page_results_play_finish">4th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">3rd</td>
+          <td class="team_page_results_play_finish">2nd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">2nd</td>
+          <td class="team_page_results_play_finish">2nd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court_bot">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Panic Attack" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Panic Attack</td>
+          <td class="team_page_team_info_cap">Leonard K.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">7th</td>
+          <td class="team_page_results_play_finish">8th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">6th</td>
+          <td class="team_page_results_play_finish">8th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">3rd</td>
+          <td class="team_page_results_play_finish">3rd</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">6th</td>
+          <td class="team_page_results_play_finish">6th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">9th</td>
+          <td class="team_page_results_play_finish">9th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">8th</td>
+          <td class="team_page_results_play_finish">7th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court_bot">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="EZ Balls" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">EZ Balls</td>
+          <td class="team_page_team_info_cap">Sara R.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">6th</td>
+          <td class="team_page_results_play_finish">5th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">1st</td>
+          <td class="team_page_results_play_finish">2nd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">4th</td>
+          <td class="team_page_results_play_finish">5th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">3rd</td>
+          <td class="team_page_results_play_finish">2nd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">4th</td>
+          <td class="team_page_results_play_finish">4th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">4th</td>
+          <td class="team_page_results_play_finish">3rd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court_bot">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Exodia" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Exodia</td>
+          <td class="team_page_team_info_cap">Artie B.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">2nd</td>
+          <td class="team_page_results_play_finish">1st</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">1st</td>
+          <td class="team_page_results_play_finish">1st</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">1st</td>
+          <td class="team_page_results_play_finish">1st</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">1st</td>
+          <td class="team_page_results_play_finish">1st</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court_bot">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="When Harry Set Sally" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">When Harry Set Sally</td>
+          <td class="team_page_team_info_cap">Rafael F.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">2nd</td>
+          <td class="team_page_results_play_finish">2nd</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">2nd</td>
+          <td class="team_page_results_play_finish">3rd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">6th</td>
+          <td class="team_page_results_play_finish">7th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">7th</td>
+          <td class="team_page_results_play_finish">8th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">10th</td>
+          <td class="team_page_results_play_finish">12th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">11th</td>
+          <td class="team_page_results_play_finish">12th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court_bot">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Supreme" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Supreme</td>
+          <td class="team_page_team_info_cap">Katie T.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">3rd</td>
+          <td class="team_page_results_play_finish">T-3rd</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">3rd</td>
+          <td class="team_page_results_play_finish">1st</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">1st</td>
+          <td class="team_page_results_play_finish">2nd</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">2nd</td>
+          <td class="team_page_results_play_finish">3rd</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">2nd</td>
+          <td class="team_page_results_play_finish">3rd</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">3rd</td>
+          <td class="team_page_results_play_finish">4th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('Panic Attack', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_12" onclick="openTab('Set It and Forget It', [])">Set It and Forget It</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 1 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court_bot">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Set It and Forget It" class="tabcontent" style="display:none;">
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_team_title">Team Name</th>
+          <th class="team_page_team_title">Captain</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <td class="team_page_team_info_name">Set It and Forget It</td>
+          <td class="team_page_team_info_cap">Tony H.</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_results_title" colspan="3">Results</th>
+        </tr>
+        <tr class="team_page_row_blue">
+          <th class="team_page_results_column">League</th>
+          <th class="team_page_results_column">Regular Season</th>
+          <th class="team_page_results_column">Playoffs</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Summer 2023</th>
+          <td class="team_page_results_reg_finish">9th</td>
+          <td class="team_page_results_play_finish">9th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Fall 2023</th>
+          <td class="team_page_results_reg_finish">7th</td>
+          <td class="team_page_results_play_finish">4th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Winter 2024</th>
+          <td class="team_page_results_reg_finish">11th</td>
+          <td class="team_page_results_play_finish">11th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Summer 2024</th>
+          <td class="team_page_results_reg_finish">12th</td>
+          <td class="team_page_results_play_finish">12th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season">Fall 2024</th>
+          <td class="team_page_results_reg_finish">12th</td>
+          <td class="team_page_results_play_finish">11th</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_results_season">Winter 2025</th>
+          <td class="team_page_results_reg_finish">10th</td>
+          <td class="team_page_results_play_finish">9th</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_results_season_bot">Summer 2025</th>
+          <td class="team_page_results_reg_finish_bot">-</td>
+          <td class="team_page_results_play_finish_bot">-</td>
+        </tr>
+      </table>
+  
+      <table class="team_page_table">
+        <tr>
+          <th class="team_page_schedule_title" colspan="5">Current Schedule</th>
+        </tr>
+        <tr>
+          <th class="team_page_schedule_column_basic">Match</th>
+          <th class="team_page_schedule_column_basic">Date</th>
+          <th class="team_page_schedule_column_opp">Opponent</th>
+          <th class="team_page_schedule_column_court">Time/Court</th>
+          <th class="team_page_schedule_column_basic">Result</th>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">1</th>
+          <td class="team_page_schedule_date">5/8</td>
+          <td class="team_page_schedule_opp"><a href="#Team_1" onclick="openTab('Love at First Spike', [])">Love at First Spike</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">2</th>
+          <td class="team_page_schedule_date">5/15</td>
+          <td class="team_page_schedule_opp"><a href="#Team_10" onclick="openTab('When Harry Set Sally', [])">When Harry Set Sally</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">3</th>
+          <td class="team_page_schedule_date">5/29</td>
+          <td class="team_page_schedule_opp"><a href="#Team_8" onclick="openTab('EZ Balls', [])">EZ Balls</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">4</th>
+          <td class="team_page_schedule_date">6/5</td>
+          <td class="team_page_schedule_opp"><a href="#Team_6" onclick="openTab('Ace Squad', [])">Ace Squad</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">5</th>
+          <td class="team_page_schedule_date">6/12</td>
+          <td class="team_page_schedule_opp"><a href="#Team_4" onclick="openTab('Thursdays with Walter', [])">Thursdays with Walter</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">6</th>
+          <td class="team_page_schedule_date">6/26</td>
+          <td class="team_page_schedule_opp"><a href="#Team_2" onclick="openTab('Get It In', [])">Get It In</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">7</th>
+          <td class="team_page_schedule_date">7/10</td>
+          <td class="team_page_schedule_opp"><a href="#Team_11" onclick="openTab('Supreme', [])">Supreme</a></td>
+          <td class="team_page_schedule_court">Court 3 - 7:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">8</th>
+          <td class="team_page_schedule_date">7/17</td>
+          <td class="team_page_schedule_opp"><a href="#Team_9" onclick="openTab('Exodia', [])">Exodia</a></td>
+          <td class="team_page_schedule_court">Court 2 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week">9</th>
+          <td class="team_page_schedule_date">7/24</td>
+          <td class="team_page_schedule_opp"><a href="#Team_7" onclick="openTab('Panic Attack', [])">Panic Attack</a></td>
+          <td class="team_page_schedule_court">Court 1 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_gray">
+          <th class="team_page_schedule_week">10</th>
+          <td class="team_page_schedule_date">7/31</td>
+          <td class="team_page_schedule_opp"><a href="#Team_5" onclick="openTab('Spike Now', [])">Spike Now</a></td>
+          <td class="team_page_schedule_court">Court 3 - 8:00pm</td>
+          <td class="team_page_schedule_score">-</td>
+        </tr>
+        <tr class="team_page_row_white">
+          <th class="team_page_schedule_week_bot">11</th>
+          <td class="team_page_schedule_date_bot">8/7</td>
+          <td class="team_page_schedule_opp_bot"><a href="#Team_3" onclick="openTab('Space Balls', [])">Space Balls</a></td>
+          <td class="team_page_schedule_court_bot">Court 2 - 7:00pm</td>
+          <td class="team_page_schedule_score_bot">-</td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>
