@@ -214,12 +214,12 @@ a {
 /* Popup object */
 .popup .popuptext {
   visibility: hidden;
-  width: 120px;
+  width: 80px;
   text-align: center;
   position: absolute;
   z-index: 1;
   bottom: -270%;
-  margin-left: -75px;
+  margin-left: -55px;
   border: solid;
 }
 
