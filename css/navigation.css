@@ -32,7 +32,6 @@ a {
 }
 
 .nav-links a {
-  /* color: lightGray; */
   color: #fff;
 }
 
@@ -44,7 +43,6 @@ a {
 }
 
 .menu a {
-  /* color: lightGray; */
   color: #fff;
 }
 
@@ -73,10 +71,6 @@ a {
   border-radius: 3px;
   top: 40px;
 }
-
-/*.dropdown ul + li {
-  margin-top: 50px;
-}*/
 
 .dropdown li {
   padding: 0.5em 0.5em;
@@ -204,4 +198,44 @@ a {
   bottom: 8px;
   width: 95%;
   text-align: center;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Popup object */
+.popup .popuptext {
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: -270%;
+  margin-left: -75px;
+  border: solid;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent MidnightBlue transparent;
+}
+
+/* Popup show/hide */
+.popup .show {
+  visibility: visible;
 }

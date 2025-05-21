@@ -10,6 +10,46 @@
   background-color:LightBlue;
 }
 
+.standings_popup_title_top {
+  width:40px;
+  text-align:center;
+  background-color:LightBlue;
+  border-bottom:solid;
+  border-right:solid;
+}
+
+.standings_popup_title_mid {
+  width:40px;
+  text-align:center;
+  background-color:LightBlue;
+  border-bottom:solid;
+}
+
+.standings_popup_title_bot {
+  width:40px;
+  text-align:center;
+  background-color:LightBlue;
+  border-bottom:solid;
+  border-left:solid;
+}
+
+.standings_popup_value_top {
+  border-right:1px solid black;
+  text-align:center;
+  background-color:#DBE2E9;
+}
+
+.standings_popup_value_mid {
+  text-align:center;
+  background-color:#DBE2E9;
+}
+
+.standings_popup_value_bot {
+  border-left:1px solid black;
+  text-align:center;
+  background-color:#DBE2E9;
+}
+
 .standings_table_row_white {
   background-color:GhostWhite;
 }
