@@ -36,6 +36,18 @@ function collapseTab() {
   }
 }
 
+function sosPopup(popupId, otherIds) {
+  for(var i = 0; i < otherIds.length; i++)
+  {
+    document.getElementById("sos_popup" + otherIds[i]).classList.remove("show");
+  }
+  if (document.getElementById("sos_popup" + popupId).classList.contains("show")) {
+    document.getElementById("sos_popup" + popupId).classList.remove("show");
+  } else {
+    document.getElementById("sos_popup" + popupId).classList.add("show");
+  }
+}
+
 let slideIndex = 1;
 let antSlideIndex = 1;
 
