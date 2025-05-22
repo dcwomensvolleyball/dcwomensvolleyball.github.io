@@ -41,7 +41,11 @@ function sosPopup(popupId, otherIds) {
   {
     document.getElementById("sos_popup" + otherIds[i]).classList.remove("show");
   }
-  document.getElementById("sos_popup" + popupId).classList.add("show");
+  if (document.getElementById("sos_popup" + popupId).classList.contains("show")) {
+    document.getElementById("sos_popup" + popupId).classList.remove("show");
+  } else {
+    document.getElementById("sos_popup" + popupId).classList.add("show");
+  }
 }
 
 let slideIndex = 1;
