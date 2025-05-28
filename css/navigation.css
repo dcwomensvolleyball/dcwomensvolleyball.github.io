@@ -121,7 +121,7 @@ a {
   background-color: #777;
   color: white;
   cursor: pointer;
-  padding: 8px;
+  padding: 5px;
   width: 100%;
   text-align: left;
   outline: none;
@@ -130,6 +130,18 @@ a {
 
 .active, .collapsible:hover {
   background-color: #555;
+}
+
+.collapse_style {
+  margin-top:5px;
+}
+
+.collapse_body {
+  margin-bottom:0px;
+}
+
+.collapse_list {
+  margin-left:20px;
 }
 
 .content {
