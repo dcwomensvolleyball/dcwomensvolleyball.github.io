@@ -94,6 +94,8 @@ a {
   color: #fff;
   display: flex;
   flex-flow: row wrap;
+  margin-left:10px;
+  margin-top:10px;
 }
 
 .subnav a {
@@ -158,6 +160,18 @@ a {
 .slideshow-container {
   position: absolute;
   margin: auto;
+}
+
+.slide {
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+.antSlide {
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
 }
 
 /* Next & previous buttons */
