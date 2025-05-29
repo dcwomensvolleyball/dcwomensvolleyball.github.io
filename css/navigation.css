@@ -70,10 +70,11 @@ a {
   display: none;
   border-radius: 3px;
   top: 40px;
+  margin-left: -10px;
 }
 
 .dropdown li {
-  padding: 0.5em 0.5em;
+  padding: 0.5em 0.75em;
   width: 9em;
   text-align: left;
   list-style: none;
@@ -155,6 +156,9 @@ a {
   background-color: gainsboro;
 }
 
+.collapse_style ol {
+  margin-bottom: 0px;
+}
 
 /* Slideshow container */
 .slideshow-container {
