@@ -21,42 +21,45 @@
     <!-- David Faber -->
     <!-- Guido Scorza -->
 
-    <nav class="navbar">
-      <!-- LOGO -->
-      <div class="logo">DC Women's Volleyball
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-          <li><a href="../index.html"><i class="material-icons">arrow_back</i></a></li>
-          <li><a href="dcwvb.html"><i class="material-icons">home</i></a></li>
-          <li><a href="#Rules" onclick="openTab('Rules', [])">Rules</a></li>
-          <li style="z-index:2;" class="services">
-            <a href="#">Location</a>
-            <!-- DROPDOWN MENU -->
-            <ul class="dropdown">
-              <li><a href="#Map" onclick="openTab('Map', ['Equipment'])">Map</a></li>
-              <li><a href="#Equipment" onclick="openTab('Equipment', ['Map'])">Equipment</a></li>
+    <div class="logo">DC Women's Volleyball</div>
+    <div class="nav_bar">
+      <li><a href="../index.html"><i class="material-icons">arrow_back</i></a></li>
+      <li><a href="dcwvb.html"><i class="material-icons">home</i></a></li>
+      <li><a href="#Rules" onclick="openTab('Rules', [])">Rules</a></li>
+      <li style="z-index:2;"><a href="#Location">Location</a>
+        <ul>
+          <li><a href="#Map" onclick="openTab('Map', ['Equipment'])">Map</a></li>
+          <li><a href="#Equipment" onclick="openTab('Equipment', ['Map'])">Equipment</a></li>
+        </ul>
+      </li>
+      <li style="z-index:2;"><a href="#Leagues">Leagues</a>
+        <ul>
+          <li><a style="background-color:#093c61;border-bottom:solid" disabled>CURRENT</a></li>
+          <li><a href="dcwvb_spr25.html">2025 Spring</a></li>
+          <li><a style="background-color:#093c61;border-bottom:solid" disabled>PREVIOUS</a></li>
+          <li><a href="#">2025</a>
+            <ul>
+              <li><a style="width:4.8em;" href="dcwvb_win25.html">Winter</a></li>
             </ul>
           </li>
-          <li style="z-index:2;" class="services">
-            <a href="#">Leagues</a>
-            <!-- DROPDOWN MENU -->
-            <ul class="dropdown">
-              <li><a style="border-bottom:solid" disabled>CURRENT</a></li>
-              <li><a href="dcwvb_spr25.html">2025 Spring</a></li>
-              <li><a style="border-bottom:solid" disabled>PREVIOUS</a></li>
-              <li><a href="dcwvb_win25.html">2025 Winter</a></li>
-              <li><a href="dcwvb_fal24.html">2024 Fall</a></li>
-              <li><a href="dcwvb_sum24.html">2024 Summer</a></li>
-              <li><a href="dcwvb_spr24.html">2024 Spring</a></li>
-              <li><a href="dcwvb_win24.html">2024 Winter</a></li>
-              <li><a href="dcwvb_fal23.html">2023 Fall</a></li>
-              <li><a href="dcwvb_sum23.html">2023 Summer</a></li>
-              <li><a href="dcwvb_spr23.html">2023 Spring</a></li>
+          <li><a href="#">2024</a>
+            <ul>
+              <li><a style="width:4.8em;" href="dcwvb_fal24.html">Fall</a></li>
+              <li><a style="width:4.8em;" href="dcwvb_sum24.html">Summer</a></li>
+              <li><a style="width:4.8em;" href="dcwvb_spr24.html">Spring</a></li>
+              <li><a style="width:4.8em;" href="dcwvb_win24.html">Winter</a></li>
             </ul>
           </li>
-        </div>
-      </div>
-    </nav>
+          <li><a href="#">2023</a>
+            <ul>
+              <li><a style="width:4.8em;" href="dcwvb_fal23.html">Fall</a></li>
+              <li><a style="width:4.8em;" href="dcwvb_sum23.html">Summer</a></li>
+              <li><a style="width:4.8em;" href="dcwvb_spr23.html">Spring</a></li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+    </div>
 
     <div id="Info" class="tabcontent" style="margin-left:10px;margin-top:10px;margin-right:10px;">
       <p>The premier ladies' volleyball league in the District of Columbia!</p>

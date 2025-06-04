@@ -26,32 +26,23 @@
     <!-- David Faber -->
     <!-- Guido Scorza -->
 
-    <nav class="navbar">
-      <!-- LOGO -->
-      <div class="logo">DC Women's Volleyball - Spring 2023
-        <!-- NAVIGATION MENUS -->
-        <div class="menu">
-          <li><a href="dcwvb.html"><i class="material-icons">arrow_back</i></a></li>
-          <li><a href="dcwvb_spr23.html"><i class="material-icons">home</i></a></li>
-          <li><a href="#" onclick="openTab('Teams', [])">Teams</a></li>
-          <li style="z-index:2;" class="services">
-            <a href="#">Standings</a>
-            <!-- DROPDOWN MENU -->
-            <ul class="dropdown">
-              <li><a href="#" onclick="openTab('Standings', ['P1','M1','M2','M3','M4','M5','M6'])">Table</a></li>
-            </ul>
-          </li>
-          <li style="z-index:2;" class="services">
-            <a href="#">Schedule</a>
-            <!-- DROPDOWN MENU -->
-            <ul class="dropdown">
-              <li><a href="#" onclick="openTab('Regular Season', ['P1','M1','M2','M3','M4','M5','M6'])">Regular Season</a></li>
-              <li><a href="#" onclick="openTab('Playoffs', ['P1','M1','M2','M3','M4','M5','M6'])">Playoffs</a></li>
-            </ul>
-          </li>
-        </div>
-      </div>
-    </nav>
+    <div class="logo">DC Women's Volleyball - Spring 2023</div>
+    <div class="nav_bar">
+      <li><a href="dcwvb.html"><i class="material-icons">arrow_back</i></a></li>
+      <li><a href="dcwvb_spr23.html"><i class="material-icons">home</i></a></li>
+      <li><a href="#Teams" onclick="openTab('Teams', ['M1','M2','M3','M4','M5','M6','P1'])">Teams</a></li>
+      <li style="z-index:2;"><a href="#Standings">Standings</a>
+        <ul>
+          <li><a style="width:5.5em;" href="#Table" onclick="openTab('Standings', ['M1','M2','M3','M4','M5','M6','P1'])">Table</a></li>
+        </ul>
+      </li>
+      <li style="z-index:2;"><a href="#Schedule">Schedule</a>
+        <ul>
+          <li><a href="#Regular_Season" onclick="openTab('Regular Season', ['M1','M2','M3','M4','M5','M6','P1'])">Regular Season</a></li>
+          <li><a href="#Playoffs" onclick="openTab('Playoffs', ['M1','M2','M3','M4','M5','M6','P1'])">Playoffs</a></li>
+        </ul>
+      </li>
+    </div>
 
     <div id="Teams" class="tabcontent" style="display:none;">
       <table class="teams_table">

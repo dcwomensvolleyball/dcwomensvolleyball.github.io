@@ -10,84 +10,78 @@ body {
   background-color: gainsboro;
   font-family: 'Roboto', sans-serif;
   color: MidnightBlue;
-}
+} /* clean body style */
 
 a {
   text-decoration: none;
-}
+} /* clean anchor style */
 
-/* NAVBAR STYLING STARTS */
-/* LOGO */
 .logo {
   font-size: 20px;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 0px 0px 15px;
   background-color: #093c61;
   color: #fff;
+  padding: 10px 0px 0px 10px;
 }
 
-.nav-links a {
-  color: #fff;
-}
-
-/* NAVBAR MENU */
-.menu {
+/* top bar sticks at top of page */
+.nav_bar {
   display: flex;
-  gap: 0;
-  font-size: 15px;
-}
-
-.menu a {
+  align-items: bottom;
+  background-color: #093c61;
   color: #fff;
+  margin-bottom: 0px;
 }
 
-.menu li:hover {
+.nav_bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: none;
+  position: absolute;
+  margin-top: 7px;
+} /* all drop lists are hidden and absolute (so we can position relatively) */
+
+.nav_bar a {
+  color: white;
+  display: block;
+  padding: 0.5em;
+  font-size: 15px;
+} /* nav_bar anchor style */
+
+.nav_bar > li {
+  display: inline-block;
+  list-style: none;
+} /* initial nav_bar items are inline */
+
+.nav_bar > li:hover {
   background-color: #13a89e;
-  border-radius: 3px;
   transition: 0.3s ease;
   list-style: none;
-}
+} /* initial nav_bar items hover color */
 
-.menu li {
-  padding: 5px 10px;
-  list-style: none;
-}
-
-/* DROPDOWN MENU */
-.services {
-  position: relative; 
-}
-
-.dropdown {
-  background-color: #13a89e;
-  padding: 0px;
-  position: absolute; /*WITH RESPECT TO PARENT*/
-  display: none;
-  border-radius: 3px;
-  top: 40px;
-  margin-left: -10px;
-}
-
-.dropdown li {
-  padding: 0.5em 0.75em;
-  width: 9em;
-  text-align: left;
-  list-style: none;
-}
-
-.dropdown li:hover {
-  background-color: #093c61;
-  list-style: none;
-}
-
-.services:hover .dropdown {
+.nav_bar li:hover > ul {
   display: block;
-}
+} /* display child list when hovering an item */
+
+.nav_bar li li {
+  position: relative;
+  background-color: #13a89e;
+} /* all drop list items are relative */
+
+.nav_bar li li:hover {
+  background: #093c61;
+} /* all drop list items hover color */
+
+.nav_bar li li a {
+  color: #fff;
+} /* drop lists anchor style */
+
+.nav_bar ul ul {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+} /* all child lists go right of previous list item */
 
 
 /* SUBNAV STYLING STARTS */
