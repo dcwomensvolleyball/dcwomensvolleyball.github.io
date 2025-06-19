@@ -5,10 +5,6 @@ body {
   color: MidnightBlue;
 }
 
-#border {
-  height:50px;
-}
-
 #container {
   overflow-x:scroll;
   overflow-y:hidden;

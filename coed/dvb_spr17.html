@@ -1,0 +1,511 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fair Play Initiative</title>
+    <link rel="shortcut icon" type="image/svg" href="../images/main/molten.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link href="../css/navigation.css" rel="stylesheet">
+    <link href="../css/teams.css" rel="stylesheet">
+    <link href="../css/standings.css" rel="stylesheet">
+    <link href="../css/box_score.css" rel="stylesheet">
+    <script src="../js/stats.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Brian Hood -->
+    <!-- Jonathan Turley -->
+    <!-- Jonathan Zittrain -->
+    <!-- David Faber -->
+    <!-- Guido Scorza -->
+
+    <div class="logo">District Volleyball - Spring 2017</div>
+    <div class="nav_bar">
+      <li><a href="dvb.html"><i class="material-icons">arrow_back</i></a></li>
+      <li><a href="dvb_spr17.html"><i class="material-icons">home</i></a></li>
+      <li><a href="#Teams" onclick="openTab('Teams', ['P1','P2'])">Teams</a></li>
+      <li style="z-index:2;"><a href="#Standings">Standings</a>
+        <ul>
+          <li><a style="width:5.5em;" href="#Table" onclick="openTab('Standings', ['P1','P2'])">Table</a></li>
+          <li><a style="width:5.5em;" href="#Chart" onclick="openTab('Chart', ['P1','P2'])">Chart</a></li>
+        </ul>
+      </li>
+      <li style="z-index:2;"><a href="#Schedule">Schedule</a>
+        <ul>
+          <li><a style="width:5.1em;" href="#Playoffs" onclick="openTab('Playoffs', ['P1','P2'])">Playoffs</a></li>
+        </ul>
+      </li>
+    </div>
+
+    <div id="Teams" class="tabcontent" style="display:none;">
+      <table class="teams_table">
+        <tr>
+          <th></th>
+          <th class="teams_table_title">Team Name</th>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_top_team_id">Team 1</th>
+          <td class="teams_table_row_top_cap">Ball Me Maybe</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 2</th>
+          <td class="teams_table_row_mid_cap">Block Creek Park</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 3</th>
+          <td class="teams_table_row_mid_cap">Burdie</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 4</th>
+          <td class="teams_table_row_mid_cap">Dat Ace Doe</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 5</th>
+          <td class="teams_table_row_mid_cap">EZ Pass</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 6</th>
+          <td class="teams_table_row_mid_cap">Kings of the Beach</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 7</th>
+          <td class="teams_table_row_mid_cap">Mighty Digs</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 8</th>
+          <td class="teams_table_row_mid_cap">No Diggity</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 9</th>
+          <td class="teams_table_row_mid_cap">Space Jam</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 10</th>
+          <td class="teams_table_row_mid_cap">#TBT</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 11</th>
+          <td class="teams_table_row_mid_cap">When Harry Set Sally</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_bot_team_id">Team 12</th>
+          <td class="teams_table_row_bot_cap">Wrecking Balls</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Standings" class="tabcontent" style="display:none;">
+      <table class="standings_table">
+        <tr>
+          <th></th>
+          <th class="standings_table_title" title="Matches Played">MP</th>
+          <th class="standings_table_title" title="Set Points For">SPF</th>
+          <th class="standings_table_title" title="Set Points Against">SPA</th>
+          <th class="standings_table_title" title="Winning Percentage">WP</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_top_th">When Harry Set Sally</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">11.50</td>
+          <td class="standings_table_row_td_basic">3.50</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.767</td>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Wrecking Balls</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">10.50</td>
+          <td class="standings_table_row_td_basic">4.50</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.700</td>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Burdie</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">10.00</td>
+          <td class="standings_table_row_td_basic">5.00</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.667</td>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_div_th">Dat Ace Doe</th>
+          <td class="standings_table_row_div_td">6</td>
+          <td class="standings_table_row_div_td">8.50</td>
+          <td class="standings_table_row_div_td">6.50</td>
+          <td class="standings_table_row_div_td" style="border-right:solid;">0.567</td>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Ball Me Maybe</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">8.00</td>
+          <td class="standings_table_row_td_basic">7.00</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.533</td>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">EZ Pass*</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">7.00</td>
+          <td class="standings_table_row_td_basic">8.00</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.467</td>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">No Diggity*</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">7.00</td>
+          <td class="standings_table_row_td_basic">8.00</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.467</td>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_div_th">Kings of the Beach*</th>
+          <td class="standings_table_row_div_td">6</td>
+          <td class="standings_table_row_div_td">7.00</td>
+          <td class="standings_table_row_div_td">8.00</td>
+          <td class="standings_table_row_div_td" style="border-right:solid;">0.467</td>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">Space Jam</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">6.50</td>
+          <td class="standings_table_row_td_basic">8.50</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.433</td>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">#TBT</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">6.00</td>
+          <td class="standings_table_row_td_basic">9.00</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.400</td>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">Mighty Digs</th>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">5.00</td>
+          <td class="standings_table_row_td_basic">10.00</td>
+          <td class="standings_table_row_td_basic" style="border-right:solid;">0.333</td>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_div_th">Block Creek Park</th>
+          <td class="standings_table_row_div_bot_td">6</td>
+          <td class="standings_table_row_div_bot_td">3.00</td>
+          <td class="standings_table_row_div_bot_td">12.00</td>
+          <td class="standings_table_row_div_td" style="border-right:solid;">0.200</td>
+        </tr>
+      </table>
+
+      <p class="standings_tiebreaker">* Denotes EZ Pass <b>H2H</b> tiebreaker over No Diggity; No Diggity <b>H2H</b> tiebreaker over Kings of the Beach</p>
+
+      <div id="Glossary" class="standings_glossary">
+        <button class="collapsible" onclick="collapseTab()">Glossary</button>
+        <div class="content">
+          <div class="collapse_style">
+            <p><b>MP</b>: Matches Played<br>
+            <b>SPF</b>: Set Points For<br>
+            <b>SPA</b>: Set Points Against<br>
+            <b>WP</b>: Winning Percentage<br>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Chart" class="tabcontent" style="display:none;width:100%;height:650px;padding-top:10px;z-index:-1;">
+      <script>
+        anychart.onDocumentReady(function () {
+          // add rank
+          var rank = [
+            ["M1",10,12,4,7,7,4,7,4,2,10,2,1],
+            ["M2",9,12,5,5,4,9,8,2,7,11,1,2],
+            ["M3",6,10,3,3,7,10,9,5,8,12,1,2],
+            ["M4",6,12,2,5,6,8,9,4,9,11,2,1],
+            ["M5",8,12,1,4,5,7,10,5,9,11,2,3],
+            ["M6",5,12,3,4,6,8,11,7,9,10,1,2],
+          ];
+
+          // create a rank set
+          var rankSet = anychart.data.set(rank);
+
+          // map the rank for all series
+          var firstSeriesData = rankSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = rankSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = rankSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = rankSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = rankSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = rankSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = rankSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = rankSet.mapAs({x: 0, value: 8});
+          var ninthSeriesData = rankSet.mapAs({x: 0, value: 9});
+          var tenthSeriesData = rankSet.mapAs({x: 0, value: 10});
+          var eleventhSeriesData = rankSet.mapAs({x: 0, value: 11});
+          var twelfthSeriesData = rankSet.mapAs({x: 0, value: 12});
+
+          // create a line chart
+          var chart = anychart.line();
+
+          // create the series and name them
+          var firstSeries = chart.line(firstSeriesData);
+          firstSeries.name("BMM");
+          firstSeries.stroke({color:"red",thickness:3});
+          firstSeries.hovered().stroke({color:"red",thickness:6});
+          var secondSeries = chart.line(secondSeriesData);
+          secondSeries.name("BCP");
+          secondSeries.stroke({color:"orange",thickness:3});
+          secondSeries.hovered().stroke({color:"orange",thickness:6});
+          var thirdSeries = chart.line(thirdSeriesData);
+          thirdSeries.name("B");
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          thirdSeries.hovered().stroke({color:"yellow",thickness:6});
+          var fourthSeries = chart.line(fourthSeriesData);
+          fourthSeries.name("DAD");
+          fourthSeries.stroke({color:"green",thickness:3});
+          fourthSeries.hovered().stroke({color:"green",thickness:6});
+          var fifthSeries = chart.line(fifthSeriesData);
+          fifthSeries.name("EZP");
+          fifthSeries.stroke({color:"blue",thickness:3});
+          fifthSeries.hovered().stroke({color:"blue",thickness:6});
+          var sixthSeries = chart.line(sixthSeriesData);
+          sixthSeries.name("KotB");
+          sixthSeries.stroke({color:"purple",thickness:3});
+          sixthSeries.hovered().stroke({color:"purple",thickness:6});
+          var seventhSeries = chart.line(seventhSeriesData);
+          seventhSeries.name("MD");
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          seventhSeries.hovered().stroke({color:"magenta",thickness:6});
+          var eighthSeries = chart.line(eighthSeriesData);
+          eighthSeries.name("ND");
+          eighthSeries.stroke({color:"gray",thickness:3});
+          eighthSeries.hovered().stroke({color:"gray",thickness:6});
+          var ninthSeries = chart.line(ninthSeriesData);
+          ninthSeries.name("SJ");
+          ninthSeries.stroke({color:"black",thickness:3});
+          ninthSeries.hovered().stroke({color:"black",thickness:6});
+          var tenthSeries = chart.line(tenthSeriesData);
+          tenthSeries.name("TBT");
+          tenthSeries.stroke({color:"cyan",thickness:3});
+          tenthSeries.hovered().stroke({color:"cyan",thickness:6});
+          var eleventhSeries = chart.line(eleventhSeriesData);
+          eleventhSeries.name("WHSS");
+          eleventhSeries.stroke({color:"pink",thickness:3});
+          eleventhSeries.hovered().stroke({color:"pink",thickness:6});
+          var twelfthSeries = chart.line(twelfthSeriesData);
+          twelfthSeries.name("WB");
+          twelfthSeries.stroke({color:"lime",thickness:3});
+          twelfthSeries.hovered().stroke({color:"lime",thickness:6});
+
+          chart.xAxis().orientation("top");
+          chart.xAxis().labels().fontColor("black");
+          chart.xAxis().labels().fontWeight("bold");
+          chart.xAxis().stroke({color:"black",thickness:2});
+
+          chart.yAxis().orientation("right");
+          chart.yAxis().labels().fontColor("black");
+          chart.yAxis().labels().fontWeight("bold");
+          chart.yAxis().drawFirstLabel(false);
+          chart.yAxis().drawLastLabel(false);
+          chart.yScale().inverted(true);
+          chart.yScale().ticks().interval(1);
+          chart.yScale().minimum(0.25);
+          chart.yScale().maximum(12.5);
+          chart.yAxis().stroke({color:"black",thickness:2});
+          chart.background().fill("gainsboro");
+
+          // gold division range
+          var rangeMarker1 = chart.rangeMarker(1);
+          rangeMarker1.axis(chart.yAxis());
+          rangeMarker1.from(0.25);
+          rangeMarker1.to(4.5);
+          rangeMarker1.fill("#F2C891 0.4");
+
+          // silver division range
+          var rangeMarker2 = chart.rangeMarker(2);
+          rangeMarker2.axis(chart.yAxis());
+          rangeMarker2.from(4.5);
+          rangeMarker2.to(8.5);
+          rangeMarker2.fill("#DBE2E9 0.4");
+
+          // bronze division range
+          var rangeMarker3 = chart.rangeMarker(3);
+          rangeMarker3.axis(chart.yAxis());
+          rangeMarker3.from(8.5);
+          rangeMarker3.to(12.5);
+          rangeMarker3.fill("#B77729 0.4");
+
+          // add a legend
+          chart.legend().enabled(true);
+
+          // add a title
+          chart.title("Rankings");
+          chart.title().orientation("bottom");
+
+          // specify where to display the chart
+          chart.container("Chart");
+
+          // draw the resulting chart
+          chart.draw();
+        });
+      </script>
+    </div>
+
+    <div id="Playoffs" class="tabcontent" style="display:none;">
+      <div class="subnav">
+        <a href="#Playoff_1" onclick="showImage('P1', ['P2'])">Playoff 1</a>
+        <a href="#Playoff_2" onclick="showImage('P2', ['P1'])">Playoff 2</a>
+      </div>
+    </div>
+
+    <div id="P1" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Playoff 1: 11/21</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">When Harry Set Sally</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Dat Ace Doe</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Wrecking Balls</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Burdie</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Ball Me Maybe</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Kings of the Beach</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">EZ Pass</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">No Diggity</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Space Jam</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Block Creek Park</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">#TBT</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Mighty Digs</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="P2" class="tabcontent" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Playoff 2: 12/5</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1 - 3rd Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Burdie</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Dat Ace Doe</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2 - 7th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">No Diggity</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Kings of the Beach</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3 - 11th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Mighty Digs</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Block Creek Park</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gold" colspan="2">Court 1 - 1st Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">When Harry Set Sally</td>
+          <td class="box_score_top_score_gray">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Wrecking Balls</td>
+          <td class="box_score_bot_score_gray">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_silver" colspan="2">Court 2 - 5th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Ball Me Maybe</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">EZ Pass</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_bronze" colspan="2">Court 3 - 9th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Space Jam</td>
+          <td class="box_score_top_score_gray">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">#TBT</td>
+          <td class="box_score_bot_score_gray">1</td>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>
+
