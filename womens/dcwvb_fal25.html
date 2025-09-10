@@ -1,0 +1,1706 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Fair Play Initiative</title>
+    <link rel="shortcut icon" type="image/svg" href="../images/main/molten.png"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Raleway|Roboto" rel="stylesheet">
+    <link href="../css/navigation.css" rel="stylesheet">
+    <link href="../css/teams.css" rel="stylesheet">
+    <link href="../css/standings.css" rel="stylesheet">
+    <link href="../css/box_score.css" rel="stylesheet">
+    <link href="../css/grid.css" rel="stylesheet">
+    <link href="../css/team_page.css" rel="stylesheet">
+    <script src="../js/stats.js"></script>
+    <script src="https://cdn.anychart.com/releases/8.11.0/js/anychart-base.min.js"></script>
+  </head>
+
+  <body>
+
+    <!-- Brian Hood -->
+    <!-- Jonathan Turley -->
+    <!-- Jonathan Zittrain -->
+    <!-- David Faber -->
+    <!-- Guido Scorza -->
+
+    <div class="logo">DC Women's Volleyball - Winter 2025</div>
+    <div class="nav_bar">
+      <li><a href="dcwvb.html"><i class="material-icons">arrow_back</i></a></li>
+      <li><a href="dcwvb_win25.html"><i class="material-icons">home</i></a></li>
+      <li><a href="#Teams" onclick="openTab('Teams', ['M1','M2','M3','M4','M5','M6','M7','M8','P1','P2','BR'])">Teams</a></li>
+      <li style="z-index:2;"><a href="#Standings">Standings</a>
+        <ul>
+          <li><a style="width:5.5em;" href="#Table" onclick="openTab('Standings', ['M1','M2','M3','M4','M5','M6','M7','M8','P1','P2','BR'])">Table</a></li>
+          <li><a style="width:5.5em;" href="#Chart" onclick="openTab('Graph', ['M1','M2','M3','M4','M5','M6','M7','M8','P1','P2','BR'])">Chart</a></li>
+        </ul>
+      </li>
+      <li style="z-index:2;"><a href="#Schedule">Schedule</a>
+        <ul>
+          <li><a href="#Regular_Season" onclick="openTab('Regular Season', ['M1','M2','M3','M4','M5','M6','M7','M8','P1','P2','BR'])">Regular Season</a></li>
+          <li><a href="#Playoffs" onclick="openTab('Playoffs', ['M1','M2','M3','M4','M5','M6','M7','M8','P1','P2','BR'])">Playoffs</a></li>
+          <li><a href="#Grid" onclick="openTab('Grid', ['M1','M2','M3','M4','M5','M6','M7','M8','P1','P2','BR'])">Grid</a></li>
+        </ul>
+      </li>
+    </div>
+
+    <div id="Teams" class="tabcontent" style="display:none;">
+      <table class="teams_table">
+        <tr>
+          <th></th>
+          <th class="teams_table_title">Team Name</th>
+          <th class="teams_table_title">Captain</th>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_top_team_id">Team 1</th>
+          <td class="teams_table_row_mid_team_page_link">Spikological Warfare</td>
+          <td class="teams_table_row_top_cap">Cara G.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 2</th>
+          <td class="teams_table_row_mid_team_page_link">ICY HOT</td>
+          <td class="teams_table_row_mid_cap">Carrie K.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 3</th>
+          <td class="teams_table_row_mid_team_page_link">Bump it like it's hot</td>
+          <td class="teams_table_row_mid_cap">Erin S.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 4</th>
+          <td class="teams_table_row_mid_team_page_link">NETworking</td>
+          <td class="teams_table_row_mid_cap">Grace H.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 5</th>
+          <td class="teams_table_row_mid_team_page_link">Team Jenn</td>
+          <td class="teams_table_row_mid_cap">Jenn H.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 6</th>
+          <td class="teams_table_row_mid_team_page_link">Team Katie H</td>
+          <td class="teams_table_row_mid_cap">Katie H.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 7</th>
+          <td class="teams_table_row_mid_team_page_link">Scrappy Do</td>
+          <td class="teams_table_row_mid_cap">Katie S.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 8</th>
+          <td class="teams_table_row_mid_team_page_link">Pass and Hitties</td>
+          <td class="teams_table_row_mid_cap">Lara M.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_mid_team_id">Team 9</th>
+          <td class="teams_table_row_mid_team_page_link">HOT TO GO</td>
+          <td class="teams_table_row_mid_cap">Liz D.</td>
+        </tr>
+        <tr class="teams_table_row_gray">
+          <th class="teams_table_row_mid_team_id">Team 10</th>
+          <td class="teams_table_row_mid_team_page_link">Bumpin That</td>
+          <td class="teams_table_row_mid_cap">Morgan W.</td>
+        </tr>
+        <tr class="teams_table_row_white">
+          <th class="teams_table_row_bot_team_id">Team 11</th>
+          <td class="teams_table_row_bot_team_page_link">Sets Education</td>
+          <td class="teams_table_row_bot_cap">Sophie L.</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Standings" class="tabcontent" style="display:none;">
+      <table class="standings_table">
+        <tr>
+          <th></th>
+          <th class="standings_table_title" title="Matches Played">MP</th>
+          <th class="standings_table_title" title="Set Points For">SPF</th>
+          <th class="standings_table_title" title="Set Points Against">SPA</th>
+          <th class="standings_table_title" title="Total Points For">TPF</th>
+          <th class="standings_table_title" title="Total Points Against">TPA</th>
+          <th class="standings_table_title" title="Point Differential">PD</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_top_th">Bumpin That</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">14.5</td>
+          <td class="standings_table_row_td_basic">5.5</td>
+          <td class="standings_table_row_td_basic">416</td>
+          <td class="standings_table_row_td_basic">364</td>
+          <td class="standings_table_row_bot_th_basic">+52</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Sets Education</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">14</td>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">411</td>
+          <td class="standings_table_row_td_basic">348</td>
+          <td class="standings_table_row_bot_th_basic">+63</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_th_basic">Team Katie H</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">12.5</td>
+          <td class="standings_table_row_td_basic">7.5</td>
+          <td class="standings_table_row_td_basic">405</td>
+          <td class="standings_table_row_td_basic">349</td>
+          <td class="standings_table_row_bot_th_basic">+56</th>
+        </tr>
+        <tr class="standings_table_row_gold">
+          <th class="standings_table_row_div_th">Team Jenn</th>
+          <td class="standings_table_row_div_td">8</td>
+          <td class="standings_table_row_div_td">12.5</td>
+          <td class="standings_table_row_div_td">7.5</td>
+          <td class="standings_table_row_div_td">410</td>
+          <td class="standings_table_row_div_td">374</td>
+          <td class="standings_table_row_div_bot_th">+36</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Bump it like it's hot</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">11</td>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">386</td>
+          <td class="standings_table_row_td_basic">368</td>
+          <td class="standings_table_row_bot_th_basic">+18</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">Pass and Hitties</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">11</td>
+          <td class="standings_table_row_td_basic">376</td>
+          <td class="standings_table_row_td_basic">389</td>
+          <td class="standings_table_row_bot_th_basic">-13</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_th_basic">NETworking</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">9</td>
+          <td class="standings_table_row_td_basic">11</td>
+          <td class="standings_table_row_td_basic">369</td>
+          <td class="standings_table_row_td_basic">398</td>
+          <td class="standings_table_row_bot_th_basic">-29</th>
+        </tr>
+        <tr class="standings_table_row_silver">
+          <th class="standings_table_row_div_th">HOT TO GO</th>
+          <td class="standings_table_row_div_td">8</td>
+          <td class="standings_table_row_div_td">8</td>
+          <td class="standings_table_row_div_td">12</td>
+          <td class="standings_table_row_div_td">368</td>
+          <td class="standings_table_row_div_td">396</td>
+          <td class="standings_table_row_div_bot_th">-28</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">Spikological Warfare</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">12</td>
+          <td class="standings_table_row_td_basic">380</td>
+          <td class="standings_table_row_td_basic">414</td>
+          <td class="standings_table_row_bot_th_basic">-34</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_th_basic">Scrappy Do</th>
+          <td class="standings_table_row_td_basic">8</td>
+          <td class="standings_table_row_td_basic">6</td>
+          <td class="standings_table_row_td_basic">14</td>
+          <td class="standings_table_row_td_basic">370</td>
+          <td class="standings_table_row_td_basic">418</td>
+          <td class="standings_table_row_bot_th_basic">-48</th>
+        </tr>
+        <tr class="standings_table_row_bronze">
+          <th class="standings_table_row_div_th">ICY HOT</th>
+          <td class="standings_table_row_div_bot_td">8</td>
+          <td class="standings_table_row_div_bot_td">5.5</td>
+          <td class="standings_table_row_div_bot_td">14.5</td>
+          <td class="standings_table_row_div_bot_td">343</td>
+          <td class="standings_table_row_div_bot_td">416</td>
+          <td class="standings_table_row_div_bot_th">-73</th>
+        </tr>
+      </table>
+
+      <div id="Glossary" style="margin-top:10px;margin-bottom:10px;margin-left:10px;margin-right:10px;">
+        <button class="collapsible" onclick="collapseTab()">Glossary</button>
+        <div class="content">
+          <div style="margin-top:5px;">
+            <p><b>MP</b>: Matches Played<br>
+            <b>SPF</b>: Set Points For<br>
+            <b>SPA</b>: Set Points Against<br>
+            <b>TPF</b>: Total Points For<br>
+            <b>TPA</b>: Total Points Against<br>
+            <b>PD</b>: Point Differential</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="Graph" class="tabcontent" style="display:none;width:100%;height:650px;padding-top:20px;z-index:-1;">
+      <script>
+        anychart.onDocumentReady(function () {
+          // add data
+          var data = [
+            ["M1",6,9,3,10,5,7,4,8,11,2,1],
+            ["M2",7,10,2,9,4,6,5,8,11,1,3],
+            ["M3",9,10,4,7,3,5,6,8,11,1,2],
+            ["M4",10,11,3,7,4,5,6,8,9,1,2],
+            ["M5",10,11,4,6,3,5,7,9,8,2,1],
+            ["M6",10,11,4,5,3,6,9,7,8,1,2],
+            ["M7",10,11,4,7,3,5,9,6,8,1,2],
+            ["M8",9,11,5,7,4,3,10,6,8,1,2],
+          ];
+  
+          // create a data set
+          var dataSet = anychart.data.set(data);
+
+          // map the data for all series
+          var firstSeriesData = dataSet.mapAs({x: 0, value: 1});
+          var secondSeriesData = dataSet.mapAs({x: 0, value: 2});
+          var thirdSeriesData = dataSet.mapAs({x: 0, value: 3});
+          var fourthSeriesData = dataSet.mapAs({x: 0, value: 4});
+          var fifthSeriesData = dataSet.mapAs({x: 0, value: 5});
+          var sixthSeriesData = dataSet.mapAs({x: 0, value: 6});
+          var seventhSeriesData = dataSet.mapAs({x: 0, value: 7});
+          var eighthSeriesData = dataSet.mapAs({x: 0, value: 8});
+          var ninthSeriesData = dataSet.mapAs({x: 0, value: 9});
+          var tenthSeriesData = dataSet.mapAs({x: 0, value: 10});
+          var eleventhSeriesData = dataSet.mapAs({x: 0, value: 11});
+
+          // create a line chart
+          var chart = anychart.line();
+
+          // create the series and name them
+          var firstSeries = chart.line(firstSeriesData);
+          firstSeries.name("SW");
+          firstSeries.stroke({color:"red",thickness:3});
+          firstSeries.hovered().stroke({color:"red",thickness:6});
+          var secondSeries = chart.line(secondSeriesData);
+          secondSeries.name("IH");
+          secondSeries.stroke({color:"orange",thickness:3});
+          secondSeries.hovered().stroke({color:"orange",thickness:6});
+          var thirdSeries = chart.line(thirdSeriesData);
+          thirdSeries.name("BILIH");
+          thirdSeries.stroke({color:"yellow",thickness:3});
+          thirdSeries.hovered().stroke({color:"yellow",thickness:6});
+          var fourthSeries = chart.line(fourthSeriesData);
+          fourthSeries.name("N");
+          fourthSeries.stroke({color:"green",thickness:3});
+          fourthSeries.hovered().stroke({color:"green",thickness:6});
+          var fifthSeries = chart.line(fifthSeriesData);
+          fifthSeries.name("TJ");
+          fifthSeries.stroke({color:"blue",thickness:3});
+          fifthSeries.hovered().stroke({color:"blue",thickness:6});
+          var sixthSeries = chart.line(sixthSeriesData);
+          sixthSeries.name("TKH");
+          sixthSeries.stroke({color:"purple",thickness:3});
+          sixthSeries.hovered().stroke({color:"purple",thickness:6});
+          var seventhSeries = chart.line(seventhSeriesData);
+          seventhSeries.name("SD");
+          seventhSeries.stroke({color:"magenta",thickness:3});
+          seventhSeries.hovered().stroke({color:"magenta",thickness:6});
+          var eighthSeries = chart.line(eighthSeriesData);
+          eighthSeries.name("PH");
+          eighthSeries.stroke({color:"gray",thickness:3});
+          eighthSeries.hovered().stroke({color:"gray",thickness:6});
+          var ninthSeries = chart.line(ninthSeriesData);
+          ninthSeries.name("HTG");
+          ninthSeries.stroke({color:"black",thickness:3});
+          ninthSeries.hovered().stroke({color:"black",thickness:6});
+          var tenthSeries = chart.line(tenthSeriesData);
+          tenthSeries.name("BT");
+          tenthSeries.stroke({color:"cyan",thickness:3});
+          tenthSeries.hovered().stroke({color:"cyan",thickness:6});
+          var eleventhSeries = chart.line(eleventhSeriesData);
+          eleventhSeries.name("SE");
+          eleventhSeries.stroke({color:"pink",thickness:3});
+          eleventhSeries.hovered().stroke({color:"pink",thickness:6});
+
+          chart.xAxis().orientation("top");
+          chart.xAxis().labels().fontColor("black");
+          chart.xAxis().labels().fontWeight("bold");
+          chart.xAxis().stroke({color:"black",thickness:2});
+
+          chart.yAxis().orientation("right");
+          chart.yAxis().labels().fontColor("black");
+          chart.yAxis().labels().fontWeight("bold");
+          chart.yAxis().drawFirstLabel(false);
+          chart.yAxis().drawLastLabel(false);
+          chart.yScale().inverted(true);
+          chart.yScale().ticks().interval(1);
+          chart.yScale().minimum(0.35);
+          chart.yScale().maximum(11.5);
+          chart.yAxis().stroke({color:"black",thickness:2});
+          chart.background().fill("gainsboro");
+
+          // gold division range
+          var rangeMarker1 = chart.rangeMarker(1);
+          rangeMarker1.axis(chart.yAxis());
+          rangeMarker1.from(0.35);
+          rangeMarker1.to(4.5);
+          rangeMarker1.fill("#F2C891 0.4");
+
+          // silver division range
+          var rangeMarker2 = chart.rangeMarker(2);
+          rangeMarker2.axis(chart.yAxis());
+          rangeMarker2.from(4.5);
+          rangeMarker2.to(8.5);
+          rangeMarker2.fill("#DBE2E9 0.4");
+
+          // bronze division range
+          var rangeMarker3 = chart.rangeMarker(3);
+          rangeMarker3.axis(chart.yAxis());
+          rangeMarker3.from(8.5);
+          rangeMarker3.to(11.5);
+          rangeMarker3.fill("#B77729 0.4");
+
+          // add a legend
+          chart.legend().enabled(true);
+  
+          // add a title
+          chart.title("Rankings");
+          chart.title().orientation("bottom");
+  
+          // specify where to display the chart
+          chart.container("Graph");
+  
+          // draw the resulting chart
+          chart.draw();
+        });
+      </script>
+    </div>
+
+    <div id="Regular Season" class="tabcontent" style="display:none;">
+      <div class="subnav" style="margin-right:10px;">
+        <a href="#Week_1" onclick="showImage('M1', ['M2','M3','M4','M5','M6','M7','M8','P1','P2'])">Week 1</a>
+        <a href="#Week_2" onclick="showImage('M2', ['M1','M3','M4','M5','M6','M7','M8','P1','P2'])">Week 2</a>
+        <a href="#Week_3" onclick="showImage('M3', ['M1','M2','M4','M5','M6','M7','M8','P1','P2'])">Week 3</a>
+        <a href="#Week_4" onclick="showImage('M4', ['M1','M2','M3','M5','M6','M7','M8','P1','P2'])">Week 4</a>
+        <a href="#Week_5" onclick="showImage('M5', ['M1','M2','M3','M4','M6','M7','M8','P1','P2'])">Week 5</a>
+        <a href="#Week_6" onclick="showImage('M6', ['M1','M2','M3','M4','M5','M7','M8','P1','P2'])">Week 6</a>
+        <a href="#Week_7" onclick="showImage('M7', ['M1','M2','M3','M4','M5','M6','M8','P1','P2'])">Week 7</a>
+        <a href="#Week_8" onclick="showImage('M8', ['M1','M2','M3','M4','M5','M6','M7','P1','P2'])">Week 8</a>
+      </div>
+    </div>
+
+    <div id="M1" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 1: 1/28</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spikological Warfare</td>
+          <td class="box_score_top_score_white_set">22</td>
+          <td class="box_score_top_score_white_set">18</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">49</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">ICY HOT</td>
+          <td class="box_score_bot_score_white_set">20</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">7</td>
+          <td class="box_score_bot_score_white_pts">48</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Bump it like it's hot</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">11</td>
+          <td class="box_score_top_score_white_pts">53</td>
+          <td class="box_score_top_score_white_pts">2</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">NETworking</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">44</td>
+          <td class="box_score_bot_score_white_pts">0.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Jenn</td>
+          <td class="box_score_top_score_white_set">22</td>
+          <td class="box_score_top_score_white_set">22</td>
+          <td class="box_score_top_score_white_set">8</td>
+          <td class="box_score_top_score_white_pts">52</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Team Katie H</td>
+          <td class="box_score_bot_score_white_set">20</td>
+          <td class="box_score_bot_score_white_set">24</td>
+          <td class="box_score_bot_score_white_set">7</td>
+          <td class="box_score_bot_score_white_pts">51</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Scrappy Do</td>
+          <td class="box_score_top_score_gray_set">14</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">50</td>
+          <td class="box_score_top_score_gray_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Pass and Hitties</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">16</td>
+          <td class="box_score_bot_score_gray_set">10</td>
+          <td class="box_score_bot_score_gray_pts">47</td>
+          <td class="box_score_bot_score_gray_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">HOT TO GO</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">10</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_pts">37</td>
+          <td class="box_score_top_score_gray_pts">0.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Bumpin That</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">10</td>
+          <td class="box_score_bot_score_gray_pts">52</td>
+          <td class="box_score_bot_score_gray_pts">2</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Sets Education</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">57</td>
+          <td class="box_score_top_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">ICY HOT</td>
+          <td class="box_score_bot_score_gray_set">9</td>
+          <td class="box_score_bot_score_gray_set">18</td>
+          <td class="box_score_bot_score_gray_set">10</td>
+          <td class="box_score_bot_score_gray_pts">37</td>
+          <td class="box_score_bot_score_gray_pts">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M2" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 2: 2/4</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Scrappy Do</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">57</td>
+          <td class="box_score_top_score_white_pts">2.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">HOT TO GO</td>
+          <td class="box_score_bot_score_white_set">19</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_pts">48</td>
+          <td class="box_score_bot_score_white_pts">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Pass and Hitties</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">5</td>
+          <td class="box_score_top_score_white_pts">45</td>
+          <td class="box_score_top_score_white_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Bumpin That</td>
+          <td class="box_score_bot_score_white_set">23</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">9</td>
+          <td class="box_score_bot_score_white_pts">53</td>
+          <td class="box_score_bot_score_white_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Sets Education</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">8</td>
+          <td class="box_score_top_score_white_pts">50</td>
+          <td class="box_score_top_score_white_pts">2</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">NETworking</td>
+          <td class="box_score_bot_score_white_set">19</td>
+          <td class="box_score_bot_score_white_set">14</td>
+          <td class="box_score_bot_score_white_set">11</td>
+          <td class="box_score_bot_score_white_pts">44</td>
+          <td class="box_score_bot_score_white_pts">0.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Spikological Warfare</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">13</td>
+          <td class="box_score_top_score_gray_set">9</td>
+          <td class="box_score_top_score_gray_pts">38</td>
+          <td class="box_score_top_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Bump it like it's hot</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">57</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">ICY HOT</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_set">13</td>
+          <td class="box_score_top_score_gray_pts">41</td>
+          <td class="box_score_top_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Team Jenn</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">14</td>
+          <td class="box_score_bot_score_gray_pts">56</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Team Katie H</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">52</td>
+          <td class="box_score_top_score_gray_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Bumpin That</td>
+          <td class="box_score_bot_score_gray_set">18</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">6</td>
+          <td class="box_score_bot_score_gray_pts">45</td>
+          <td class="box_score_bot_score_gray_pts">1</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M3" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 3: 2/18</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spikological Warfare</td>
+          <td class="box_score_top_score_white_set">23</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_set">5</td>
+          <td class="box_score_top_score_white_pts">37</td>
+          <td class="box_score_top_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Team Jenn</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">57</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">ICY HOT</td>
+          <td class="box_score_top_score_white_set">2</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">34</td>
+          <td class="box_score_top_score_white_pts">0.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Team Katie H</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">11</td>
+          <td class="box_score_bot_score_white_pts">53</td>
+          <td class="box_score_bot_score_white_pts">2</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Bump it like it's hot</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">11</td>
+          <td class="box_score_top_score_white_set">14</td>
+          <td class="box_score_top_score_white_pts">44</td>
+          <td class="box_score_top_score_white_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Bumpin That</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_pts">58</td>
+          <td class="box_score_bot_score_white_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">NETworking</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">8</td>
+          <td class="box_score_top_score_gray_pts">50</td>
+          <td class="box_score_top_score_gray_pts">2</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Scrappy Do</td>
+          <td class="box_score_bot_score_gray_set">19</td>
+          <td class="box_score_bot_score_gray_set">19</td>
+          <td class="box_score_bot_score_gray_set">9</td>
+          <td class="box_score_bot_score_gray_pts">47</td>
+          <td class="box_score_bot_score_gray_pts">0.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Pass and Hitties</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">8</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">44</td>
+          <td class="box_score_top_score_gray_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Bump it like it's hot</td>
+          <td class="box_score_bot_score_gray_set">14</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">13</td>
+          <td class="box_score_bot_score_gray_pts">48</td>
+          <td class="box_score_bot_score_gray_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">HOT TO GO</td>
+          <td class="box_score_top_score_gray_set">9</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_set">9</td>
+          <td class="box_score_top_score_gray_pts">33</td>
+          <td class="box_score_top_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Sets Education</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">57</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M4" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 4: 2/25</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Bump it like it's hot</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">11</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">47</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Scrappy Do</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">14</td>
+          <td class="box_score_bot_score_white_pts">47</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Pass and Hitties</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">20</td>
+          <td class="box_score_top_score_white_set">5</td>
+          <td class="box_score_top_score_white_pts">42</td>
+          <td class="box_score_top_score_white_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">HOT TO GO</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">22</td>
+          <td class="box_score_bot_score_white_set">6</td>
+          <td class="box_score_bot_score_white_pts">49</td>
+          <td class="box_score_bot_score_white_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Katie H</td>
+          <td class="box_score_top_score_white_set">14</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">44</td>
+          <td class="box_score_top_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Sets Education</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_set">10</td>
+          <td class="box_score_bot_score_white_pts">43</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Spikological Warfare</td>
+          <td class="box_score_top_score_gray_set">19</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_pts">52</td>
+          <td class="box_score_top_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">NETworking</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">23</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">59</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">ICY HOT</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">10</td>
+          <td class="box_score_top_score_gray_pts">42</td>
+          <td class="box_score_top_score_gray_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Bumpin That</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">19</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">55</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Team Jenn</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">19</td>
+          <td class="box_score_top_score_gray_set">10</td>
+          <td class="box_score_top_score_gray_pts">50</td>
+          <td class="box_score_top_score_gray_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Pass and Hitties</td>
+          <td class="box_score_bot_score_gray_set">18</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">12</td>
+          <td class="box_score_bot_score_gray_pts">51</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M5" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 5: 3/4</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spikological Warfare</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">13</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">49</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Pass and Hitties</td>
+          <td class="box_score_bot_score_white_set">14</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">12</td>
+          <td class="box_score_bot_score_white_pts">47</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">ICY HOT</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">5</td>
+          <td class="box_score_top_score_white_pts">43</td>
+          <td class="box_score_top_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">NETworking</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">8</td>
+          <td class="box_score_bot_score_white_pts">46</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Jenn</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">13</td>
+          <td class="box_score_top_score_white_pts">51</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Bumpin That</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">10</td>
+          <td class="box_score_bot_score_white_pts">48</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Bump it like it's hot</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">7</td>
+          <td class="box_score_top_score_gray_pts">40</td>
+          <td class="box_score_top_score_gray_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Team Katie H</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">13</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_pts">49</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Scrappy Do</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">11</td>
+          <td class="box_score_top_score_gray_set">14</td>
+          <td class="box_score_top_score_gray_pts">41</td>
+          <td class="box_score_top_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Sets Education</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">16</td>
+          <td class="box_score_bot_score_gray_pts">58</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">HOT TO GO</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">57</td>
+          <td class="box_score_top_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">NETworking</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_set">14</td>
+          <td class="box_score_bot_score_gray_set">11</td>
+          <td class="box_score_bot_score_gray_pts">40</td>
+          <td class="box_score_bot_score_gray_pts">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M6" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 6: 3/11</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Bump it like it's hot</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">45</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Sets Education</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">9</td>
+          <td class="box_score_bot_score_white_pts">46</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">NETworking</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">45</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Team Katie H</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">19</td>
+          <td class="box_score_bot_score_white_set">8</td>
+          <td class="box_score_bot_score_white_pts">48</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Jenn</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">12</td>
+          <td class="box_score_top_score_white_pts">54</td>
+          <td class="box_score_top_score_white_pts">2</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Scrappy Do</td>
+          <td class="box_score_bot_score_white_set">18</td>
+          <td class="box_score_bot_score_white_set">16</td>
+          <td class="box_score_bot_score_white_set">14</td>
+          <td class="box_score_bot_score_white_pts">48</td>
+          <td class="box_score_bot_score_white_pts">0.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Spikological Warfare</td>
+          <td class="box_score_top_score_gray_set">19</td>
+          <td class="box_score_top_score_gray_set">17</td>
+          <td class="box_score_top_score_gray_set">10</td>
+          <td class="box_score_top_score_gray_pts">46</td>
+          <td class="box_score_top_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Bumpin That</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">11</td>
+          <td class="box_score_bot_score_gray_pts">53</td>
+          <td class="box_score_bot_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">ICY HOT</td>
+          <td class="box_score_top_score_gray_set">17</td>
+          <td class="box_score_top_score_gray_set">18</td>
+          <td class="box_score_top_score_gray_set">14</td>
+          <td class="box_score_top_score_gray_pts">49</td>
+          <td class="box_score_top_score_gray_pts">0.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Pass and Hitties</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">10</td>
+          <td class="box_score_bot_score_gray_pts">52</td>
+          <td class="box_score_bot_score_gray_pts">2</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">HOT TO GO</td>
+          <td class="box_score_top_score_gray_set">13</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">12</td>
+          <td class="box_score_top_score_gray_pts">46</td>
+          <td class="box_score_top_score_gray_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Team Jenn</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">14</td>
+          <td class="box_score_bot_score_gray_set">13</td>
+          <td class="box_score_bot_score_gray_pts">48</td>
+          <td class="box_score_bot_score_gray_pts">1.5</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M7" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 7: 3/18</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spikological Warfare</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">17</td>
+          <td class="box_score_top_score_white_set">14</td>
+          <td class="box_score_top_score_white_pts">52</td>
+          <td class="box_score_top_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Sets Education</td>
+          <td class="box_score_bot_score_white_set">19</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">13</td>
+          <td class="box_score_bot_score_white_pts">53</td>
+          <td class="box_score_bot_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">HOT TO GO</td>
+          <td class="box_score_top_score_white_set">23</td>
+          <td class="box_score_top_score_white_set">19</td>
+          <td class="box_score_top_score_white_set">6</td>
+          <td class="box_score_top_score_white_pts">48</td>
+          <td class="box_score_top_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">ICY HOT</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">7</td>
+          <td class="box_score_bot_score_white_pts">49</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Jenn</td>
+          <td class="box_score_top_score_white_set">12</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">42</td>
+          <td class="box_score_top_score_white_pts">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Bump it like it's hot</td>
+          <td class="box_score_bot_score_white_set">21</td>
+          <td class="box_score_bot_score_white_set">18</td>
+          <td class="box_score_bot_score_white_set">13</td>
+          <td class="box_score_bot_score_white_pts">52</td>
+          <td class="box_score_bot_score_white_pts">1.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Team Katie H</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">57</td>
+          <td class="box_score_top_score_gray_pts">2.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Scrappy Do</td>
+          <td class="box_score_bot_score_gray_set">11</td>
+          <td class="box_score_bot_score_gray_set">17</td>
+          <td class="box_score_bot_score_gray_set">12</td>
+          <td class="box_score_bot_score_gray_pts">40</td>
+          <td class="box_score_bot_score_gray_pts">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">NETworking</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">18</td>
+          <td class="box_score_top_score_gray_set">7</td>
+          <td class="box_score_top_score_gray_pts">41</td>
+          <td class="box_score_top_score_gray_pts">0.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Pass and Hitties</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">6</td>
+          <td class="box_score_bot_score_gray_pts">48</td>
+          <td class="box_score_bot_score_gray_pts">2</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Bumpin That</td>
+          <td class="box_score_top_score_gray_set">16</td>
+          <td class="box_score_top_score_gray_set">21</td>
+          <td class="box_score_top_score_gray_set">15</td>
+          <td class="box_score_top_score_gray_pts">52</td>
+          <td class="box_score_top_score_gray_pts">1.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Sets Education</td>
+          <td class="box_score_bot_score_gray_set">21</td>
+          <td class="box_score_bot_score_gray_set">15</td>
+          <td class="box_score_bot_score_gray_set">11</td>
+          <td class="box_score_bot_score_gray_pts">47</td>
+          <td class="box_score_bot_score_gray_pts">1</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="M8" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="7">Week 8: 3/25</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="6">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Spikological Warfare</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">15</td>
+          <td class="box_score_top_score_white_pts">57</td>
+          <td class="box_score_top_score_white_pts">2.5</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Scrappy Do</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_set">10</td>
+          <td class="box_score_bot_score_white_pts">40</td>
+          <td class="box_score_bot_score_white_pts">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Katie H</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">21</td>
+          <td class="box_score_top_score_white_set">9</td>
+          <td class="box_score_top_score_white_pts">51</td>
+          <td class="box_score_top_score_white_pts">2</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">HOT TO GO</td>
+          <td class="box_score_bot_score_white_set">17</td>
+          <td class="box_score_bot_score_white_set">18</td>
+          <td class="box_score_bot_score_white_set">15</td>
+          <td class="box_score_bot_score_white_pts">50</td>
+          <td class="box_score_bot_score_white_pts">0.5</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="6">Court 3 - Match 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_bisque" colspan="6">Reserved</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_bisque" colspan="6">Playoffs</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="10">8 PM</th>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 1 - Match 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_bisque" colspan="6">Reserved</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_bisque" colspan="6">Playoffs</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 2 - Match 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_bisque" colspan="6">Reserved</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_bisque" colspan="6">Playoffs</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="6">Court 3 - Match 4</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_bisque" colspan="6">Reserved</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_bisque" colspan="6">Playoffs</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="Playoffs" class="tabcontent" style="display:none;">
+      <div class="subnav">
+        <a href="#Playoff_1" onclick="showImage('P1', ['P2','BR','M1','M2','M3','M4','M5','M6','M7','M8'])">Playoff 1</a>
+        <a href="#Playoff_2" onclick="showImage('P2', ['P1','BR','M1','M2','M3','M4','M5','M6','M7','M8'])">Playoff 2</a>
+        <a href="#Bracket" onclick="showImage('BR', ['P1','P2','M1','M2','M3','M4','M5','M6','M7','M8'])">Bracket</a>
+      </div>
+    </div>
+
+    <div id="P1" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Playoff 1: 3/25</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_white" colspan="2">Court 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_bisque" colspan="6">Reserved</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_bisque" colspan="6">Regular Season</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_bisque" colspan="6">Reserved</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_bisque" colspan="6">Regular Season</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3 - Match 1</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Pass and Hitties</td>
+          <td class="box_score_top_score_white">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">NETworking</td>
+          <td class="box_score_bot_score_white">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_gray" colspan="2">Court 1 - Match 2</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Bumpin That</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Team Jenn</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2 - Match 3</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Sets Education</td>
+          <td class="box_score_top_score_gray">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Team Katie H</td>
+          <td class="box_score_bot_score_gray">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 3 - Match 4</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Bump it like it's hot</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">HOT TO GO</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="P2" style="display:none;">
+      <table class="box_score_table">
+        <tr>
+          <th class="box_score_title" colspan="3">Playoff 2: 4/1</th>
+        </tr>
+        <tr>
+          <th class="box_score_7pm" rowspan="9">7 PM</th>
+          <th class="box_score_court_gold" colspan="2">Court 1 - 1st Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Bumpin That</td>
+          <td class="box_score_top_score_white">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Team Katie H</td>
+          <td class="box_score_bot_score_white">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 2 - 3rd Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Team Jenn</td>
+          <td class="box_score_top_score_white">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">Sets Education</td>
+          <td class="box_score_bot_score_white">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_white" colspan="2">Court 3 - Match 7</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_white">Scrappy Do</td>
+          <td class="box_score_top_score_white">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_white">ICY HOT</td>
+          <td class="box_score_bot_score_white">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_8pm" rowspan="9">8 PM</th>
+          <th class="box_score_court_silver" colspan="2">Court 1 - 5th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Bump it like it's hot</td>
+          <td class="box_score_top_score_gray">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">NETworking</td>
+          <td class="box_score_bot_score_gray">1</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_gray" colspan="2">Court 2 - 7th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">HOT TO GO</td>
+          <td class="box_score_top_score_gray">1</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">Pass and Hitties</td>
+          <td class="box_score_bot_score_gray">0</td>
+        </tr>
+        <tr>
+          <th class="box_score_court_bronze" colspan="2">Court 3 - 9th Place</th>
+        </tr>
+        <tr>
+          <td class="box_score_top_team_gray">Spikological Warfare</td>
+          <td class="box_score_top_score_gray">0</td>
+        </tr>
+        <tr>
+          <td class="box_score_bot_team_gray">ICY HOT</td>
+          <td class="box_score_bot_score_gray">1</td>
+        </tr>
+      </table>
+    </div>
+
+    <div id="BR" style="display:none;margin-left:10px;margin-top:10px;margin-right:10px;margin-bottom:10px;">
+      <div>
+        <img title="Bracket" style="height:100%;width:min(868px,100%);" src="../images/dcwvb/dcwvb_win25_bracket.png">
+      </div>
+    </div>
+
+    <div id="Grid" class="tabcontent" style="display:none;">
+      <table class="standings_table">
+        <tr>
+          <th></th>
+          <th class="grid_table_title_left"   title="Spikological Warfare">SW</th>
+          <th class="grid_table_title_middle" title="ICY HOT">IH</th>
+          <th class="grid_table_title_middle" title="Bump it like it's hot">BILIH</th>
+          <th class="grid_table_title_middle" title="NETworking">N</th>
+          <th class="grid_table_title_middle" title="Team Jenn">TJ</th>
+          <th class="grid_table_title_middle" title="Team Katie H">TKH</th>
+          <th class="grid_table_title_middle" title="Scrappy Do">SD</th>
+          <th class="grid_table_title_middle" title="Pass and Hitties">PH</th>
+          <th class="grid_table_title_middle" title="HOT TO GO">HTG</th>
+          <th class="grid_table_title_middle" title="Bumpin That">BT</th>
+          <th class="grid_table_title_right"  title="Sets Education">SE</th>
+          <th style="width:60px;"></th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_top_th_team">Spikological Warfare</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <th class="grid_table_row_top_th_sets">8</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">ICY HOT</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">5.5</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Bump it like it's hot</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <th class="grid_table_row_mid_th_sets">11</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">NETworking</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <th class="grid_table_row_mid_th_sets">9</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Team Jenn</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <th class="grid_table_row_mid_th_sets">12.5</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Team Katie H</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <th class="grid_table_row_mid_th_sets">12.5</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">Scrappy Do</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">6</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Pass and Hitties</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_bye"></th>
+          <th class="grid_table_row_mid_th_sets">9</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_mid_th_team">HOT TO GO</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">0.5</th>
+          <td class="grid_table_row_td_basic">0</th>
+          <th class="grid_table_row_mid_th_sets">8</th>
+        </tr>
+        <tr class="grid_table_row_gray">
+          <th class="grid_table_row_mid_th_team">Bumpin That</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">2.5</th>
+          <td class="grid_table_row_td_basic">2</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_td_basic">1.5</th>
+          <th class="grid_table_row_mid_th_sets">14.5</th>
+        </tr>
+        <tr class="grid_table_row_white">
+          <th class="grid_table_row_bot_th_team">Sets Education</th>
+          <td class="grid_table_row_bot_td_basic">1</th>
+          <td class="grid_table_row_bot_td_basic">2.5</th>
+          <td class="grid_table_row_bot_td_basic">1</th>
+          <td class="grid_table_row_bot_td_basic">2</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_bot_td_basic">1.5</th>
+          <td class="grid_table_row_bot_td_basic">2.5</th>
+          <td class="grid_table_row_td_bye"></th>
+          <td class="grid_table_row_bot_td_basic">2.5</th>
+          <td class="grid_table_row_bot_td_basic">1</th>
+          <td class="grid_table_row_td_bye"></th>
+          <th class="grid_table_row_bot_th_sets">14</th>
+        </tr>
+        <tr>
+          <th></th>
+          <th class="grid_table_row_opp_top_td_sets_gray">12</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">14.5</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">9</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">11</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">7.5</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">7.5</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">14</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">11</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">12</th>
+          <th class="grid_table_row_opp_mid_td_sets_gray">5.5</th>
+          <th class="grid_table_row_opp_bot_td_sets_gray">6</th>
+          <th></th>
+        </tr>
+      </table>
+    </div>
+
+  </body>
+</html>
