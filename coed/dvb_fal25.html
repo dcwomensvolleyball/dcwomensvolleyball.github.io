@@ -30,7 +30,7 @@
     <div class="logo">District Volleyball - Fall 2025</div>
     <div class="nav_bar">
       <li><a href="dvb.html"><i class="material-icons">arrow_back</i></a></li>
-      <li><a href="dvb_sum25.html"><i class="material-icons">home</i></a></li>
+      <li><a href="dvb_fal25.html"><i class="material-icons">home</i></a></li>
       <li><a href="#Teams" onclick="openTab('Teams', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2','BR'])">Teams</a></li>
       <li style="z-index:2;"><a href="#Standings">Standings</a>
         <ul>
@@ -46,7 +46,6 @@
         </ul>
       </li>
     </div>
-
 
     <div id="Teams" class="tabcontent" style="display:none;">
       <table class="teams_table">
@@ -451,13 +450,13 @@
     </div>
 
     <div id="Chart" class="tabcontent" style="display:none;">
-      <div class="subnav" style="margin-left:10px;margin-top:10px;">
+      <div class="subnav">
         <a href="#Rank" onclick="showImage('Rank', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P2','BR','Points'])">Rank</a>
         <a href="#Points" onclick="showImage('Points', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','BR','Rank'])">Points</a>
       </div>
     </div>
 
-    <div id="Rank" style="display:none;width:100%;height:700px;padding-top:10px;z-index:-1;" class="tabcontent">
+    <div id="Rank" class="tabcontent" style="display:none;width:100%;height:650px;padding-top:10px;z-index:-1;">
       <script>
         anychart.onDocumentReady(function () {
           // add rank
@@ -487,35 +486,35 @@
 
           // create the series and name them
           var firstSeries = chart.line(firstSeriesData);
-          firstSeries.name("LaFS");
+          firstSeries.name("AS");
           firstSeries.stroke({color:"red",thickness:3});
           firstSeries.hovered().stroke({color:"red",thickness:6});
           var secondSeries = chart.line(secondSeriesData);
-          secondSeries.name("GII");
+          secondSeries.name("EZB");
           secondSeries.stroke({color:"orange",thickness:3});
           secondSeries.hovered().stroke({color:"orange",thickness:6});
           var thirdSeries = chart.line(thirdSeriesData);
-          thirdSeries.name("SB");
+          thirdSeries.name("S");
           thirdSeries.stroke({color:"yellow",thickness:3});
           thirdSeries.hovered().stroke({color:"yellow",thickness:6});
           var fourthSeries = chart.line(fourthSeriesData);
-          fourthSeries.name("TwW");
+          fourthSeries.name("SB");
           fourthSeries.stroke({color:"green",thickness:3});
           fourthSeries.hovered().stroke({color:"green",thickness:6});
           var fifthSeries = chart.line(fifthSeriesData);
-          fifthSeries.name("SN");
+          fifthSeries.name("LaFS");
           fifthSeries.stroke({color:"blue",thickness:3});
           fifthSeries.hovered().stroke({color:"blue",thickness:6});
           var sixthSeries = chart.line(sixthSeriesData);
-          sixthSeries.name("AS");
+          sixthSeries.name("WHSS");
           sixthSeries.stroke({color:"purple",thickness:3});
           sixthSeries.hovered().stroke({color:"purple",thickness:6});
           var seventhSeries = chart.line(seventhSeriesData);
-          seventhSeries.name("PA");
+          seventhSeries.name("SN");
           seventhSeries.stroke({color:"magenta",thickness:3});
           seventhSeries.hovered().stroke({color:"magenta",thickness:6});
           var eighthSeries = chart.line(eighthSeriesData);
-          eighthSeries.name("EZB");
+          eighthSeries.name("SIaFI");
           eighthSeries.stroke({color:"gray",thickness:3});
           eighthSeries.hovered().stroke({color:"gray",thickness:6});
           var ninthSeries = chart.line(ninthSeriesData);
@@ -523,15 +522,15 @@
           ninthSeries.stroke({color:"black",thickness:3});
           ninthSeries.hovered().stroke({color:"black",thickness:6});
           var tenthSeries = chart.line(tenthSeriesData);
-          tenthSeries.name("WHSS");
+          tenthSeries.name("PA");
           tenthSeries.stroke({color:"cyan",thickness:3});
           tenthSeries.hovered().stroke({color:"cyan",thickness:6});
           var eleventhSeries = chart.line(eleventhSeriesData);
-          eleventhSeries.name("S");
+          eleventhSeries.name("GII");
           eleventhSeries.stroke({color:"pink",thickness:3});
           eleventhSeries.hovered().stroke({color:"pink",thickness:6});
           var twelfthSeries = chart.line(twelfthSeriesData);
-          twelfthSeries.name("SIaFI");
+          twelfthSeries.name("TwW");
           twelfthSeries.stroke({color:"lime",thickness:3});
           twelfthSeries.hovered().stroke({color:"lime",thickness:6});
 
@@ -621,35 +620,35 @@
 
           // create the series and name them
           var firstSeries = pointsChart.line(firstSeriesData);
-          firstSeries.name("LaFS");
+          firstSeries.name("AS");
           firstSeries.stroke({color:"red",thickness:3});
           firstSeries.hovered().stroke({color:"red",thickness:6});
           var secondSeries = pointsChart.line(secondSeriesData);
-          secondSeries.name("GII");
+          secondSeries.name("EZB");
           secondSeries.stroke({color:"orange",thickness:3});
           secondSeries.hovered().stroke({color:"orange",thickness:6});
           var thirdSeries = pointsChart.line(thirdSeriesData);
-          thirdSeries.name("SB");
+          thirdSeries.name("S");
           thirdSeries.stroke({color:"yellow",thickness:3});
           thirdSeries.hovered().stroke({color:"yellow",thickness:6});
           var fourthSeries = pointsChart.line(fourthSeriesData);
-          fourthSeries.name("TwW");
+          fourthSeries.name("SB");
           fourthSeries.stroke({color:"green",thickness:3});
           fourthSeries.hovered().stroke({color:"green",thickness:6});
           var fifthSeries = pointsChart.line(fifthSeriesData);
-          fifthSeries.name("SN");
+          fifthSeries.name("LaFS");
           fifthSeries.stroke({color:"blue",thickness:3});
           fifthSeries.hovered().stroke({color:"blue",thickness:6});
           var sixthSeries = pointsChart.line(sixthSeriesData);
-          sixthSeries.name("AS");
+          sixthSeries.name("WHSS");
           sixthSeries.stroke({color:"purple",thickness:3});
           sixthSeries.hovered().stroke({color:"purple",thickness:6});
           var seventhSeries = pointsChart.line(seventhSeriesData);
-          seventhSeries.name("PA");
+          seventhSeries.name("SN");
           seventhSeries.stroke({color:"magenta",thickness:3});
           seventhSeries.hovered().stroke({color:"magenta",thickness:6});
           var eighthSeries = pointsChart.line(eighthSeriesData);
-          eighthSeries.name("EZB");
+          eighthSeries.name("SIaFI");
           eighthSeries.stroke({color:"gray",thickness:3});
           eighthSeries.hovered().stroke({color:"gray",thickness:6});
           var ninthSeries = pointsChart.line(ninthSeriesData);
@@ -657,15 +656,15 @@
           ninthSeries.stroke({color:"black",thickness:3});
           ninthSeries.hovered().stroke({color:"black",thickness:6});
           var tenthSeries = pointsChart.line(tenthSeriesData);
-          tenthSeries.name("WHSS");
+          tenthSeries.name("PA");
           tenthSeries.stroke({color:"cyan",thickness:3});
           tenthSeries.hovered().stroke({color:"cyan",thickness:6});
           var eleventhSeries = pointsChart.line(eleventhSeriesData);
-          eleventhSeries.name("S");
+          eleventhSeries.name("GII");
           eleventhSeries.stroke({color:"pink",thickness:3});
           eleventhSeries.hovered().stroke({color:"pink",thickness:6});
           var twelfthSeries = pointsChart.line(twelfthSeriesData);
-          twelfthSeries.name("SIaFI");
+          twelfthSeries.name("TwW");
           twelfthSeries.stroke({color:"lime",thickness:3});
           twelfthSeries.hovered().stroke({color:"lime",thickness:6});
 
@@ -711,7 +710,7 @@
     </div>
 
     <div id="Regular Season" class="tabcontent" style="display:none;">
-      <div class="subnav" style="margin-left:10px;margin-top:10px;margin-right:10px;">
+      <div class="subnav" style="margin-right:10px;">
         <a href="#Week_1" onclick="showImage('M1', ['M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 1</a>
         <a href="#Week_2" onclick="showImage('M2', ['M1','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 2</a>
         <a href="#Week_3" onclick="showImage('M3', ['M1','M2','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Week 3</a>
@@ -1563,7 +1562,7 @@
     </div>
 
     <div id="Playoffs" class="tabcontent" style="display:none;">
-      <div class="subnav" style="margin-left:10px;margin-top:10px;">
+      <div class="subnav">
         <a href="#Playoff_1" onclick="showImage('P1', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P2','BR'])">Playoff 1</a>
         <a href="#Playoff_2" onclick="showImage('P2', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','BR'])">Playoff 2</a>
         <a href="#Bracket" onclick="showImage('BR', ['M1','M2','M3','M4','M5','M6','M7','M8','M9','M10','M11','P1','P2'])">Bracket</a>
@@ -1732,18 +1731,18 @@
       <table class="grid_table">
         <tr>
           <th></th>
-          <th class="grid_table_title_left"   title="Ace Squad">LaFS</th>
-          <th class="grid_table_title_middle" title="EZ Balls">GII</th>
-          <th class="grid_table_title_middle" title="Supreme">SB</th>
-          <th class="grid_table_title_middle" title="Space Balls">TwW</th>
-          <th class="grid_table_title_middle" title="Love at First Spike">SN</th>
-          <th class="grid_table_title_middle" title="When Harry Set Sally">AS</th>
-          <th class="grid_table_title_middle" title="Spike Now">PA</th>
-          <th class="grid_table_title_middle" title="Set It and Forget It">EB</th>
+          <th class="grid_table_title_left"   title="Ace Squad">AS</th>
+          <th class="grid_table_title_middle" title="EZ Balls">EZB</th>
+          <th class="grid_table_title_middle" title="Supreme">S</th>
+          <th class="grid_table_title_middle" title="Space Balls">SB</th>
+          <th class="grid_table_title_middle" title="Love at First Spike">LaFS</th>
+          <th class="grid_table_title_middle" title="When Harry Set Sally">WHSS</th>
+          <th class="grid_table_title_middle" title="Spike Now">SN</th>
+          <th class="grid_table_title_middle" title="Set It and Forget It">SIaFI</th>
           <th class="grid_table_title_middle" title="Exodia">E</th>
-          <th class="grid_table_title_middle" title="Panic Attack">WHSS</th>
-          <th class="grid_table_title_middle" title="Get It In">S</th>
-          <th class="grid_table_title_right"  title="Thursdays with Walter">SIaFI</th>
+          <th class="grid_table_title_middle" title="Panic Attack">PA</th>
+          <th class="grid_table_title_middle" title="Get It In">GII</th>
+          <th class="grid_table_title_right"  title="Thursdays with Walter">TwW</th>
           <th style="width:60px;"></th>
         </tr>
         <tr class="grid_table_row_white">
