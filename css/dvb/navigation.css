@@ -1,0 +1,264 @@
+/* UTILITIES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 12px;
+  background-color: gainsboro;
+  font-family: 'Roboto', sans-serif;
+  color: #000000;
+} /* clean body style */
+
+a {
+  text-decoration: none;
+} /* clean anchor style */
+
+.logo {
+  font-size: 20px;
+  background-color: #e81b39;
+  color: #fff;
+  padding: 10px 0px 0px 10px;
+}
+
+/* top bar sticks at top of page */
+.nav_bar {
+  display: flex;
+  align-items: bottom;
+  background-color: #e81b39;
+  color: #fff;
+  margin-bottom: 0px;
+}
+
+.nav_bar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+  display: none;
+  position: absolute;
+  margin-top: 7px;
+} /* all drop lists are hidden and absolute (so we can position relatively) */
+
+.nav_bar a {
+  color: white;
+  display: block;
+  padding: 0.5em;
+  font-size: 15px;
+} /* nav_bar anchor style */
+
+.nav_bar > li {
+  display: inline-block;
+  list-style: none;
+} /* initial nav_bar items are inline */
+
+.nav_bar > li:hover {
+  background-color: #000000;
+  transition: 0.3s ease;
+  list-style: none;
+} /* initial nav_bar items hover color */
+
+.nav_bar li:hover > ul {
+  display: block;
+} /* display child list when hovering an item */
+
+.nav_bar li li {
+  position: relative;
+  background-color: #000000;
+} /* all drop list items are relative */
+
+.nav_bar li li:hover {
+  background: #e81b39;
+} /* all drop list items hover color */
+
+.nav_bar li li a {
+  color: #fff;
+} /* drop lists anchor style */
+
+.nav_bar ul ul {
+  top: 0;
+  left: 100%;
+  margin-top: 0px;
+} /* all child lists go right of previous list item */
+
+
+/* SUBNAV STYLING STARTS */
+.subnav {
+  color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  margin-left:8px;
+  margin-top:10px;
+}
+
+.subnav a {
+  font-size: 11px;
+  border-radius: 5px;
+  color: #e81b39;
+  padding: 7px 11px 7px 11px;
+  width: 7em;
+  border: 3px solid Silver;
+  margin: 2px;
+}
+
+.subnav a:hover {
+  border-radius: 5px;
+  transition: 0.3s ease;
+  background-color: Silver;
+}
+
+.subnav a:focus {
+  background-color: Silver;
+}
+
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 5px;
+  width: 100%;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapse_style {
+  margin-top:5px;
+}
+
+.collapse_body {
+  margin-bottom:0px;
+}
+
+.collapse_list {
+  margin-left:20px;
+}
+
+.content {
+  font-size: 13px;
+  padding: 0 10px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: gainsboro;
+}
+
+.collapse_style ol {
+  margin-bottom: 0px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: absolute;
+  margin: auto;
+}
+
+.slide {
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+.antSlide {
+  margin-left:10px;
+  margin-right:10px;
+  margin-bottom:10px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -44px;
+  font-weight: bold;
+  font-size: 24px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  margin-right: 10px;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  font-weight: bold;
+  top: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Caption text */
+.text {
+  color: #ffffff;
+  font-size: 18px;
+  padding: 8px 12px;
+  position: absolute;
+  font-weight: bold;
+  bottom: 8px;
+  width: 95%;
+  text-align: center;
+}
+
+/* Popup container */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Popup object */
+.popup .popuptext {
+  visibility: hidden;
+  width: 80px;
+  text-align: center;
+  position: absolute;
+  z-index: 1;
+  bottom: -270%;
+  margin-left: -55px;
+  border: solid;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #000000 transparent;
+}
+
+/* Popup show/hide */
+.popup .show {
+  visibility: visible;
+}
