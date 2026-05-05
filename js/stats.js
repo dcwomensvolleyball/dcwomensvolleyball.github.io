@@ -82,3 +82,48 @@ function antShowSlides(n) {
   }
   slides[antSlideIndex-1].style.display = "block";
 }
+
+function toggle_row(btnID, eIDs) {
+  // Feed the list of ids as a selector
+  var theRows = document.querySelectorAll(eIDs);
+  // Get the button that triggered this
+  var theButton = document.getElementById(btnID);
+  // Get the icon that triggered this
+  var theIcon = document.getElementById(`icon-${btnID}`);
+
+  // SVG for Minus icon
+  const minusSVG = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+    </svg>
+  `;
+ 
+  // SVG for Plus icon
+  const plusSVG = `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+      <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+    </svg>
+  `;
+
+  // If the button is not expanded...
+  if (theButton.getAttribute("aria-expanded") == "false") {
+    // Loop through the rows and show them
+    for (var i = 0; i < theRows.length; i++) {
+      theRows[i].classList.add("shown");
+      theRows[i].classList.remove("hidden");
+    }
+    // Now set the button to expanded
+    theButton.setAttribute("aria-expanded", "true");
+    theIcon.innerHTML = minusSVG;
+  // Otherwise button is not expanded...
+  } else {
+    // Loop through the rows and hide them
+    for (var i = 0; i < theRows.length; i++) {
+      theRows[i].classList.add("hidden");
+      theRows[i].classList.remove("shown");
+    }
+    // Now set the button to collapsed
+    theButton.setAttribute("aria-expanded", "false");
+    theIcon.innerHTML = plusSVG;
+  }
+}
