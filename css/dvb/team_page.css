@@ -56,6 +56,11 @@
   border-style:solid;
 }
 
+.team_page_results_year {
+  border:solid;
+  padding-left:5px;
+}
+
 .team_page_results_season {
   border-top:1px solid black;
   border-left:solid;
@@ -201,4 +206,31 @@
   border-left:1px solid black;
   border-right:solid;
   border-bottom:solid;
+}
+
+.team_page_row_white.shown, .team_page_row_white.hidden {
+  background-color: #fff;
+  display: table-row;
+}
+
+.team_page_row_white.hidden {
+  display: none;
+}
+
+.team_page_row_gray button {
+  background-color: LightGray;
+  border: .1em solid LightGray;
+  width: 100%;
+}
+
+.team_page_row_gray button svg {
+  width: 0.8em;
+  height: 0.8em;
+  transition: transform 0.25s ease-in;
+  transform-origin: center 45%;
+}
+
+/* Lean on programmatic state for styling */
+.team_page_row_gray button[aria-expanded="true"] svg {
+  transform: rotate(180deg);
 }

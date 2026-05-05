@@ -1978,63 +1978,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20231" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s1,#r2023f1');" aria-controls="r2023s1 r2023f1" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20231">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s1">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish">T-3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f1">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish">1st &#x1f947;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3"">
+            <button id="btn20241" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w1,#r2024s1,#r2024f1');" aria-controls="r2024w1 r2024s1 r2024f1" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20241">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w1">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish">2nd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s1">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f1">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">3rd</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20251" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w1,#r2025s1,#r2025f1');" aria-controls="r2025w1 r2025s1 r2025f1" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20251">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w1">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">4th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s1">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f1">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">4th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20261" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w1,#r2026s1');" aria-controls="r2026w1 r2026s1" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20261">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w1">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">6th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s1">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -2154,63 +2186,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20232" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s2,#r2023f2');" aria-controls="r2023s2 r2023f2" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20232">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s2">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish">6th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f2">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish">T-5th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20242" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w2,#r2024s2,#r2024f2');" aria-controls="r2024w2 r2024s2 r2024f2" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20242">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w2">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish">8th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s2">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">5th &#x1f948;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f2">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">8th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20252" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w2,#r2025s2,#r2025f2');" aria-controls="r2025w2 r2025s2 r2025f2" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20252">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w2">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">10th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s2">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">12th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">11th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f2">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">6th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20262" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w2,#r2026s2');" aria-controls="r2026w2 r2026s2" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20262">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w2">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">10th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s2">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -2330,63 +2394,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20233" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s3,#r2023f3');" aria-controls="r2023s3 r2023f3" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20233">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s3">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish">10th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f3">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish">10th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20243" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w3,#r2024s3,#r2024f3');" aria-controls="r2024w3 r2024s3 r2024f3" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20243">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w3">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish">6th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s3">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">9th &#x1f949;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f3">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">7th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20253" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w3,#r2025s3,#r2025f3');" aria-controls="r2025w3 r2025s3 r2025f3" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20253">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w3">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">5th &#x1f948;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s3">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">6th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f3">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">T-7th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20263" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w3,#r2026s3');" aria-controls="r2026w3 r2026s3" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20263">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w3">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">T-3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s3">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -2506,63 +2602,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20234" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s4,#r2023f4');" aria-controls="r2023s4 r2023f4" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20234">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s4">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish">2nd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f4">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish">3rd</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20244" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w4,#r2024s4,#r2024f4');" aria-controls="r2024w4 r2024s4 r2024f4" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20244">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w4">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish">7th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s4">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">8th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f4">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">12th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20254" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w4,#r2025s4,#r2025f4');" aria-controls="r2025w4 r2025s4 r2025f4" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20254">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w4">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">12th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s4">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">7th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f4">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">10th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20264" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w4,#r2026s4');" aria-controls="r2026w4 r2026s4" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20264">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w4">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">9th &#x1f949;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s4">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -2682,50 +2810,74 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20245" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w5,#r2024s5,#r2024f5');" aria-controls="r2024w5 r2024s5 r2024f5" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20245">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w5">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish">10th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s5">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">11th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f5">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">6th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20255" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w5,#r2025s5,#r2025f5');" aria-controls="r2025w5 r2025s5 r2025f5" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20255">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w5">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">12th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">11th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s5">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">12th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f5">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">11th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20265" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w5,#r2026s5');" aria-controls="r2026w5 r2026s5" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20265">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w5">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">12th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">11th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s5">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -2845,63 +2997,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20236" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s6,#r2023f6');" aria-controls="r2023s6 r2023f6" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20236">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023w6">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish">9th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s6">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish">4th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20246" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w6,#r2024s6,#r2024f6');" aria-controls="r2024w6 r2024s6 r2024f6" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20246">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w6">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish">11th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s6">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">12th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">12th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f6">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">12th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">11th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20256" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w6,#r2025s6,#r2025f6');" aria-controls="r2025w6 r2025s6 r2025f6" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20256">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w6">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">9th &#x1f949;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s6">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">10th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f6">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">12th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">12th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20266" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w6,#r2026s6');" aria-controls="r2026w6 r2026s6" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20266">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w6">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">12th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s6">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -3021,50 +3205,74 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20247" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w7,#r2024s7,#r2024f7');" aria-controls="r2024w7 r2024s7 r2024f7" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20247">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w7">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish">1st &#x1f947;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s7">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">1st &#x1f947;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f7">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">1st &#x1f947;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20257" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w7,#r2025s7,#r2025f7');" aria-controls="r2025w7 r2025s7 r2025f7" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20257">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w7">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">1st &#x1f947;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s7">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">1st &#x1f947;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f7">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">2nd</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20267" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w7,#r2026s7');" aria-controls="r2026w7 r2026s7" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20267">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w7">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">2nd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s7">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -3184,63 +3392,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20238" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s8,#r2023f8');" aria-controls="r2023s8 r2023f8" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20238">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s8">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish">8th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f8">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish">8th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20248" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w8,#r2024s8,#r2024f8');" aria-controls="r2024w8 r2024s8 r2024f8" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20248">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w8">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish">3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s8">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">6th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f8">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">9th &#x1f949;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20258" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w8,#r2025s8,#r2025f8');" aria-controls="r2025w8 r2025s8 r2025f8" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20258">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w8">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">7th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s8">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">8th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f8">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">5th &#x1f948;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20268" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w8,#r2026s8');" aria-controls="r2026w8 r2026s8" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20268">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w8">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">5th &#x1f948;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s8">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -3360,63 +3600,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20239" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s9,#r2023f9');" aria-controls="r2023s9 r2023f9" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn20239">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s9">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish">7th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f9">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish">7th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20249" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w9,#r2024s9,#r2024f9');" aria-controls="r2024w9 r2024s9 r2024f9" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn20249">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w9">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish">9th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s9">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">7th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f9">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">11th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">10th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20259" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w9,#r2025s9,#r2025f9');" aria-controls="r2025w9 r2025s9 r2025f9" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn20259">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w9">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">8th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s9">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">9th &#x1f949;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f9">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">8th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">T-7th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn20269" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w9,#r2026s9');" aria-controls="r2026w9 r2026s9" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn20269">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w9">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">7th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s9">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -3536,63 +3808,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202310" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s10,#r2023f10');" aria-controls="r2023s10 r2023f10" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn202310">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023w10">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish">T-3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s10">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish">9th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202410" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w10,#r2024s10,#r2024f10');" aria-controls="r2024w10 r2024s10 r2024f10" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn202410">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w10">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">7th</td>
           <td class="team_page_results_play_finish">4th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s10">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">9th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">10th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f10">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">5th &#x1f948;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202510" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w10,#r2025s10,#r2025f10');" aria-controls="r2025w10 r2025s10 r2025f10" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn202510">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w10">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">6th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s10">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">5th &#x1f948;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f10">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">10th</td>
           <td class="team_page_results_play_finish" style="background-color:#D59352;">9th &#x1f949;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202610" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w10,#r2026s10');" aria-controls="r2026w10 r2026s10" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn202610">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w10">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">T-3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s10">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -3712,45 +4016,69 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202411" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w11,#r2024s11,#r2024f11');" aria-controls="r2024w11 r2024s11 r2024f11" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn202411">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s11">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">4th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f11">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">2nd</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202511" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w11,#r2025s11,#r2025f11');" aria-controls="r2025w11 r2025s11 r2025f11" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn202511">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w11">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">2nd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s11">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">4th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f11">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">1st &#x1f947;</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202611" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w11,#r2026s11');" aria-controls="r2026w11 r2026s11" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn202611">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w11">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">5th</td>
           <td class="team_page_results_play_finish" style="background-color:#DBE2E9;">8th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s11">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
@@ -3870,63 +4198,95 @@
           <th class="team_page_results_column"><font color="#ffffff">Playoffs</font></th>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2023</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202312" aria-expanded="false" onclick="toggle_row(this.id,'#r2023s12,#r2023f12');" aria-controls="r2023s12 r2023f12" style="text-align:center;"><b>2023</b>
+              <span id="icon-btn202312">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023s12">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">6th</td>
           <td class="team_page_results_play_finish">5th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2023f12">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish">2nd</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2024</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202412" aria-expanded="false" onclick="toggle_row(this.id,'#r2024w12,#r2024s12,#r2024f12');" aria-controls="r2024w12 r2024s12 r2024f12" style="text-align:center;"><b>2024</b>
+              <span id="icon-btn202412">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024w12">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish">5th</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024s12">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">2nd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2024f12">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">4th</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2025</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202512" aria-expanded="false" onclick="toggle_row(this.id,'#r2025w12,#r2025s12,#r2025f12');" aria-controls="r2025w12 r2025s12 r2025f12" style="text-align:center;"><b>2025</b>
+              <span id="icon-btn202512">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M8.75 3.75a.75.75 0 0 0-1.5 0v3.5h-3.5a.75.75 0 0 0 0 1.5h3.5v3.5a.75.75 0 0 0 1.5 0v-3.5h3.5a.75.75 0 0 0 0-1.5h-3.5v-3.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025w12">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">4th</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">3rd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025s12">
           <th class="team_page_results_season">Summer</th>
           <td class="team_page_results_reg_finish">2nd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">2nd</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white hidden" id="r2025f12">
           <th class="team_page_results_season">Fall</th>
           <td class="team_page_results_reg_finish">3rd</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">3rd</td>
         </tr>
         <tr class="team_page_row_gray">
-          <th class="team_page_results_season" colspan="3" style="text-align: center;">2026</th>
+          <th class="team_page_results_year" colspan="3">
+            <button id="btn202612" aria-expanded="true" onclick="toggle_row(this.id,'#r2026w12,#r2026s12');" aria-controls="r2026w12 r2026s12" style="text-align:center;"><b>2026</b>
+              <span id="icon-btn202612">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor">
+                  <path d="M3.75 7.25a.75.75 0 0 0 0 1.5h8.5a.75.75 0 0 0 0-1.5h-8.5Z" />
+                </svg>
+              </span>
+            </button>
+          </th>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026w12">
           <th class="team_page_results_season">Winter</th>
           <td class="team_page_results_reg_finish">1st</td>
           <td class="team_page_results_play_finish" style="background-color:#F2C891;">1st &#x1f947;</td>
         </tr>
-        <tr class="team_page_row_white">
+        <tr class="team_page_row_white" id="r2026s12">
           <th class="team_page_results_season_bot">Summer</th>
           <td class="team_page_results_reg_finish_bot">-</td>
           <td class="team_page_results_play_finish_bot">-</td>
